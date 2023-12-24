@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import laptops from './laptopData'
+import Header from './Header'
 
 const LaptopCards = () => {
 
@@ -31,7 +32,7 @@ const LaptopCards = () => {
               </ul>
               <div className=' my-2 flex justify-between items-center'>
                 <div>
-                  <p className='font-semibold text-2xl'>₹{laptop.price/10}</p>
+                  <p className='font-semibold text-2xl'>₹{laptop.price-laptop.price/10}</p>
                   <p><s className='text-gray-600 mr-1'>₹{laptop.price}</s><span className='text-green-500 font-bold'>10% off</span></p>
                 </div>
                 <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-lg shadow-blue-500/50  font-medium rounded-lg text-sm px-5 py-2.5 text-center">Buy now</button>

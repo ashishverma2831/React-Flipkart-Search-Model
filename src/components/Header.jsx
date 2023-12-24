@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useRef ,useState } from 'react'
+import laptops from './laptopData';
+// import LaptopCards from './LaptopCards';
 
 const Header = () => {
+
+    // const [selectedLaptop, setSelectedLaptop] = useState(laptops);
+    const searchRef = useRef(null);
+    const searchLaptop = () => {
+        const filteredLaptop = laptops.filter((laptop)=>{
+            return laptop.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
+        })
+        // setSelectedLaptop(filteredLaptop);
+    }
+
   return (
     <>
-        <header className='bg-[#2874f0] '>
+        <header className='bg-[#2874f0] shadow-lg fixed w-full'>
             <div className='max-w-screen-xl mx-auto py-2 flex items-center justify-center'>
                 <div className='flex flex-col mx-4'>
-                    <img width={80} src='public/flipkart-plus_8d85f4.png' className='text-white' alt='logo' />
-                    <p className='text-white italic flex font-semibold text-sm  justify-center'>Explore <span className='text-yellow-500 font-semibold'>Plus </span><img className='w-4 mr-1 h-4' src='https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png'/></p>
+                    <img width={80} src='/flipkart-plus_8d85f4.png' className='text-white' alt='logo' />
+                    <p className='text-white italic flex font-semibold text-sm hover:underline  justify-center'>Explore <span className='text-yellow-300 font-semibold'>Plus </span><img className='w-4 mr-1 h-4' src='https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png'/></p>
                 </div>
                 {/* <form className='w-4/12'>   
                     <div className="relative shadow">
@@ -25,8 +37,8 @@ const Header = () => {
 <form className='w-1/3'>
     <div className="flex">
         <div className="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded border border-gray-300 " placeholder="Search laptops..." required />
-            <button type="submit" className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 ">
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded border border-gray-300 " placeholder="Search laptops..." required ref={searchRef} />
+            <button type="submit" className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 " onClick={searchLaptop}>
             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>

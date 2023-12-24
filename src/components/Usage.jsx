@@ -1,29 +1,29 @@
 import React from 'react'
 
-const ScreenSize = () => {
-    const screenSizes = [
-        "Below 12 inch",
-        "12 inch - 12.9 inch",
-        "13 inch - 13.9 inch",
-        "14 inch - 14.9 inch",
-        "15 inch - 15.9 inch",
-        "16 inch - 17.9 inch",
-        "18 inch - 20 inch",
-        "Above 20 inch"
+const Usage = () => {
+    const usage = [
+        "Business",
+        "Gaming, Everyday Use",
+        "Gaming, Multimedia",
+        "Home/Office/Gaming",
+        "Home/Office/Designing",
+        "Home/Office",
+        "Everyday Use, Office, Student",
+        "Gaming",
+        "Processing & Multitasking"
     ];
-
   return (
     <div>
         <div>
-    <h2 id="accordion-collapse-heading-8">
+    <h2 id="accordion-collapse-heading-14">
             <button
                 type="button"
                 class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
-                data-accordion-target="#accordion-collapse-body-8"
+                data-accordion-target="#accordion-collapse-body-14"
                 aria-expanded="true"
-                aria-controls="accordion-collapse-body-8"
+                aria-controls="accordion-collapse-body-14"
             >
-                <span>Screen Size</span>         
+                <span>Usage</span>         
                 <svg
                     data-accordion-icon
                     class="w-3 h-3 rotate-180 shrink-0"
@@ -43,16 +43,16 @@ const ScreenSize = () => {
             </button>
         </h2>
         <div
-            id="accordion-collapse-body-8"
+            id="accordion-collapse-body-14"
             class="hidden"
-            aria-labelledby="accordion-collapse-heading-8"
+            aria-labelledby="accordion-collapse-heading-14"
         >
             <div class="p-5 border border-b-0 border-gray-200 ">
-                {screenSizes.map((size) => {
+                {usage.map((u) => {
                     return (
                         <div class="flex items-center mb-4">
                             <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{size}</label>
+                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{u}</label>
                         </div>
                     );
                 })}
@@ -63,4 +63,4 @@ const ScreenSize = () => {
   )
 }
 
-export default ScreenSize
+export default Usage

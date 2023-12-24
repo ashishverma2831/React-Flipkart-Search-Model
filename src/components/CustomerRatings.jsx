@@ -1,29 +1,23 @@
 import React from 'react'
 
-const ScreenSize = () => {
-    const screenSizes = [
-        "Below 12 inch",
-        "12 inch - 12.9 inch",
-        "13 inch - 13.9 inch",
-        "14 inch - 14.9 inch",
-        "15 inch - 15.9 inch",
-        "16 inch - 17.9 inch",
-        "18 inch - 20 inch",
-        "Above 20 inch"
+const CustomerRatings = () => {
+    const customerRatings = [
+        "4",
+        "3",
+        "2",
+        "1"
     ];
-
   return (
     <div>
-        <div>
-    <h2 id="accordion-collapse-heading-8">
+    <h2 id="accordion-collapse-heading-22">
             <button
                 type="button"
                 class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
-                data-accordion-target="#accordion-collapse-body-8"
+                data-accordion-target="#accordion-collapse-body-22"
                 aria-expanded="true"
-                aria-controls="accordion-collapse-body-8"
+                aria-controls="accordion-collapse-body-22"
             >
-                <span>Screen Size</span>         
+                <span>Customer Ratings</span>         
                 <svg
                     data-accordion-icon
                     class="w-3 h-3 rotate-180 shrink-0"
@@ -43,24 +37,23 @@ const ScreenSize = () => {
             </button>
         </h2>
         <div
-            id="accordion-collapse-body-8"
+            id="accordion-collapse-body-22"
             class="hidden"
-            aria-labelledby="accordion-collapse-heading-8"
+            aria-labelledby="accordion-collapse-heading-22"
         >
             <div class="p-5 border border-b-0 border-gray-200 ">
-                {screenSizes.map((size) => {
+                {customerRatings.map((cr) => {
                     return (
                         <div class="flex items-center mb-4">
                             <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{size}</label>
+                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{cr}<i class="fa-solid fa-star"></i> & above</label>
                         </div>
                     );
                 })}
             </div>
         </div>
 </div>
-    </div>
   )
 }
 
-export default ScreenSize
+export default CustomerRatings

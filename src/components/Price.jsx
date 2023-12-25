@@ -2,14 +2,15 @@ import React from 'react'
 
 const Price = () => {
     const prices = [
-        "20,000",
-        "30,000",
-        "40,000",
-        "50,000",
-        "60,000",
-        "70,000",
-        "80,000",
-        "90,000"
+        "All",
+        "Below 20,000",
+        "Above 20,000 & Below 30,000",
+        "Above 30,000 & Below 40,000",
+        "Above 40,000 & Below 50,000",
+        "Above 50,000 & Below 60,000",
+        "Above 60,000 & Below 70,000",
+        "Above 70,000 & Below 80,000",
+        "Above 80,000"
     ];
   return (
     <div>

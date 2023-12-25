@@ -12,7 +12,7 @@ const LaptopCards = () => {
         return (
           <div class="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
             <img class="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
-            <div class="flex flex-col justify-between p-4 ml-2 w-full hover:bg-gray-50 ">
+            <div class="flex flex-col justify-between p-4 ml-2 flex-1 w-full hover:bg-gray-50 ">
               <h5 class="text-2xl font-semibold tracking-tight text-gray-900 ">{laptop.name}</h5>
               <p class=" my-2 text-gray-700 font-medium">
                 {laptop.rating?

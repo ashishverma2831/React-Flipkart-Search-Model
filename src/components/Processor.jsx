@@ -13,14 +13,6 @@ const Processor = () => {
     ];
     return (
         <div>
-            {/* <h1 className="mt-4">Processor</h1>
-        {processors.map((processor)=>{
-            return <div>
-                {processor}
-            </div>
-        })} */}
-
-            {/* <div id="accordion-collapse" data-accordion="collapse"> */}
             <h2 id="accordion-collapse-heading-1">
                 <button
                     type="button"

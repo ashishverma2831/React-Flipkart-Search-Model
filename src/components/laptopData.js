@@ -1,4 +1,6 @@
-const laptops =
+import DedicatedGraphicsMemory from "./DedicatedGraphicsMemory";
+
+const laptops = 
 [
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -11,7 +13,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "0"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -24,7 +27,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "1"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/s/z/r/-original-imagetgzg4pgszmt.jpeg?q=70",
@@ -37,7 +41,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "4733",
-    no_of_reviews: "463"
+    no_of_reviews: "463",
+    id: "2"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/1/7/-original-imag3ebnzawky4kn.jpeg?q=70",
@@ -50,7 +55,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "10406",
-    no_of_reviews: "1040"
+    no_of_reviews: "1040",
+    id: "3"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70",
@@ -63,7 +69,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "18",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "4"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
@@ -76,7 +83,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "8865",
-    no_of_reviews: "795"
+    no_of_reviews: "795",
+    id: "5"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70",
@@ -89,7 +97,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "790",
-    no_of_reviews: "95"
+    no_of_reviews: "95",
+    id: "6"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -100,9 +109,10 @@ const laptops =
     os: "64 bit Windows 11 Operating System",
     storage: "256 GB SSD",
     display: "14",
-    rating: "",
-    no_of_ratings: "",
-    no_of_reviews: ""
+    rating: "4",
+    no_of_ratings: "67",
+    no_of_reviews: "78",
+    id: "7"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -115,7 +125,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "112",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "8"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuwzssw0/computer/x/l/a/redmibook-15-pro-thin-and-light-laptop-redmi-original-imag7xhnakyazyma.jpeg?q=70",
@@ -128,7 +139,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "3955",
-    no_of_reviews: "462"
+    no_of_reviews: "462",
+    id: "9"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/0/8/-original-imagkgr3wcfexyd8.jpeg?q=70",
@@ -141,7 +153,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "381",
-    no_of_reviews: "76"
+    no_of_reviews: "76",
+    id: "10"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/u/o/-original-imagg6t9hc6wubth.jpeg?q=70",
@@ -154,7 +167,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "11"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/t/h/-original-imagg6t9pauha4t7.jpeg?q=70",
@@ -167,7 +181,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "257",
-    no_of_reviews: "26"
+    no_of_reviews: "26",
+    id: "12"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/q/o/-original-imag7wjdg4dvcdya.jpeg?q=70",
@@ -180,7 +195,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "137",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "13"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/o/u/-original-imaghkk994ybh4fh.jpeg?q=70",
@@ -193,7 +209,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "143",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "14"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
@@ -206,7 +223,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "12584",
-    no_of_reviews: "1870"
+    no_of_reviews: "1870",
+    id: "15"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5h2xe80/computer/h/i/p/14s-dy5005tu-thin-and-light-laptop-hp-original-imagg4rc7n75zqkp.jpeg?q=70",
@@ -219,7 +237,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "1779",
-    no_of_reviews: "160"
+    no_of_reviews: "160",
+    id: "16"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/6/i/-original-imaggshd5zgfe8ev.jpeg?q=70",
@@ -232,7 +251,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "328",
-    no_of_reviews: "34"
+    no_of_reviews: "34",
+    id: "17"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/3/l/-original-imagha3pvvc2xuz2.jpeg?q=70",
@@ -245,7 +265,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2239",
-    no_of_reviews: "299"
+    no_of_reviews: "299",
+    id: "18"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/z/r/-original-imaggskgx4ze73fn.jpeg?q=70",
@@ -258,7 +279,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "9",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "19"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/khdqnbk0/computer/f/y/t/apple-original-imafxfyqydgvrkzv.jpeg?q=70",
@@ -271,7 +293,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "8865",
-    no_of_reviews: "795"
+    no_of_reviews: "795",
+    id: "20"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/6/1/15s-fq5007tu-thin-and-light-laptop-hp-original-imagkwj68xgexkhy.jpeg?q=70",
@@ -284,7 +307,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "93",
-    no_of_reviews: "17"
+    no_of_reviews: "17",
+    id: "21"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/b/8/15s-fr4000tu-thin-and-light-laptop-hp-original-imaghrcwmt7v5svk.jpeg?q=70",
@@ -297,7 +321,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "68",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "22"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/6/i/-original-imaggshd5zgfe8ev.jpeg?q=70",
@@ -310,7 +335,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "1911",
-    no_of_reviews: "208"
+    no_of_reviews: "208",
+    id: "23"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/c/q/t/lenovo-na-thin-and-light-laptop-original-imafuzt873zgp9xe.jpeg?q=70",
@@ -323,7 +349,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "870",
-    no_of_reviews: "66"
+    no_of_reviews: "66",
+    id: "24"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks4yz680/computer/q/5/z/x409fa-ek617t-thin-and-light-laptop-asus-original-imag5rwhrgjtgkyq.jpeg?q=70",
@@ -336,7 +363,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "19",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "25"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/6/o/14s-fq0568au-thin-and-light-laptop-hp-original-imaggdzyrdf7hbkr.jpeg?q=70",
@@ -349,7 +377,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "754",
-    no_of_reviews: "79"
+    no_of_reviews: "79",
+    id: "26"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -362,7 +391,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "27"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/k/i/-original-imaggsh8hmh4jmdz.jpeg?q=70",
@@ -375,7 +405,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "1979",
-    no_of_reviews: "202"
+    no_of_reviews: "202",
+    id: "28"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l15bxjk0/computer/8/4/i/-original-imagcsyu53jxgtqe.jpeg?q=70",
@@ -388,7 +419,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "1233",
-    no_of_reviews: "149"
+    no_of_reviews: "149",
+    id: "29"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5h2xe80/computer/e/i/d/15s-fr2511tu-thin-and-light-laptop-hp-original-imagg59a7s5kymvy.jpeg?q=70",
@@ -401,7 +433,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "388",
-    no_of_reviews: "40"
+    no_of_reviews: "40",
+    id: "30"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -414,7 +447,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "31"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/8/e/j/-original-imagckcffymgykfd.jpeg?q=70",
@@ -427,7 +461,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "127",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "32"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/z/c/-original-imaghr25cncfgpza.jpeg?q=70",
@@ -440,7 +475,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "870",
-    no_of_reviews: "105"
+    no_of_reviews: "105",
+    id: "33"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/6/4/-original-imagkqwzbryf6sp7.jpeg?q=70",
@@ -453,7 +489,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "2011",
-    no_of_reviews: "167"
+    no_of_reviews: "167",
+    id: "34"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -466,7 +503,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "35"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0r1j0w0/computer/z/m/a/np340xla-ka1in-thin-and-light-laptop-samsung-original-imagcgqvcvcbsun6.jpeg?q=70",
@@ -479,7 +517,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "109",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "36"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/w/i/-original-imagmnmsbhuxbazf.jpeg?q=70",
@@ -492,7 +531,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "128",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "37"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l48s9zk0/computer/e/n/0/-original-imagf6z3yxgmucxj.jpeg?q=70",
@@ -505,7 +545,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "325",
-    no_of_reviews: "52"
+    no_of_reviews: "52",
+    id: "38"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -518,7 +559,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "39"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/v/b/y/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgw27k4tbb.jpeg?q=70",
@@ -531,7 +573,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "12584",
-    no_of_reviews: "1870"
+    no_of_reviews: "1870",
+    id: "40"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0r1j0w0/computer/d/d/r/fa777rm-hx019w-gaming-laptop-asus-original-imagcg8q8kqgycxy.jpeg?q=70",
@@ -544,7 +587,8 @@ const laptops =
     display: "17.3",
     rating: "4.3",
     no_of_ratings: "59",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "41"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/v/m/-original-imagmnmr59pmudx6.jpeg?q=70",
@@ -557,7 +601,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "301",
-    no_of_reviews: "22"
+    no_of_reviews: "22",
+    id: "42"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -570,7 +615,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "43"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70",
@@ -583,7 +629,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "233",
-    no_of_reviews: "32"
+    no_of_reviews: "32",
+    id: "44"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5e81ow0/computer/j/w/o/ex-215-54-thin-and-light-laptop-acer-original-imagg28wzdeny2jq.jpeg?q=70",
@@ -596,7 +643,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "741",
-    no_of_reviews: "84"
+    no_of_reviews: "84",
+    id: "45"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70",
@@ -609,7 +657,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "431",
-    no_of_reviews: "39"
+    no_of_reviews: "39",
+    id: "46"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -622,7 +671,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "47"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/h/w/-original-imaghzahgukpkyfu.jpeg?q=70",
@@ -635,7 +685,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "28",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "48"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcjexe80/computer/f/j/u/asus-original-imaftndwqbqznkju.jpeg?q=70",
@@ -648,7 +699,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "389",
-    no_of_reviews: "44"
+    no_of_reviews: "44",
+    id: "49"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/v/b/y/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgw27k4tbb.jpeg?q=70",
@@ -661,7 +713,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "12584",
-    no_of_reviews: "1870"
+    no_of_reviews: "1870",
+    id: "50"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -674,7 +727,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "51"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/t/h/-original-imagg6t9pauha4t7.jpeg?q=70",
@@ -687,7 +741,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "206",
-    no_of_reviews: "20"
+    no_of_reviews: "20",
+    id: "52"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/b/n/-original-imagfdf4xnbyyxpa.jpeg?q=70",
@@ -698,9 +753,10 @@ const laptops =
     os: "Mac OS Operating System",
     storage: "512 GB SSD",
     display: "13.6",
-    rating: "",
-    no_of_ratings: "",
-    no_of_reviews: ""
+    rating: "3.8",
+    no_of_ratings: "55",
+    no_of_reviews: "34",
+    id: "53"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l30hmkw0/computer/y/r/c/-original-image8cfzz5chjas.jpeg?q=70",
@@ -713,7 +769,8 @@ const laptops =
     display: "14",
     rating: "4.7",
     no_of_ratings: "6",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "54"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -726,7 +783,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "55"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/r/z/alpha-15-amd-advantage-edition-b5eek-gaming-laptop-msi-original-imaghffgxvfmtcpg.jpeg?q=70",
@@ -739,7 +797,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "413",
-    no_of_reviews: "63"
+    no_of_reviews: "63",
+    id: "56"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l15bxjk0/computer/8/4/i/-original-imagcsyu53jxgtqe.jpeg?q=70",
@@ -752,7 +811,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "1087",
-    no_of_reviews: "131"
+    no_of_reviews: "131",
+    id: "57"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/3/b/t/-original-imaghsggffspg9pw.jpeg?q=70",
@@ -763,9 +823,10 @@ const laptops =
     os: "64 bit Windows 11 Operating System",
     storage: "512 GB SSD",
     display: "14",
-    rating: "",
-    no_of_ratings: "",
-    no_of_reviews: ""
+    rating: "4.2",
+    no_of_ratings: "766",
+    no_of_reviews: "788",
+    id: "58"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -778,7 +839,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "59"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/2/t/-original-imagg6t9xpv4rr8v.jpeg?q=70",
@@ -791,7 +853,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "7",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "60"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/r/c/-original-imaghzah5hzzt2hw.jpeg?q=70",
@@ -804,7 +867,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "25",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "61"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
@@ -817,7 +881,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "5533",
-    no_of_reviews: "674"
+    no_of_reviews: "674",
+    id: "62"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -830,7 +895,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "63"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/v/m/-original-imagmnmr59pmudx6.jpeg?q=70",
@@ -841,9 +907,10 @@ const laptops =
     os: "64 bit Windows 11 Operating System",
     storage: "1 TB SSD",
     display: "14",
-    rating: "",
-    no_of_ratings: "",
-    no_of_reviews: ""
+    rating: "4.6",
+    no_of_ratings: "344",
+    no_of_reviews: "67",
+    id: "64"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/v/x/v/na-thin-and-light-laptop-apple-original-imag5jt7u9fzenqb.jpeg?q=70",
@@ -856,7 +923,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "8865",
-    no_of_reviews: "795"
+    no_of_reviews: "795",
+    id: "65"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -869,7 +937,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "66"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -882,7 +951,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "67"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2dmky80/computer/0/3/a/-original-imagdqdytfgwhsah.jpeg?q=70",
@@ -895,7 +965,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "652",
-    no_of_reviews: "85"
+    no_of_reviews: "85",
+    id: "68"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwdv3bk0/computer/r/m/c/15-ec2145ax-gaming-laptop-hp-original-imag92vp9cznphgg.jpeg?q=70",
@@ -908,7 +979,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "327",
-    no_of_reviews: "51"
+    no_of_reviews: "51",
+    id: "69"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/3/9/x515ja-ej382ws-laptop-asus-original-imaghhwnkafntrrc.jpeg?q=70",
@@ -921,7 +993,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "107",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "70"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/4/b/-original-imagmmntzeunqhyh.jpeg?q=70",
@@ -934,7 +1007,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "37",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "71"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/w/7/raider-ge78hx-13vh-088in-gaming-laptop-msi-original-imagmmhz3pyvmxbp.jpeg?q=70",
@@ -945,9 +1019,10 @@ const laptops =
     os: "Windows 11 Operating System",
     storage: "2 TB SSD",
     display: "17",
-    rating: "",
-    no_of_ratings: "",
-    no_of_reviews: ""
+    rating: "3.9",
+    no_of_ratings: "82",
+    no_of_reviews: "",
+    id: "72"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr2e3680/computer/i/w/9/na-thin-and-light-laptop-asus-original-imag4yykyhpwfp8v.jpeg?q=70",
@@ -960,7 +1035,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "1671",
-    no_of_reviews: "226"
+    no_of_reviews: "226",
+    id: "73"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/z/n/-original-imagg3fxfrttfgvj.jpeg?q=70",
@@ -973,7 +1049,8 @@ const laptops =
     display: "11.6",
     rating: "4",
     no_of_ratings: "1853",
-    no_of_reviews: "287"
+    no_of_reviews: "287",
+    id: "74"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -986,7 +1063,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "75"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/b/w/-original-imagg6t9sb9gvafu.jpeg?q=70",
@@ -999,7 +1077,8 @@ const laptops =
     display: "14",
     rating: "3.6",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "76"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/n/d/katana-17-b13vfk-253in-gaming-laptop-msi-original-imagmmhgf9gjkhzf.jpeg?q=70",
@@ -1012,7 +1091,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "77"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/j/z/m1603qa-mb511ws-laptop-asus-original-imaghfbtdt8fzsss.jpeg?q=70",
@@ -1025,7 +1105,8 @@ const laptops =
     display: "16",
     rating: "4.9",
     no_of_ratings: "7",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "78"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -1038,7 +1119,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "79"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/l/a/w/-original-imagf39qgu4qjmgk.jpeg?q=70",
@@ -1051,7 +1133,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "4379",
-    no_of_reviews: "580"
+    no_of_reviews: "580",
+    id: "80"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwmfqfk0/computer/8/l/2/ideapad-3-14acl6-thin-and-light-laptop-lenovo-original-imag99kmftdeexpz.jpeg?q=70",
@@ -1064,7 +1147,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "57",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "81"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/3/b/t/-original-imaghsggffspg9pw.jpeg?q=70",
@@ -1077,7 +1161,8 @@ const laptops =
     display: "14",
     rating: "4.8",
     no_of_ratings: "19",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "82"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -1090,7 +1175,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "83"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/u/b/-original-imagg2vnsrgrfkmz.jpeg?q=70",
@@ -1103,7 +1189,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "694",
-    no_of_reviews: "67"
+    no_of_reviews: "67",
+    id: "84"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4vnbm80/computer/i/f/f/15ada7-thin-and-light-laptop-lenovo-original-imagfzzxmhfgzysy.jpeg?q=70",
@@ -1116,7 +1203,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "778",
-    no_of_reviews: "78"
+    no_of_reviews: "78",
+    id: "85"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/0/v/15ach6h-gaming-laptop-lenovo-original-imagheh6fngdnzav.jpeg?q=70",
@@ -1129,7 +1217,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "86"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/b/q/-original-imaghsggzmjg7qgn.jpeg?q=70",
@@ -1142,7 +1231,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "23",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "87"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/y/0/c/na-thin-and-light-laptop-asus-original-imag3ebnzawky4kn.jpeg?q=70",
@@ -1155,7 +1245,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "564",
-    no_of_reviews: "55"
+    no_of_reviews: "55",
+    id: "88"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/l/i/g713ie-hx040w-gaming-laptop-asus-original-imagkygrm3x7vzzv.jpeg?q=70",
@@ -1168,7 +1259,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "89"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/s/14-ek0092tu-thin-and-light-laptop-hp-original-imaghubrzsyhm6wf.jpeg?q=70",
@@ -1181,7 +1273,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "90"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/b/p/-original-imaghkprhrcgrfey.jpeg?q=70",
@@ -1194,7 +1287,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "142",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "91"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/q/u/u/-original-imagfhpzry32pdyg.jpeg?q=70",
@@ -1207,7 +1301,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "97",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "92"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/3/c/s/-original-imagf35fjbjagyax.jpeg?q=70",
@@ -1220,7 +1315,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "146",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "93"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/j/c/-original-imagh3wecapg5gqn.jpeg?q=70",
@@ -1233,7 +1329,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "947",
-    no_of_reviews: "100"
+    no_of_reviews: "100",
+    id: "94"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2dmky80/computer/l/c/g/-original-imagdqdyewdfx452.jpeg?q=70",
@@ -1246,7 +1343,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "624",
-    no_of_reviews: "90"
+    no_of_reviews: "90",
+    id: "95"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -1259,7 +1357,8 @@ const laptops =
     display: "16.1",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "96"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/l/v/-original-imaghrfyjeff4bzv.jpeg?q=70",
@@ -1272,7 +1371,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "715",
-    no_of_reviews: "112"
+    no_of_reviews: "112",
+    id: "97"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/n/t/g/sword-15-a12ud-gaming-laptop-msi-original-imageymchyn4ypgz.jpeg?q=70",
@@ -1285,7 +1385,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "62",
-    no_of_reviews: "17"
+    no_of_reviews: "17",
+    id: "98"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -1298,7 +1399,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "99"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/r/y/n/x360-bf0059tu-thin-and-light-laptop-hp-original-imagh4z7h3f56xxj.jpeg?q=70",
@@ -1311,7 +1413,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "100"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4hcx3k0/computer/y/j/z/macbook-air-thin-and-light-laptop-apple-original-imagfdeqter4sj2j.jpeg?q=70",
@@ -1324,7 +1427,8 @@ const laptops =
     display: "13.6",
     rating: "4.3",
     no_of_ratings: "32",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "101"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4hcx3k0/computer/p/p/o/macbook-air-thin-and-light-laptop-apple-original-imagfdfpnjjpdhq2.jpeg?q=70",
@@ -1337,7 +1441,8 @@ const laptops =
     display: "13.6",
     rating: "4.8",
     no_of_ratings: "45",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "102"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -1350,7 +1455,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "103"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/b/n/-original-imagfdf4xnbyyxpa.jpeg?q=70",
@@ -1363,7 +1469,8 @@ const laptops =
     display: "13.6",
     rating: "4.7",
     no_of_ratings: "50",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "104"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2urv680/computer/a/v/k/-original-image333jzhyzhyt.jpeg?q=70",
@@ -1376,7 +1483,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "1266",
-    no_of_reviews: "172"
+    no_of_reviews: "172",
+    id: "105"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/h/n/-original-imaggzesaqdhy3xd.jpeg?q=70",
@@ -1389,7 +1497,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "174",
-    no_of_reviews: "22"
+    no_of_reviews: "22",
+    id: "106"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -1402,7 +1511,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "107"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5h2xe80/computer/h/i/p/14s-dy5005tu-thin-and-light-laptop-hp-original-imagg4rc7n75zqkp.jpeg?q=70",
@@ -1415,7 +1525,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "3572",
-    no_of_reviews: "327"
+    no_of_reviews: "327",
+    id: "108"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3t2fm80/computer/p/q/q/-original-imageuecysr3cuca.jpeg?q=70",
@@ -1428,7 +1539,8 @@ const laptops =
     display: "14",
     rating: "4.6",
     no_of_ratings: "25",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "109"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/5/u/x360-bf0121tu-thin-and-light-laptop-hp-original-imaghqcrw4zxhhcc.jpeg?q=70",
@@ -1441,7 +1553,8 @@ const laptops =
     display: "13.4",
     rating: "4.7",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "110"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/x/7/14-ec1005au-thin-and-light-laptop-hp-original-imaghusjswsafhcu.jpeg?q=70",
@@ -1454,7 +1567,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "111"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/q/d/n/-original-imagetjymucqggdq.jpeg?q=70",
@@ -1467,7 +1581,8 @@ const laptops =
     display: "17.3",
     rating: "4.7",
     no_of_ratings: "13",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "112"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/0/k/vector-gp77-13vg-055in-gaming-laptop-msi-original-imagmmhkwjhqgrue.jpeg?q=70",
@@ -1480,7 +1595,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "113"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/t/z/j/-original-imagckcfkvspp9ga.jpeg?q=70",
@@ -1493,7 +1609,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "114"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/l/c/raider-ge77hx-12uhs-205in-gaming-laptop-msi-original-imaghffpfubseq3n.jpeg?q=70",
@@ -1506,7 +1623,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "115"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l15bxjk0/computer/8/4/i/-original-imagcsyu53jxgtqe.jpeg?q=70",
@@ -1519,7 +1637,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "1087",
-    no_of_reviews: "131"
+    no_of_reviews: "131",
+    id: "116"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/u/h/h/15ach6-gaming-laptop-lenovo-original-imaggmxtjewnjpeq.jpeg?q=70",
@@ -1532,7 +1651,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "374",
-    no_of_reviews: "46"
+    no_of_reviews: "46",
+    id: "117"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/i/d/p/na-thin-and-light-laptop-apple-original-imagaygvtvf6cx8h.jpeg?q=70",
@@ -1545,7 +1665,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "719",
-    no_of_reviews: "83"
+    no_of_reviews: "83",
+    id: "118"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/klfhk7k0/computer/w/u/x/na-thin-and-light-laptop-lenovo-original-imagyk4hedcydqx5.jpeg?q=70",
@@ -1558,7 +1679,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "41",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "119"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/9/l/-original-imaghzahumgmsmj5.jpeg?q=70",
@@ -1571,7 +1693,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "187",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "120"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/3/w/u/-original-imaghzahcwt9and9.jpeg?q=70",
@@ -1584,7 +1707,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "121"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/q/u/u/-original-imagfhpzry32pdyg.jpeg?q=70",
@@ -1597,7 +1721,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "97",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "122"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -1610,7 +1735,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "123"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/b/q/-original-imaghsggzmjg7qgn.jpeg?q=70",
@@ -1623,7 +1749,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "11",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "124"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/i/n/e/a715-5g-gaming-laptop-acer-original-imagfj2g954wfdyz.jpeg?q=70",
@@ -1636,7 +1763,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "3065",
-    no_of_reviews: "354"
+    no_of_reviews: "354",
+    id: "125"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l572ufk0/computer/r/n/k/fx517zc-hn108ws-gaming-laptop-asus-original-imagfxj5nfwkg5s7.jpeg?q=70",
@@ -1649,7 +1777,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "136",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "126"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -1662,7 +1791,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "127"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -1675,7 +1805,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "128"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/o/u/creator-m16-a12ud-notebook-msi-original-imaghffhcg3zcdju.jpeg?q=70",
@@ -1688,7 +1819,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "129"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/p/3/15-ew0043tu-thin-and-light-laptop-hp-original-imaghrgttxtdcnfy.jpeg?q=70",
@@ -1701,7 +1833,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "130"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -1714,7 +1847,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "131"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/klfhk7k0/computer/w/u/x/na-thin-and-light-laptop-lenovo-original-imagyk4hedcydqx5.jpeg?q=70",
@@ -1727,7 +1861,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "41",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "132"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
@@ -1740,7 +1875,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "7200",
-    no_of_reviews: "967"
+    no_of_reviews: "967",
+    id: "133"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/q/2/-original-imagkqwzyzfahqac.jpeg?q=70",
@@ -1753,7 +1889,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "1346",
-    no_of_reviews: "124"
+    no_of_reviews: "124",
+    id: "134"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/l/a/w/-original-imagf39qgu4qjmgk.jpeg?q=70",
@@ -1766,7 +1903,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "713",
-    no_of_reviews: "103"
+    no_of_reviews: "103",
+    id: "135"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/3/q/14-ek0074tu-thin-and-light-laptop-hp-original-imagh89bdga9fcys.jpeg?q=70",
@@ -1779,7 +1917,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "27",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "136"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/1/g/-original-imagg6t9hmxg6ndz.jpeg?q=70",
@@ -1792,7 +1931,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "18",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "137"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
@@ -1805,7 +1945,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "5533",
-    no_of_reviews: "674"
+    no_of_reviews: "674",
+    id: "138"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/q/s/w/inspiron-3511-laptop-dell-original-imagfycrbnpu2nbh.jpeg?q=70",
@@ -1818,7 +1959,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "440",
-    no_of_reviews: "40"
+    no_of_reviews: "40",
+    id: "139"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks7tuvk0/computer/i/e/z/predator-helios-300-gaming-laptop-acer-original-imag5txxsjgxh47z.jpeg?q=70",
@@ -1831,7 +1973,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "473",
-    no_of_reviews: "71"
+    no_of_reviews: "71",
+    id: "140"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/v/c/x/inspiron-3511-thin-and-light-laptop-dell-original-imagf4n2y3uk8jcz.jpeg?q=70",
@@ -1844,7 +1987,8 @@ const laptops =
     display: "15.6",
     rating: "3.1",
     no_of_ratings: "15",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "141"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/computer/t/g/j/14-ec1008au-thin-and-light-laptop-hp-original-imagdsx9uqnpahja.jpeg?q=70",
@@ -1857,7 +2001,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "218",
-    no_of_reviews: "19"
+    no_of_reviews: "19",
+    id: "142"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/l/f/-original-imagg2ckcragzhhe.jpeg?q=70",
@@ -1870,7 +2015,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "29",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "143"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/b/v/q/na-thin-and-light-laptop-apple-original-imagaygvkp7pjexm.jpeg?q=70",
@@ -1883,7 +2029,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "719",
-    no_of_reviews: "83"
+    no_of_reviews: "83",
+    id: "144"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/e/u/f/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjedtcx2vfw.jpeg?q=70",
@@ -1896,7 +2043,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "145"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/f/r/-original-imagjfgyxmcz7scf.jpeg?q=70",
@@ -1909,7 +2057,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "146"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -1922,7 +2071,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "147"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/x/4/j/g15-5515-gaming-laptop-dell-original-imag7chqvu3veeaz.jpeg?q=70",
@@ -1935,7 +2085,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "52",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "148"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/3/n/s/mk183hn-a-laptop-apple-original-imag7yzkbgbwvwq3.jpeg?q=70",
@@ -1948,7 +2099,8 @@ const laptops =
     display: "16.2",
     rating: "4.3",
     no_of_ratings: "13",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "149"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/4/x/vivobook-16x-laptop-asus-original-imaghezywsyju5sf.jpeg?q=70",
@@ -1961,7 +2113,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "16",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "150"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -1974,7 +2127,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "151"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/e/s/15igl05-thin-and-light-laptop-lenovo-original-imaghvfkfwpmnpcf.jpeg?q=70",
@@ -1987,7 +2141,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "108",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "152"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70",
@@ -2000,7 +2155,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2547",
-    no_of_reviews: "319"
+    no_of_reviews: "319",
+    id: "153"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/f/r/-original-imagjfgyxmcz7scf.jpeg?q=70",
@@ -2013,7 +2169,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "26",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "154"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -2026,7 +2183,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "155"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/v/c/x/inspiron-3511-thin-and-light-laptop-dell-original-imagf4n2y3uk8jcz.jpeg?q=70",
@@ -2039,7 +2197,8 @@ const laptops =
     display: "15.6",
     rating: "3.1",
     no_of_ratings: "15",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "156"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/i/n/e/a715-5g-gaming-laptop-acer-original-imagfj2g954wfdyz.jpeg?q=70",
@@ -2052,7 +2211,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "3065",
-    no_of_reviews: "354"
+    no_of_reviews: "354",
+    id: "157"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/r/u/y/-original-imaghrfjvmz5eqwj.jpeg?q=70",
@@ -2065,7 +2225,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "715",
-    no_of_reviews: "112"
+    no_of_reviews: "112",
+    id: "158"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -2078,7 +2239,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "159"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/4/z/j/-original-imaghvf8ybzgrerk.jpeg?q=70",
@@ -2091,7 +2253,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "160"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/b/w/-original-imagg6t9sb9gvafu.jpeg?q=70",
@@ -2104,7 +2267,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "18",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "161"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1mh7rk0/computer/z/t/0/inspiron-3515-notebook-dell-original-imagd5jzfjyuze5g.jpeg?q=70",
@@ -2117,7 +2281,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "78",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "162"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -2130,7 +2295,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "163"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/o/s/-original-imaghzah9mjvukjz.jpeg?q=70",
@@ -2143,7 +2309,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "30",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "164"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/o/l/w/15-fa0353tx-gaming-laptop-hp-original-imaggytdx6zpv6qg.jpeg?q=70",
@@ -2156,7 +2323,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "61",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "165"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/d/c/gaming-3-gaming-laptop-lenovo-original-imaghtkrg8rw6jtp.jpeg?q=70",
@@ -2169,7 +2337,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "2648",
-    no_of_reviews: "228"
+    no_of_reviews: "228",
+    id: "166"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -2182,7 +2351,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "167"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kkyc9zk0/computer/j/z/b/na-2-in-1-laptop-asus-original-imagy6zh6zq2npfx.jpeg?q=70",
@@ -2195,7 +2365,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "144",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "168"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1dwknk0/computer/3/w/s/inspiron-3521-notebook-dell-original-imagcyrhxaybghra.jpeg?q=70",
@@ -2208,7 +2379,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "329",
-    no_of_reviews: "32"
+    no_of_reviews: "32",
+    id: "169"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2urv680/computer/e/6/d/-original-image333p9qc4qua.jpeg?q=70",
@@ -2221,7 +2393,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "24",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "170"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -2234,7 +2407,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "171"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2hwwi80/computer/9/5/2/eg2036tu-thin-and-light-laptop-hp-original-imagduyqdgd5gtas.jpeg?q=70",
@@ -2247,7 +2421,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "24",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "172"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/3/c/s/-original-imagf35fjbjagyax.jpeg?q=70",
@@ -2260,7 +2435,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "348",
-    no_of_reviews: "47"
+    no_of_reviews: "47",
+    id: "173"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -2273,7 +2449,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "174"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -2286,7 +2463,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "175"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcjexe80/computer/f/j/u/asus-original-imaftndwqbqznkju.jpeg?q=70",
@@ -2299,7 +2477,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "222",
-    no_of_reviews: "28"
+    no_of_reviews: "28",
+    id: "176"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/9/b/ideapad-3-thin-and-light-laptop-lenovo-original-imaghqfhjbzprpxn.jpeg?q=70",
@@ -2312,7 +2491,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "177"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/j/e/galaxy-book2-plastic-thin-and-light-laptop-samsung-original-imaghkp8zvqhfzrh.jpeg?q=70",
@@ -2325,7 +2505,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "178"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -2338,7 +2519,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "179"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3t2fm80/computer/p/q/q/-original-imageuecysr3cuca.jpeg?q=70",
@@ -2351,7 +2533,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "144",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "180"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kz4gh3k0/computer/n/e/x/fx506lh-hn258ws-gaming-laptop-asus-original-imagb7hfzhmv6v9y.jpeg?q=70",
@@ -2364,7 +2547,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "121",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "181"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
@@ -2377,7 +2561,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "7200",
-    no_of_reviews: "967"
+    no_of_reviews: "967",
+    id: "182"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -2390,7 +2575,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "183"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l13whow0/computer/o/s/h/-original-imagcqvpmys2cmg3.jpeg?q=70",
@@ -2403,7 +2589,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "758",
-    no_of_reviews: "80"
+    no_of_reviews: "80",
+    id: "184"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/t/x/notebook-laptop-hp-original-imagjdywrx9g8yph.jpeg?q=70",
@@ -2416,7 +2603,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "66",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "185"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/c/8/u/mkgp3hn-a-thin-and-light-laptop-apple-original-imag7yznc5d2rsuh.jpeg?q=70",
@@ -2429,7 +2617,8 @@ const laptops =
     display: "14.2",
     rating: "4.8",
     no_of_ratings: "119",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "186"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -2442,7 +2631,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "187"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/h/l/x515ja-ej382ws-laptop-asus-original-imaghxfzcc6dgrqk.jpeg?q=70",
@@ -2455,7 +2645,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "193",
-    no_of_reviews: "17"
+    no_of_reviews: "17",
+    id: "188"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/c/p/c/14s-fy1005au-thin-and-light-laptop-hp-original-imagg4dgtu77mzye.jpeg?q=70",
@@ -2468,7 +2659,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "225",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "189"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/k/j/-original-imagg3fx8htg5tgu.jpeg?q=70",
@@ -2481,7 +2673,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "190"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -2494,7 +2687,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "191"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5e81ow0/computer/j/w/o/ex-215-54-thin-and-light-laptop-acer-original-imagg28wzdeny2jq.jpeg?q=70",
@@ -2507,7 +2701,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "168",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "192"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4x2rgw0/computer/t/c/y/inspiron-5320-thin-and-light-laptop-dell-original-imagfpzgrnw6hykf.jpeg?q=70",
@@ -2520,7 +2715,8 @@ const laptops =
     display: "13.3",
     rating: "4.5",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "193"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1dwknk0/computer/e/u/0/inspiron-3525-notebook-dell-original-imagcyrebyny33kd.jpeg?q=70",
@@ -2533,7 +2729,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "9",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "194"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -2546,7 +2743,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "195"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/c/p/c/14s-fy1005au-thin-and-light-laptop-hp-original-imagg4dgtu77mzye.jpeg?q=70",
@@ -2559,7 +2757,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "225",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "196"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/t/h/-original-imagg6t9pauha4t7.jpeg?q=70",
@@ -2572,7 +2771,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "157",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "197"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/z/n/mphh3hn-a-thin-and-light-laptop-apple-original-imagmfhe3vvshdzc.jpeg?q=70",
@@ -2585,7 +2785,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "198"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -2598,7 +2799,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "199"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/t/x/notebook-laptop-hp-original-imagjdywrx9g8yph.jpeg?q=70",
@@ -2611,7 +2813,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "66",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "200"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/7/5/r/g15-5525-gaming-laptop-dell-original-imagf4haxvzux68z.jpeg?q=70",
@@ -2624,7 +2827,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "201"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0bbonk0/computer/g/6/7/vostro-3400-notebook-dell-original-imagc4sthrpynfww.jpeg?q=70",
@@ -2637,7 +2841,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "202"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -2650,7 +2855,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "203"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/5/q/p/gx650rm-ls019ws-gaming-laptop-asus-original-imagfyg8tkytthbb.jpeg?q=70",
@@ -2663,7 +2869,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "204"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/r/n/-original-imagg6t94c5qsaqx.jpeg?q=70",
@@ -2676,7 +2883,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "758",
-    no_of_reviews: "80"
+    no_of_reviews: "80",
+    id: "205"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4hcx3k0/computer/g/u/k/macbook-pro-thin-and-light-laptop-apple-original-imagfdewfh9z3pee.jpeg?q=70",
@@ -2689,7 +2897,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "22",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "206"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3vxbbk0/computer/g/u/y/-original-imagewgtfgzf8fdd.jpeg?q=70",
@@ -2702,7 +2911,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "1224",
-    no_of_reviews: "158"
+    no_of_reviews: "158",
+    id: "207"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4vnbm80/computer/i/f/f/15ada7-thin-and-light-laptop-lenovo-original-imagfzzxmhfgzysy.jpeg?q=70",
@@ -2715,7 +2925,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "673",
-    no_of_reviews: "76"
+    no_of_reviews: "76",
+    id: "208"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0zm64w0/computer/e/g/8/g15-5515-gaming-laptop-dell-original-imagcnty69nhzy58.jpeg?q=70",
@@ -2728,7 +2939,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "7",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "209"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/o/z/-original-imagg6t9zfyzzeqg.jpeg?q=70",
@@ -2741,7 +2953,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "12",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "210"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/g/h/-original-imaghrfwurybjpyq.jpeg?q=70",
@@ -2754,7 +2967,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "80",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "211"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
@@ -2767,7 +2981,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "212"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/b/v/q/na-thin-and-light-laptop-apple-original-imagaygvkp7pjexm.jpeg?q=70",
@@ -2780,7 +2995,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "719",
-    no_of_reviews: "83"
+    no_of_reviews: "83",
+    id: "213"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/p/m/9/14a-ca0506tu-thin-and-light-laptop-hp-original-imagbmtfbpbkvyqz.jpeg?q=70",
@@ -2793,7 +3009,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "24",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "214"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/e/u/-original-imaghrfs99qhypuc.jpeg?q=70",
@@ -2806,7 +3023,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "80",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "215"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/g/h/-original-imaghrfwurybjpyq.jpeg?q=70",
@@ -2819,7 +3037,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "80",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "216"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
@@ -2832,7 +3051,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "217"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/b/v/q/na-thin-and-light-laptop-apple-original-imagaygvkp7pjexm.jpeg?q=70",
@@ -2845,7 +3065,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "719",
-    no_of_reviews: "83"
+    no_of_reviews: "83",
+    id: "218"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -2858,7 +3079,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "219"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l26hdow0/computer/d/r/a/g15-5521-se-gaming-laptop-dell-original-imagdktezaswjvsk.jpeg?q=70",
@@ -2871,7 +3093,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "35",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "220"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/h/i/inspiron-laptop-dell-original-imagg9xubhhumghg.jpeg?q=70",
@@ -2884,7 +3107,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "221"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/9/l/-original-imaghzahumgmsmj5.jpeg?q=70",
@@ -2897,7 +3121,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "187",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "222"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -2910,7 +3135,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "223"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/computer/t/g/j/14-ec1008au-thin-and-light-laptop-hp-original-imagdsx9uqnpahja.jpeg?q=70",
@@ -2923,7 +3149,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "218",
-    no_of_reviews: "19"
+    no_of_reviews: "19",
+    id: "224"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/x/p/-original-imaghzahjrwt6bvp.jpeg?q=70",
@@ -2936,7 +3163,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "4",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "225"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/t/h/-original-imagg6t9pauha4t7.jpeg?q=70",
@@ -2949,7 +3177,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "405",
-    no_of_reviews: "48"
+    no_of_reviews: "48",
+    id: "226"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -2962,7 +3191,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "227"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/w/j/c/-original-imagf4htystubbsg.jpeg?q=70",
@@ -2975,7 +3205,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "435",
-    no_of_reviews: "56"
+    no_of_reviews: "56",
+    id: "228"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
@@ -2988,7 +3219,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "8865",
-    no_of_reviews: "795"
+    no_of_reviews: "795",
+    id: "229"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/p/m/9/14a-ca0506tu-thin-and-light-laptop-hp-original-imagbmtfbpbkvyqz.jpeg?q=70",
@@ -3001,7 +3233,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "24",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "230"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -3014,7 +3247,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "231"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k9d3p8w0/computer/c/a/h/asus-na-laptop-original-imafr6cbfurgkspg.jpeg?q=70",
@@ -3027,7 +3261,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "3191",
-    no_of_reviews: "410"
+    no_of_reviews: "410",
+    id: "232"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5e81ow0/computer/j/w/o/ex-215-54-thin-and-light-laptop-acer-original-imagg28wzdeny2jq.jpeg?q=70",
@@ -3040,7 +3275,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "385",
-    no_of_reviews: "34"
+    no_of_reviews: "34",
+    id: "233"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ko8xtow0/computer/j/q/r/na-thin-and-light-laptop-dell-original-imag2qm3x6zhexrf.jpeg?q=70",
@@ -3053,7 +3289,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "17",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "234"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -3066,7 +3303,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "235"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/g/p/-original-imaggskghfjzams4.jpeg?q=70",
@@ -3079,7 +3317,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "10",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "236"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70",
@@ -3092,7 +3331,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "43",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "237"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/i/d/p/na-thin-and-light-laptop-apple-original-imagaygvtvf6cx8h.jpeg?q=70",
@@ -3105,7 +3345,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "719",
-    no_of_reviews: "83"
+    no_of_reviews: "83",
+    id: "238"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -3118,7 +3359,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "239"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kz4gh3k0/computer/n/e/x/fx506lh-hn258ws-gaming-laptop-asus-original-imagb7hfzhmv6v9y.jpeg?q=70",
@@ -3131,7 +3373,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "5145",
-    no_of_reviews: "564"
+    no_of_reviews: "564",
+    id: "240"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -3144,7 +3387,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "241"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70",
@@ -3157,7 +3401,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "395",
-    no_of_reviews: "43"
+    no_of_reviews: "43",
+    id: "242"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -3170,7 +3415,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "243"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/m/q/7/vostro-3425-thin-and-light-laptop-dell-original-imagf4mth22ydgqs.jpeg?q=70",
@@ -3183,7 +3429,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "43",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "244"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/e/r/fx517zc-hn083ws-gaming-laptop-asus-original-imaghksrxzczrbyw.jpeg?q=70",
@@ -3196,7 +3443,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "97",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "245"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/l/7/m/-original-imagetj2awbvdju6.jpeg?q=70",
@@ -3209,7 +3457,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "41",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "246"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -3222,7 +3471,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "247"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks7tuvk0/computer/t/j/v/g513qy-hq008ts-gaming-laptop-asus-original-imag5tthdvxrbrnv.jpeg?q=70",
@@ -3235,7 +3485,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "265",
-    no_of_reviews: "56"
+    no_of_reviews: "56",
+    id: "248"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/d/z/alienware-m15-r7-gaming-laptop-dell-original-imagjwuuwrqkdbpk.jpeg?q=70",
@@ -3248,7 +3499,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "249"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1fc0i80/computer/9/5/r/inspiron-3525-thin-and-light-laptop-dell-original-imagczzfezyd7tqs.jpeg?q=70",
@@ -3261,7 +3513,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "250"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -3274,7 +3527,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "251"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2hwwi80/computer/o/q/u/eg2035tu-thin-and-light-laptop-hp-original-imagdtzgzfs6gjfy.jpeg?q=70",
@@ -3287,7 +3541,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "90",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "252"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/j/u/-original-imaggzes4pd7ptkx.jpeg?q=70",
@@ -3300,7 +3555,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "258",
-    no_of_reviews: "29"
+    no_of_reviews: "29",
+    id: "253"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k9d3p8w0/computer/c/a/h/asus-na-laptop-original-imafr6cbfurgkspg.jpeg?q=70",
@@ -3313,7 +3569,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "3191",
-    no_of_reviews: "410"
+    no_of_reviews: "410",
+    id: "254"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -3326,7 +3583,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "255"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/khdqnbk0/computer/5/2/3/apple-original-imafxfyqp4fbfuv3.jpeg?q=70",
@@ -3339,7 +3597,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "784",
-    no_of_reviews: "87"
+    no_of_reviews: "87",
+    id: "256"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/v/o/an515-45-gaming-laptop-acer-original-imagkfjtgwdetsby.jpeg?q=70",
@@ -3352,7 +3611,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "313",
-    no_of_reviews: "31"
+    no_of_reviews: "31",
+    id: "257"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/j/h/b/katana-gf66-12ud-gaming-laptop-msi-original-imageym6wfkavhyh.jpeg?q=70",
@@ -3365,7 +3625,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "21",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "258"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -3378,7 +3639,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "259"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/l/8/14-eh0021tu-thin-and-light-laptop-hp-original-imaghubybwgeghrt.jpeg?q=70",
@@ -3391,7 +3653,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "260"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzrbiq80/computer/v/d/d/15s-fq2626tu-thin-and-light-laptop-hp-original-imagbpb2sztfprgz.jpeg?q=70",
@@ -3404,7 +3667,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "80",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "261"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/4/i/k/-original-imagckcfgfba4fja.jpeg?q=70",
@@ -3417,7 +3681,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "262"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -3430,7 +3695,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "263"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/1/w/14iil05-thin-and-light-laptop-lenovo-original-imagkwgzvknngbfu.jpeg?q=70",
@@ -3443,7 +3709,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "13",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "264"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5jxt3k0/computer/o/t/v/vivobook-notebook-asus-original-imagg763qstjsura.jpeg?q=70",
@@ -3456,7 +3723,8 @@ const laptops =
     display: "14",
     rating: "3.7",
     no_of_ratings: "13",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "265"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kgfg2vk0/computer/e/j/f/asus-vivobook-laptop-original-imafwzf5e8awkm9x.jpeg?q=70",
@@ -3469,7 +3737,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "266"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -3482,7 +3751,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "267"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/8/a/vostro-5620-thin-and-light-laptop-dell-original-imagkz9fxzcgsnry.jpeg?q=70",
@@ -3495,7 +3765,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "268"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcm9t3k0/computer/q/x/r/hp-na-gaming-laptop-original-imaftpesbvfxgw9t.jpeg?q=70",
@@ -3508,7 +3779,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "15492",
-    no_of_reviews: "2054"
+    no_of_reviews: "2054",
+    id: "269"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/g/z/q/mk1e3hn-a-laptop-apple-original-imag7yzmv57cvg3f.jpeg?q=70",
@@ -3521,7 +3793,8 @@ const laptops =
     display: "16.2",
     rating: "4.8",
     no_of_ratings: "119",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "270"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -3534,7 +3807,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "271"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70",
@@ -3547,7 +3821,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "26",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "272"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktop5e80/computer/j/j/w/na-2-in-1-laptop-asus-original-imag6yuwbqz8jchg.jpeg?q=70",
@@ -3560,7 +3835,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "273"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2dmky80/computer/l/c/g/-original-imagdqdyewdfx452.jpeg?q=70",
@@ -3573,7 +3849,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "1443",
-    no_of_reviews: "248"
+    no_of_reviews: "248",
+    id: "274"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -3586,7 +3863,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "275"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
@@ -3599,7 +3877,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "276"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kggviq80/computer/x/6/g/lenovo-original-imafwpajqjvfhrea.jpeg?q=70",
@@ -3612,7 +3891,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "148",
-    no_of_reviews: "19"
+    no_of_reviews: "19",
+    id: "277"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kxnl6kw0/computer/p/y/t/a5efk-083in-gaming-laptop-msi-original-imaga237dvrrnznh.jpeg?q=70",
@@ -3625,7 +3905,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "41",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "278"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3bx5e80/computer/w/b/h/inspiron-15-3000-laptop-dell-original-imagegyhzfggaagg.jpeg?q=70",
@@ -3638,7 +3919,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "279"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/o/f/16-e0650ax-gaming-laptop-hp-original-imagkzqetd9hbwru.jpeg?q=70",
@@ -3651,7 +3933,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "280"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l572ufk0/computer/j/z/i/ga402rk-l8147ws-gaming-laptop-asus-original-imagfxjkh4gxvwvu.jpeg?q=70",
@@ -3664,7 +3947,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "281"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/koad9jk0/computer/u/r/2/na-gaming-laptop-asus-original-imag2sc5zgzhcsjd.jpeg?q=70",
@@ -3677,7 +3961,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "282"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/p/3/15-ew0043tu-thin-and-light-laptop-hp-original-imaghrgttxtdcnfy.jpeg?q=70",
@@ -3690,7 +3975,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "283"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -3703,7 +3989,8 @@ const laptops =
     display: "16.1",
     rating: "4.8",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "284"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktrk13k0/computer/r/f/g/v15-ada-laptop-lenovo-original-imag7fh6fufy5cjp.jpeg?q=70",
@@ -3716,7 +4003,8 @@ const laptops =
     display: "15.6",
     rating: "3.6",
     no_of_ratings: "84",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "285"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/i/f/-original-imagmmaugqgpmmvx.jpeg?q=70",
@@ -3729,7 +4017,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "286"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt4ozgw0/computer/k/r/h/swift-3-thin-and-light-laptop-acer-original-imag6jer4nhrjth2.jpeg?q=70",
@@ -3742,7 +4031,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "29",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "287"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/p/h/a515-57-thin-and-light-laptop-acer-original-imagkfjvv6cdzvze.jpeg?q=70",
@@ -3755,7 +4045,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "288"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/c/a/-original-imagfdfpnjjpdhq2.jpeg?q=70",
@@ -3768,7 +4059,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "289"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/1/2/vivobook-pro-15-gaming-laptop-asus-original-imaggpfbagyucgw3.jpeg?q=70",
@@ -3781,7 +4073,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "290"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -3794,7 +4087,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "291"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/4/i/k/-original-imagckcfgfba4fja.jpeg?q=70",
@@ -3807,7 +4101,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "10",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "292"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcauaa80/computer/8/k/e/alienware-original-imaftgn37g4vzqmy.jpeg?q=70",
@@ -3820,7 +4115,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "10",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "293"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k5zn9u80/computer/c/g/z/dell-na-thin-and-light-laptop-original-imafzjvtmchmyfx4.jpeg?q=70",
@@ -3833,7 +4129,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "17",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "294"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -3846,7 +4143,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "295"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l08gsy80/computer/m/l/h/g513rc-hn083w-gaming-laptop-asus-original-imagc2h7wwznsqzk.jpeg?q=70",
@@ -3859,7 +4157,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "296"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1fc0i80/computer/9/5/r/inspiron-3525-thin-and-light-laptop-dell-original-imagczzfezyd7tqs.jpeg?q=70",
@@ -3872,7 +4171,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "297"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/o/h/g5-me-51in213sh-gaming-laptop-gigabyte-original-imagk2b5v9thfsdj.jpeg?q=70",
@@ -3885,7 +4185,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "298"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -3898,7 +4199,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "299"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/j/h/an515-45-gaming-laptop-acer-original-imagkfjta83h2njz.jpeg?q=70",
@@ -3911,7 +4213,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "222",
-    no_of_reviews: "25"
+    no_of_reviews: "25",
+    id: "300"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/5/k/z/na-gaming-laptop-lenovo-original-imag5bg5egrw92gp.jpeg?q=70",
@@ -3924,7 +4227,8 @@ const laptops =
     display: "16",
     rating: "4.7",
     no_of_ratings: "32",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "301"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4hcx3k0/computer/p/p/o/macbook-air-thin-and-light-laptop-apple-original-imagfdfpnjjpdhq2.jpeg?q=70",
@@ -3937,7 +4241,8 @@ const laptops =
     display: "13.6",
     rating: "5",
     no_of_ratings: "8",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "302"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyvvtzk0/computer/2/7/l/-original-imagbygbzq27x6sy.jpeg?q=70",
@@ -3950,7 +4255,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "288",
-    no_of_reviews: "23"
+    no_of_reviews: "23",
+    id: "303"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/z/g/9/-original-imaggjqyfupmuew7.jpeg?q=70",
@@ -3963,7 +4269,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "304"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -3976,7 +4283,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "87",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "305"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/khdqnbk0/computer/s/2/g/apple-original-imafxfyqykyghjg6.jpeg?q=70",
@@ -3989,7 +4297,8 @@ const laptops =
     display: "13.3",
     rating: "4.6",
     no_of_ratings: "1149",
-    no_of_reviews: "126"
+    no_of_reviews: "126",
+    id: "306"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l37mtu80/computer/q/v/i/np750xed-kb1in-thin-and-light-laptop-samsung-original-imagednvcrgdxpam.jpeg?q=70",
@@ -4002,7 +4311,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "82",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "307"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70",
@@ -4015,7 +4325,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "31",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "308"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/t/8/fa506icb-hn005w-gaming-laptop-asus-original-imagguv66hcfz7yx.jpeg?q=70",
@@ -4028,7 +4339,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "309"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -4041,7 +4353,8 @@ const laptops =
     display: "16.1",
     rating: "3.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "310"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3vxbbk0/computer/g/u/y/-original-imagewgtfgzf8fdd.jpeg?q=70",
@@ -4054,7 +4367,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "193",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "311"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/b/j/-original-imagjfgy6ghyqssh.jpeg?q=70",
@@ -4067,7 +4381,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "197",
-    no_of_reviews: "43"
+    no_of_reviews: "43",
+    id: "312"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5e81ow0/computer/j/w/o/ex-215-54-thin-and-light-laptop-acer-original-imagg28wzdeny2jq.jpeg?q=70",
@@ -4080,7 +4395,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "385",
-    no_of_reviews: "34"
+    no_of_reviews: "34",
+    id: "313"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/j/i/17-ck1022tx-gaming-laptop-hp-original-imagg24gfaewgdzf.jpeg?q=70",
@@ -4093,7 +4409,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "314"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -4106,7 +4423,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "315"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/v/x/v/na-thin-and-light-laptop-apple-original-imag5jt7u9fzenqb.jpeg?q=70",
@@ -4119,7 +4437,8 @@ const laptops =
     display: "13.3",
     rating: "4.7",
     no_of_ratings: "8865",
-    no_of_reviews: "795"
+    no_of_reviews: "795",
+    id: "316"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kfmv9u80/computer/s/v/9/asus-na-gaming-laptop-original-imafwfxafdy5yzyu.jpeg?q=70",
@@ -4132,7 +4451,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "193",
-    no_of_reviews: "39"
+    no_of_reviews: "39",
+    id: "317"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/d/i/zl12-business-laptop-infinix-original-imagm83gc6xr8sau.jpeg?q=70",
@@ -4145,7 +4465,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "32",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "318"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -4158,7 +4479,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "319"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/computer/k/f/3/pulse-gl66-11ugk-thin-and-light-laptop-msi-original-imag6hgu5bffmasm.jpeg?q=70",
@@ -4171,7 +4493,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "136",
-    no_of_reviews: "23"
+    no_of_reviews: "23",
+    id: "320"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4fxh8w0/computer/c/i/p/-original-imagfc54c6fynkxu.jpeg?q=70",
@@ -4184,7 +4507,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "321"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/b/f/k/inbook-x1-neo-thin-and-light-laptop-infinix-original-imagg49hqgt2ggzc.jpeg?q=70",
@@ -4197,7 +4521,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "884",
-    no_of_reviews: "151"
+    no_of_reviews: "151",
+    id: "322"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -4210,7 +4535,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "323"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/9/g/-original-imaghrfhqeqntfzz.jpeg?q=70",
@@ -4223,7 +4549,8 @@ const laptops =
     display: "14.5",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "324"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/h/u/g5-ge-51in263sh-gaming-laptop-gigabyte-original-imagk2b7d8uqrsxf.jpeg?q=70",
@@ -4236,7 +4563,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "325"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/g/j/16arh7h-gaming-laptop-lenovo-original-imagheh6c3x4empb.jpeg?q=70",
@@ -4249,7 +4577,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "326"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwb07m80/computer/8/b/7/an515-57-gaming-laptop-acer-original-imag9yek7qv67nan.jpeg?q=70",
@@ -4262,7 +4591,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "13",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "327"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/n/c/e410ka-bv101ws-thin-and-light-laptop-asus-original-imaghjyqzfwkenbq.jpeg?q=70",
@@ -4275,7 +4605,8 @@ const laptops =
     display: "14.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "328"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/b/p/8/gp66-leopard-11ug-gaming-laptop-msi-original-imageynxarsxgnh3.jpeg?q=70",
@@ -4288,7 +4619,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "113",
-    no_of_reviews: "27"
+    no_of_reviews: "27",
+    id: "329"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70",
@@ -4301,7 +4633,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "288",
-    no_of_reviews: "26"
+    no_of_reviews: "26",
+    id: "330"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/o/l/w/15-fa0353tx-gaming-laptop-hp-original-imaggytdx6zpv6qg.jpeg?q=70",
@@ -4314,7 +4647,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "496",
-    no_of_reviews: "41"
+    no_of_reviews: "41",
+    id: "331"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/computer/u/x/h/na-gaming-laptop-asus-original-imag7bhdsxf4t3sz.jpeg?q=70",
@@ -4327,7 +4661,8 @@ const laptops =
     display: "17.3",
     rating: "4.5",
     no_of_ratings: "533",
-    no_of_reviews: "93"
+    no_of_reviews: "93",
+    id: "332"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kmns7m80/computer/o/0/x/na-gaming-laptop-acer-original-imagfgq66pufmnny.jpeg?q=70",
@@ -4340,7 +4675,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "497",
-    no_of_reviews: "69"
+    no_of_reviews: "69",
+    id: "333"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/i/n/e/a715-5g-gaming-laptop-acer-original-imagfj2g954wfdyz.jpeg?q=70",
@@ -4353,7 +4689,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "3065",
-    no_of_reviews: "354"
+    no_of_reviews: "354",
+    id: "334"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/b/l/5/a314-35-notebook-acer-original-imagg46sdzyjh6ge.jpeg?q=70",
@@ -4366,7 +4703,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "19",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "335"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr3tj0w0/computer/b/p/r/na-notebook-msi-original-imag4z5zs2xkvmwh.jpeg?q=70",
@@ -4379,7 +4717,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "153",
-    no_of_reviews: "25"
+    no_of_reviews: "25",
+    id: "336"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/q/d/n/-original-imagetjymucqggdq.jpeg?q=70",
@@ -4392,7 +4731,8 @@ const laptops =
     display: "17.3",
     rating: "3.9",
     no_of_ratings: "12",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "337"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4vnbm80/computer/d/j/e/vostro-5625-laptop-dell-original-imagfzh6vqh9jfww.jpeg?q=70",
@@ -4405,7 +4745,8 @@ const laptops =
     display: "16",
     rating: "4.7",
     no_of_ratings: "7",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "338"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -4418,7 +4759,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "339"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/k/m/vostro-5625-thin-and-light-laptop-dell-original-imagkz88uc9ekuxa.jpeg?q=70",
@@ -4431,7 +4773,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "340"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/j/i/17-ck1022tx-gaming-laptop-hp-original-imagg24gfaewgdzf.jpeg?q=70",
@@ -4444,7 +4787,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "341"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/g/r/alienware-x17-r2-gaming-laptop-dell-original-imagjh6whbhgguhg.jpeg?q=70",
@@ -4457,7 +4801,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "342"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -4470,7 +4815,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "343"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcjexe80/computer/f/s/m/asus-original-imaftndw8zg398np.jpeg?q=70",
@@ -4483,7 +4829,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "389",
-    no_of_reviews: "44"
+    no_of_reviews: "44",
+    id: "344"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/khdqnbk0/computer/5/d/e/apple-original-imafxfyqkdfxqjab.jpeg?q=70",
@@ -4496,7 +4843,8 @@ const laptops =
     display: "13.3",
     rating: "4.6",
     no_of_ratings: "1149",
-    no_of_reviews: "126"
+    no_of_reviews: "126",
+    id: "345"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/x/o/6/15-fb0040ax-gaming-laptop-hp-original-imaggyue2b3anwr9.jpeg?q=70",
@@ -4509,7 +4857,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "346"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -4522,7 +4871,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "347"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/computer/u/x/h/na-gaming-laptop-asus-original-imag7bhdsxf4t3sz.jpeg?q=70",
@@ -4535,7 +4885,8 @@ const laptops =
     display: "17.3",
     rating: "4.5",
     no_of_ratings: "533",
-    no_of_reviews: "93"
+    no_of_reviews: "93",
+    id: "348"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kmns7m80/computer/o/0/x/na-gaming-laptop-acer-original-imagfgq66pufmnny.jpeg?q=70",
@@ -4548,7 +4899,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "497",
-    no_of_reviews: "69"
+    no_of_reviews: "69",
+    id: "349"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr58yvk0/computer/1/f/i/na-business-laptop-acer-original-imag5y57uuuaya3u.jpeg?q=70",
@@ -4561,7 +4913,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "68",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "350"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -4574,7 +4927,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "351"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1b1oy80/computer/n/t/t/fa506ic-hn075w-gaming-laptop-asus-original-imagcwugqkffhevx.jpeg?q=70",
@@ -4587,7 +4941,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "10",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "352"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/z/j/j/14s-dq3037tu-thin-and-light-laptop-hp-original-imagghdpygbmghvm.jpeg?q=70",
@@ -4600,7 +4955,8 @@ const laptops =
     display: "14",
     rating: "3.7",
     no_of_ratings: "65",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "353"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kpodocw0/computer/7/j/n/na-gaming-laptop-asus-original-imag3v8dna5gf6zc.jpeg?q=70",
@@ -4613,7 +4969,8 @@ const laptops =
     display: "17.3",
     rating: "4.5",
     no_of_ratings: "17",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "354"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -4626,7 +4983,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "355"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/k/m/vostro-5625-thin-and-light-laptop-dell-original-imagkz88uc9ekuxa.jpeg?q=70",
@@ -4639,7 +4997,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "356"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/1/k/inspiron-5425-thin-and-light-laptop-dell-original-imagjwuvveeupzae.jpeg?q=70",
@@ -4652,7 +5011,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "357"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/5/r/alienware-x17-r1-gaming-laptop-dell-original-imagjwuyrtbtyzg3.jpeg?q=70",
@@ -4665,7 +5025,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "358"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -4678,7 +5039,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "359"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/k/i/-original-imaggsh8hmh4jmdz.jpeg?q=70",
@@ -4691,7 +5053,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "2025",
-    no_of_reviews: "257"
+    no_of_reviews: "257",
+    id: "360"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/h/g/l/inbook-x1-neo-thin-and-light-laptop-infinix-original-imagg49gbqxuhfha.jpeg?q=70",
@@ -4704,7 +5067,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "884",
-    no_of_reviews: "151"
+    no_of_reviews: "151",
+    id: "361"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kulk9zk0/computer/f/t/w/15-ec2075ax-gaming-laptop-hp-original-imag7nyzhxqc7xhh.jpeg?q=70",
@@ -4717,7 +5081,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "99",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "362"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -4730,7 +5095,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "363"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/p/l/15ial7-thin-and-light-laptop-lenovo-original-imaggujwd4yz54xw.jpeg?q=70",
@@ -4743,7 +5109,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "364"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/u/i/inspiron-7420-thin-and-light-laptop-dell-original-imagguu3g8efward.jpeg?q=70",
@@ -4756,7 +5123,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "365"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/o/a/16arh7h-gaming-laptop-lenovo-original-imaghnqz5gup2ktt.jpeg?q=70",
@@ -4769,7 +5137,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "366"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -4782,7 +5151,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "367"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0bbonk0/computer/e/h/g/inspiron-3515-thin-and-light-laptop-dell-original-imagc4khfybjef5s.jpeg?q=70",
@@ -4795,7 +5165,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "29",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "368"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/b/n/-original-imagfdf4xnbyyxpa.jpeg?q=70",
@@ -4808,7 +5179,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "369"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/3/n/s/mk183hn-a-laptop-apple-original-imag7yzkbgbwvwq3.jpeg?q=70",
@@ -4821,7 +5193,8 @@ const laptops =
     display: "16.2",
     rating: "4.8",
     no_of_ratings: "119",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "370"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -4834,7 +5207,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "371"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/k/e/-original-imagkz7pm2gzedte.jpeg?q=70",
@@ -4847,7 +5221,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "372"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/m/p/-original-imaggkgybazqhjhp.jpeg?q=70",
@@ -4860,7 +5235,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "373"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/i/g/f/-original-imagfhpzm88zjzyc.jpeg?q=70",
@@ -4873,7 +5249,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "374"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/k/z/x360-bf0058tu-thin-and-light-laptop-hp-original-imagh4ypj3ujgska.jpeg?q=70",
@@ -4886,7 +5263,8 @@ const laptops =
     display: "13.3",
     rating: "3.8",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "375"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/7/5/r/g15-5525-gaming-laptop-dell-original-imagf4haxvzux68z.jpeg?q=70",
@@ -4899,7 +5277,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "376"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/5/m/aero-5-ke4-72in614so-gaming-laptop-gigabyte-original-imagk2b6hvt5bpdw.jpeg?q=70",
@@ -4912,7 +5291,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "377"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/d/i/zl12-business-laptop-infinix-original-imagm83gc6xr8sau.jpeg?q=70",
@@ -4925,7 +5305,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "32",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "378"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/u/x/inspiron-3525-thin-and-light-laptop-dell-original-imagg42smhwrtf3g.jpeg?q=70",
@@ -4938,7 +5319,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "23",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "379"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyag87k0/computer/7/r/u/raider-ge66-12ugs-gaming-laptop-msi-original-imagakb9zw7gqzcm.jpeg?q=70",
@@ -4951,7 +5333,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "380"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/n/p/-original-imagfdfew8gszzhk.jpeg?q=70",
@@ -4964,7 +5347,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "381"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/e/r/fx517zc-hn083ws-gaming-laptop-asus-original-imaghksrxzczrbyw.jpeg?q=70",
@@ -4977,7 +5361,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "97",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "382"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3vxbbk0/computer/v/w/o/-original-imagewgt7g66ynx4.jpeg?q=70",
@@ -4990,7 +5375,8 @@ const laptops =
     display: "16",
     rating: "4.3",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "383"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70",
@@ -5003,7 +5389,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "263",
-    no_of_reviews: "22"
+    no_of_reviews: "22",
+    id: "384"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/5/l/an515-46-gaming-laptop-acer-original-imagg6phzm2h8cgm.jpeg?q=70",
@@ -5016,7 +5403,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "385"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/t/r/14ihu5-thin-and-light-laptop-lenovo-original-imagheh6vrqvpfnx.jpeg?q=70",
@@ -5029,7 +5417,8 @@ const laptops =
     display: "14",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "386"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -5042,7 +5431,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "387"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/i/2/laptop-hp-15s-fq2670tu-laptop-hp-original-imagjmgbdgahch5f.jpeg?q=70",
@@ -5055,7 +5445,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "388"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2urv680/computer/f/v/8/-original-image333auvbgkhr.jpeg?q=70",
@@ -5068,7 +5459,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "45",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "389"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -5081,7 +5473,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "390"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -5094,7 +5487,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "391"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l16rde80/computer/p/4/i/inspiron-3511-thin-and-light-laptop-dell-original-imagctygxz8x6hnx.jpeg?q=70",
@@ -5107,7 +5501,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "93",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "392"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kv8fbm80/computer/p/t/6/ideapad-slim-5i-thin-and-light-laptop-lenovo-original-imag86n3qmesbkpj.jpeg?q=70",
@@ -5120,7 +5515,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "393"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krz97rk0/computer/t/m/p/na-gaming-laptop-dell-original-imag5nkdyegnzggv.jpeg?q=70",
@@ -5133,7 +5529,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "394"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -5146,7 +5543,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "395"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/z/h/h/-original-imaggugb4zvazpzf.jpeg?q=70",
@@ -5159,7 +5557,8 @@ const laptops =
     display: "13.3",
     rating: "4.4",
     no_of_ratings: "72",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "396"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/i/g/f/-original-imagfhpzm88zjzyc.jpeg?q=70",
@@ -5172,7 +5571,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "397"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/r/e/-original-imagg5jspqht3hym.jpeg?q=70",
@@ -5185,7 +5585,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "48",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "398"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l01blow0/computer/f/8/m/predator-helios-300-gaming-laptop-acer-original-imagbx25hvqxzqsm.jpeg?q=70",
@@ -5198,7 +5599,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "7",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "399"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4ei1e80/computer/0/t/0/-original-imagfbayfqxfz5hm.jpeg?q=70",
@@ -5211,7 +5613,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "400"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
@@ -5224,7 +5627,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "401"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/q/9/e/-original-imageye8tzbey747.jpeg?q=70",
@@ -5237,7 +5641,8 @@ const laptops =
     display: "14.1",
     rating: "3.8",
     no_of_ratings: "689",
-    no_of_reviews: "92"
+    no_of_reviews: "92",
+    id: "402"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l59xq4w0/computer/w/e/b/gv601re-m6012ws-gaming-laptop-asus-original-imagfzchctgpefz6.jpeg?q=70",
@@ -5250,7 +5655,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "403"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcauaa80/computer/8/k/e/alienware-original-imaftgn37g4vzqmy.jpeg?q=70",
@@ -5263,7 +5669,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "404"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/n/f/-original-imaghzahkzhredeu.jpeg?q=70",
@@ -5276,7 +5683,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "405"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/v/c/x/inspiron-3511-thin-and-light-laptop-dell-original-imagf4n2y3uk8jcz.jpeg?q=70",
@@ -5289,7 +5697,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "10",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "406"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwl0akw0/computer/o/4/q/g15-5515-gaming-laptop-dell-original-imag98e62brs8uzy.jpeg?q=70",
@@ -5302,7 +5711,8 @@ const laptops =
     display: "14.96",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "407"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/o/9/fa506icb-hn075ws-gaming-laptop-asus-original-imagjfgfphjggqgp.jpeg?q=70",
@@ -5315,7 +5725,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "408"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70",
@@ -5328,7 +5739,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "1232",
-    no_of_reviews: "119"
+    no_of_reviews: "119",
+    id: "409"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/3/q/14-ek0074tu-thin-and-light-laptop-hp-original-imagh89bdga9fcys.jpeg?q=70",
@@ -5341,7 +5753,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "410"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -5354,7 +5767,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "411"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/f/x/-original-imaghzahmt9zphps.jpeg?q=70",
@@ -5367,7 +5781,8 @@ const laptops =
     display: "15.6",
     rating: "3.6",
     no_of_ratings: "11",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "412"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/b/2/-original-imagjmhqndcxs6yg.jpeg?q=70",
@@ -5380,7 +5795,8 @@ const laptops =
     display: "16",
     rating: "3.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "413"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/e/n/-original-imagjfgfjnwnq89g.jpeg?q=70",
@@ -5393,7 +5809,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "197",
-    no_of_reviews: "43"
+    no_of_reviews: "43",
+    id: "414"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -5406,7 +5823,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "415"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyag87k0/computer/h/i/l/stealth-gs66-12ugs-gaming-laptop-msi-original-imagak5jdsg4bgtp.jpeg?q=70",
@@ -5419,7 +5837,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "416"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksyz8280/computer/s/r/z/vivobook15-thin-and-light-laptop-asus-original-imag6eyabh3w846p.jpeg?q=70",
@@ -5432,7 +5851,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "44",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "417"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/computer/a/y/b/hp-spectre-notebook-original-imaepbx7ncxbuzwc.jpeg?q=70",
@@ -5445,7 +5865,8 @@ const laptops =
     display: "13.3",
     rating: "4.3",
     no_of_ratings: "6",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "418"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -5458,7 +5879,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "419"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/2/o/q/-original-imagetjfvgfsm24g.jpeg?q=70",
@@ -5471,7 +5893,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "499",
-    no_of_reviews: "63"
+    no_of_reviews: "63",
+    id: "420"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/z/k/q/mkgr3hn-a-thin-and-light-laptop-apple-original-imag7yzp78bpnzyg.jpeg?q=70",
@@ -5484,7 +5907,8 @@ const laptops =
     display: "14.2",
     rating: "4.8",
     no_of_ratings: "119",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "421"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
@@ -5497,7 +5921,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "422"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktx9si80/computer/2/c/y/inspiron-laptop-dell-original-imag75zxhd4vgejn.jpeg?q=70",
@@ -5510,7 +5935,8 @@ const laptops =
     display: "15.6",
     rating: "3.6",
     no_of_ratings: "25",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "423"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcjexe80/computer/f/j/u/asus-original-imaftndwqbqznkju.jpeg?q=70",
@@ -5523,7 +5949,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "74",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "424"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/e/u/f/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjedtcx2vfw.jpeg?q=70",
@@ -5536,7 +5963,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "425"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l432ikw0/computer/d/u/8/fx517zc-hn035ws-laptop-asus-original-imagf2euzx3g5vub.jpeg?q=70",
@@ -5549,7 +5977,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "426"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/x/4/j/g15-5515-gaming-laptop-dell-original-imag7chqvu3veeaz.jpeg?q=70",
@@ -5562,7 +5991,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "213",
-    no_of_reviews: "36"
+    no_of_reviews: "36",
+    id: "427"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
@@ -5575,7 +6005,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "85",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "428"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kdnf98w0/computer/5/a/a/msi-original-imafugm3vjgbfgzp.jpeg?q=70",
@@ -5588,7 +6019,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "893",
-    no_of_reviews: "173"
+    no_of_reviews: "173",
+    id: "429"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l572ufk0/computer/u/d/s/ga503rm-hq142ws-gaming-laptop-asus-original-imagfxjrtmpgfyhs.jpeg?q=70",
@@ -5601,7 +6033,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "430"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/m/p/-original-imaggkgybazqhjhp.jpeg?q=70",
@@ -5614,7 +6047,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "431"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/y/8/x1500ea-ej701ws-business-laptop-asus-original-imagkftffdhmv2zv.jpeg?q=70",
@@ -5627,7 +6061,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "432"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4pxk7k0/computer/n/g/g/inspiron-3511-d560742win9s-laptop-dell-original-imagfjtzjr3hhezv.jpeg?q=70",
@@ -5640,7 +6075,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "3",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "433"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/e/u/f/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjedtcx2vfw.jpeg?q=70",
@@ -5653,7 +6089,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "434"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -5666,7 +6103,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "435"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/a/m/16arh7h-gaming-laptop-lenovo-original-imagmg7xdxhcyrcy.jpeg?q=70",
@@ -5679,7 +6117,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "436"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l30hmkw0/computer/4/0/s/pura-e-comet-lake-i3-laptop-avita-original-image8ezr4afxxvd.jpeg?q=70",
@@ -5692,7 +6131,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "437"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/computer/v/3/7/-original-imagdsjsjszc65fh.jpeg?q=70",
@@ -5705,7 +6145,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "438"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -5718,7 +6159,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "439"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kfeamq80/computer/z/c/z/asus-na-gaming-laptop-original-imafvuye6yhsbnkb.jpeg?q=70",
@@ -5731,7 +6173,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "273",
-    no_of_reviews: "41"
+    no_of_reviews: "41",
+    id: "440"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/s/s/16-k0370tx-gaming-laptop-hp-original-imagg4e9pxdar8cg.jpeg?q=70",
@@ -5744,7 +6187,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "441"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf4ajrk0/computer/j/f/u/alienware-original-imafvngmfmgqwawv.jpeg?q=70",
@@ -5757,7 +6201,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "13",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "442"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -5770,7 +6215,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "443"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcauaa80/computer/8/k/e/alienware-original-imaftgn37g4vzqmy.jpeg?q=70",
@@ -5783,7 +6229,8 @@ const laptops =
     display: "15.6",
     rating: "4.9",
     no_of_ratings: "12",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "444"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/l/8/14-eh0021tu-thin-and-light-laptop-hp-original-imaghubybwgeghrt.jpeg?q=70",
@@ -5796,7 +6243,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "445"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwv0djk0/computer/3/n/y/14c-cc0010tu-chromebook-hp-original-imag9g9mhckzhuqt.jpeg?q=70",
@@ -5809,7 +6257,8 @@ const laptops =
     display: "14",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "446"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/z/n/mphh3hn-a-thin-and-light-laptop-apple-original-imagmfhe3vvshdzc.jpeg?q=70",
@@ -5822,7 +6271,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "447"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kl2mljk0/computer/h/h/r/na-thin-and-light-laptop-mi-original-imagy9zzhzwbgqha.jpeg?q=70",
@@ -5835,7 +6285,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "569",
-    no_of_reviews: "59"
+    no_of_reviews: "59",
+    id: "448"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/5/q/p/gx650rm-ls019ws-gaming-laptop-asus-original-imagfyg8tkytthbb.jpeg?q=70",
@@ -5848,7 +6299,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "449"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/c/y/inspiron-3511-thin-and-light-laptop-dell-original-imagjh6h55w6r98g.jpeg?q=70",
@@ -5861,7 +6313,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "450"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3lx8cw0/computer/s/t/b/pt516-52s-gaming-laptop-acer-original-imagep4hxjafezxf.jpeg?q=70",
@@ -5874,7 +6327,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "451"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/z/h/-original-imaghxgk8pzmhqja.jpeg?q=70",
@@ -5887,7 +6341,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "452"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/e/o/14-ek0086tu-thin-and-light-laptop-hp-original-imaghubrzsyhm6wf.jpeg?q=70",
@@ -5900,7 +6355,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "453"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l33cia80/computer/v/z/6/16-b1350tx-gaming-laptop-hp-original-imageafuauevp8re.jpeg?q=70",
@@ -5913,7 +6369,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "454"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krce64w0/computer/g/x/z/aspire-5-thin-and-light-laptop-acer-original-imag55gzykbb22cp.jpeg?q=70",
@@ -5926,7 +6383,8 @@ const laptops =
     display: "14",
     rating: "3.7",
     no_of_ratings: "337",
-    no_of_reviews: "35"
+    no_of_reviews: "35",
+    id: "455"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l08gsy80/computer/r/j/h/g513rc-hn062w-gaming-laptop-asus-original-imagc2hkehpcytxe.jpeg?q=70",
@@ -5939,7 +6397,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "456"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/o/d/w/-original-imagf35eyyeezqpk.jpeg?q=70",
@@ -5952,7 +6411,8 @@ const laptops =
     display: "14.96",
     rating: "4.4",
     no_of_ratings: "171",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "457"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcm9t3k0/computer/q/x/r/hp-na-gaming-laptop-original-imaftpesbvfxgw9t.jpeg?q=70",
@@ -5965,7 +6425,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2208",
-    no_of_reviews: "248"
+    no_of_reviews: "248",
+    id: "458"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -5978,7 +6439,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "459"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/g/z/q/mk1e3hn-a-laptop-apple-original-imag7yzmv57cvg3f.jpeg?q=70",
@@ -5991,7 +6453,8 @@ const laptops =
     display: "16.2",
     rating: "4.8",
     no_of_ratings: "119",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "460"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyxb9u80/computer/4/y/0/vivobook-laptop-asus-original-imagbfz5wjzf4bde.jpeg?q=70",
@@ -6004,7 +6467,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "5",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "461"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k6zda4w0/computer/g/s/z/msi-original-imafpbphchfxrmkp.jpeg?q=70",
@@ -6017,7 +6481,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "316",
-    no_of_reviews: "53"
+    no_of_reviews: "53",
+    id: "462"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -6030,7 +6495,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "463"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqgyhe80/computer/d/l/f/g15-5510-notebook-dell-original-imag4gy96ahhtmvz.jpeg?q=70",
@@ -6043,7 +6509,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "333",
-    no_of_reviews: "29"
+    no_of_reviews: "29",
+    id: "464"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l13whow0/computer/o/s/h/-original-imagcqvpmys2cmg3.jpeg?q=70",
@@ -6056,7 +6523,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "58",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "465"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l26hdow0/computer/d/r/a/g15-5521-se-gaming-laptop-dell-original-imagdktezaswjvsk.jpeg?q=70",
@@ -6069,7 +6537,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "12",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "466"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -6082,7 +6551,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "467"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/l/0/n/-original-imagfhpzzb36whbn.jpeg?q=70",
@@ -6095,7 +6565,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "468"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1mh7rk0/computer/q/w/0/inspiron-7425-notebook-dell-original-imagd5hbw6vhe4f2.jpeg?q=70",
@@ -6108,7 +6579,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "469"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/v/v/-original-imagfdeqter4sj2j.jpeg?q=70",
@@ -6121,7 +6593,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "470"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/3/l/-original-imagha3pvvc2xuz2.jpeg?q=70",
@@ -6134,7 +6607,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2239",
-    no_of_reviews: "299"
+    no_of_reviews: "299",
+    id: "471"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kybvo280/computer/c/u/5/-original-imagah7xqmwnt2x6.jpeg?q=70",
@@ -6147,7 +6621,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "264",
-    no_of_reviews: "31"
+    no_of_reviews: "31",
+    id: "472"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1mh7rk0/computer/e/4/q/inspiron-3525-notebook-dell-original-imagd5k6ykzvkhdc.jpeg?q=70",
@@ -6160,7 +6635,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "473"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/e/t/g713rs-ll023ws-gaming-laptop-asus-original-imaghyvm3bkwrsy9.jpeg?q=70",
@@ -6173,7 +6649,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "474"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/v/w/alienware-x14-r1-gaming-laptop-dell-original-imagjh6v5mjeb6e8.jpeg?q=70",
@@ -6186,7 +6663,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "475"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/computer/h/x/8/14iil05-thin-and-light-laptop-lenovo-original-imag7anttggbgmzm.jpeg?q=70",
@@ -6199,7 +6677,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "66",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "476"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/s/n/spectre-x360-13-notebook-hp-original-imagg4fa4ng9axqx.jpeg?q=70",
@@ -6212,7 +6691,8 @@ const laptops =
     display: "13.5",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "477"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0zm64w0/computer/e/g/8/g15-5515-gaming-laptop-dell-original-imagcnty69nhzy58.jpeg?q=70",
@@ -6225,7 +6705,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "110",
-    no_of_reviews: "22"
+    no_of_reviews: "22",
+    id: "478"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/z/o/e/-original-imagckcfz6jgjn3z.jpeg?q=70",
@@ -6238,7 +6719,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "90",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "479"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -6251,7 +6733,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "45",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "480"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/i/o/-original-imagh3kyz5vch93f.jpeg?q=70",
@@ -6264,7 +6747,8 @@ const laptops =
     display: "16",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "481"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/e/q/-original-imagmmnamgzjnq9q.jpeg?q=70",
@@ -6277,7 +6761,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "4",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "482"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -6290,7 +6775,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "483"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kh0vonk0/computer/f/j/g/acer-na-gaming-laptop-original-imafx4u9yyzuzffx.jpeg?q=70",
@@ -6303,7 +6789,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "21",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "484"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krf91u80/computer/2/m/b/na-thin-and-light-laptop-dell-original-imag585xzyrystrc.jpeg?q=70",
@@ -6316,7 +6803,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "50",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "485"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/n/p/-original-imagfdfew8gszzhk.jpeg?q=70",
@@ -6329,7 +6817,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "486"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -6342,7 +6831,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "487"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -6355,7 +6845,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "488"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwnv6a80/computer/9/c/i/-original-imag9aajekwegabt.jpeg?q=70",
@@ -6368,7 +6859,8 @@ const laptops =
     display: "11.6",
     rating: "3.6",
     no_of_ratings: "387",
-    no_of_reviews: "51"
+    no_of_reviews: "51",
+    id: "489"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kppt47k0/computer/w/i/f/na-thin-and-light-laptop-dell-original-imag3wyz2cwngyzk.jpeg?q=70",
@@ -6381,7 +6873,8 @@ const laptops =
     display: "13.3",
     rating: "4.5",
     no_of_ratings: "22",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "490"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -6394,7 +6887,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "491"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/0/9/y/-original-imagj77kjkqwbajg.jpeg?q=70",
@@ -6407,7 +6901,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "492"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/k/2/-original-imagg6t9zus8vhew.jpeg?q=70",
@@ -6420,7 +6915,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "405",
-    no_of_reviews: "48"
+    no_of_reviews: "48",
+    id: "493"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksgehzk0/computer/r/c/k/predator-helios-300-gaming-laptop-acer-original-imag6yjdmwdrksyn.jpeg?q=70",
@@ -6433,7 +6929,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "57",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "494"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -6446,7 +6943,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "495"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ko8xtow0/computer/j/q/r/na-thin-and-light-laptop-dell-original-imag2qm3x6zhexrf.jpeg?q=70",
@@ -6459,7 +6957,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "496"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/3/k/m/asus-original-imafvq36ufg5v9mx.jpeg?q=70",
@@ -6472,7 +6971,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "497"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3t2fm80/computer/e/x/m/-original-imageuecggrzczd5.jpeg?q=70",
@@ -6485,7 +6985,8 @@ const laptops =
     display: "11.6",
     rating: "4",
     no_of_ratings: "20",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "498"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -6498,7 +6999,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "499"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/i/y/mphg3hn-a-thin-and-light-laptop-apple-original-imagmfhepavqyfyy.jpeg?q=70",
@@ -6511,7 +7013,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "500"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/i/2/laptop-hp-15s-fq2670tu-laptop-hp-original-imagjmgbdgahch5f.jpeg?q=70",
@@ -6524,7 +7027,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "501"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/t/m/-original-imaghkcjwpmszxtg.jpeg?q=70",
@@ -6537,7 +7041,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "302",
-    no_of_reviews: "36"
+    no_of_reviews: "36",
+    id: "502"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/4/b/-original-imagmmntzeunqhyh.jpeg?q=70",
@@ -6550,7 +7055,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "37",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "503"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/6/a/15iah7-gaming-laptop-lenovo-original-imaggmxxjupstpez.jpeg?q=70",
@@ -6563,7 +7069,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "504"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/b/d/y/-original-imagf39qmdjgesc9.jpeg?q=70",
@@ -6576,7 +7083,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "4379",
-    no_of_reviews: "580"
+    no_of_reviews: "580",
+    id: "505"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jyq5oy80/computer/t/y/2/apple-na-thin-and-light-laptop-original-imafgwev6abfznds.jpeg?q=70",
@@ -6589,7 +7097,8 @@ const laptops =
     display: "13.3",
     rating: "4.2",
     no_of_ratings: "107",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "506"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -6602,7 +7111,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "507"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/m/3/k/a314-35-notebook-acer-original-imagg462zhhzd62a.jpeg?q=70",
@@ -6615,7 +7125,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "24",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "508"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krf91u80/computer/n/y/q/aspire-5-thin-and-light-laptop-acer-original-imag57xygyzhxaa7.jpeg?q=70",
@@ -6628,7 +7139,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "61",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "509"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l48s9zk0/computer/q/u/t/250-g7-laptop-notebook-hp-original-imagf6n8stwdjfqj.jpeg?q=70",
@@ -6641,7 +7153,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "510"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -6654,7 +7167,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "511"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/i/g/f/-original-imagfhpzm88zjzyc.jpeg?q=70",
@@ -6667,7 +7181,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "512"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4d2ljk0/computer/s/1/9/-original-imagf9x3mjdwmnxg.jpeg?q=70",
@@ -6680,7 +7195,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "513"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/6/n/q/vivobook-16x-m1603qa-laptop-asus-original-imagjy3g4gvfrg5h.jpeg?q=70",
@@ -6693,7 +7209,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "514"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -6706,7 +7223,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "515"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzygpzk0/computer/u/n/j/vostro-3400-thin-and-light-laptop-dell-original-imagbuusnyzeqsjh.jpeg?q=70",
@@ -6719,7 +7237,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "9",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "516"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l23mhzk0/computer/e/6/4/br1100cka-gj0722w-laptop-asus-original-imagdgsbfwfbzdmw.jpeg?q=70",
@@ -6732,7 +7251,8 @@ const laptops =
     display: "11.6",
     rating: "4.1",
     no_of_ratings: "197",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "517"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/l/t/q/16-e1062ax-gaming-laptop-hp-original-imagfgqgzbrzchfq.jpeg?q=70",
@@ -6745,7 +7265,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "518"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -6758,7 +7279,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "519"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4fxh8w0/computer/k/u/e/vivobook-s-15-oled-s3502za-laptop-asus-original-imagfcg9zrubgprk.jpeg?q=70",
@@ -6771,7 +7293,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "520"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4x2rgw0/computer/l/w/6/vivobook-16x-laptop-asus-original-imagfpxumnphbfsr.jpeg?q=70",
@@ -6784,7 +7307,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "521"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/v/v/-original-imagfdeqter4sj2j.jpeg?q=70",
@@ -6797,7 +7321,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "522"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -6810,7 +7335,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "523"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/v/w/alienware-x14-r1-gaming-laptop-dell-original-imagjh6v5mjeb6e8.jpeg?q=70",
@@ -6823,7 +7349,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "524"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/6/7/9/-original-imagf39qzkzncyvh.jpeg?q=70",
@@ -6836,7 +7363,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "713",
-    no_of_reviews: "103"
+    no_of_reviews: "103",
+    id: "525"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/7/5/r/g15-5525-gaming-laptop-dell-original-imagf4haxvzux68z.jpeg?q=70",
@@ -6849,7 +7377,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "526"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -6862,7 +7391,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "527"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krf91u80/computer/z/0/m/ideapad-slim-laptop-lenovo-original-imag57x3p7bw8y8b.jpeg?q=70",
@@ -6875,7 +7405,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "528"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/u/z/m/k6500ze-l502ws-gaming-laptop-asus-original-imaghmkhpg3m5qmm.jpeg?q=70",
@@ -6888,7 +7419,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "529"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/p/m/y/asus-original-imafvq2qyjm7humq.jpeg?q=70",
@@ -6901,7 +7433,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "530"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -6914,7 +7447,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "531"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l26hdow0/computer/d/r/a/g15-5521-se-gaming-laptop-dell-original-imagdktezaswjvsk.jpeg?q=70",
@@ -6927,7 +7461,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "12",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "532"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/z/g/aero-5-xe4-73in614so-gaming-laptop-gigabyte-original-imagk2b5gjhmkzzf.jpeg?q=70",
@@ -6940,7 +7475,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "533"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j5ws0i80/computer/g/p/d/acer-na-notebook-original-imaewhwtbtzwe7ct.jpeg?q=70",
@@ -6953,7 +7489,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "3221",
-    no_of_reviews: "691"
+    no_of_reviews: "691",
+    id: "534"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -6966,7 +7503,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "535"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/9/e/inspiron-7425-2-in-1-laptop-dell-original-imagjh6nsjhnrtgb.jpeg?q=70",
@@ -6979,7 +7517,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "536"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1l1rww0/computer/m/v/i/yoga-slim-7i-2-in-1-laptop-lenovo-original-imagd4drfk95tkaj.jpeg?q=70",
@@ -6992,7 +7531,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "537"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/e/u/f/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjedtcx2vfw.jpeg?q=70",
@@ -7005,7 +7545,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "538"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -7018,7 +7559,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "539"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/juk4gi80/computer/d/v/r/msi-na-gaming-laptop-original-imafcwryd6vccwgc.jpeg?q=70",
@@ -7031,7 +7573,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "540"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/1/f/b/-original-imagf35erduuk5gh.jpeg?q=70",
@@ -7044,7 +7587,8 @@ const laptops =
     display: "14.96",
     rating: "4.2",
     no_of_ratings: "534",
-    no_of_reviews: "59"
+    no_of_reviews: "59",
+    id: "541"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwl0akw0/computer/f/t/r/inspiron-3511-thin-and-light-laptop-dell-original-imag98fjy6yu6fgz.jpeg?q=70",
@@ -7057,7 +7601,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "542"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -7070,7 +7615,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "543"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -7083,7 +7629,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "395",
-    no_of_reviews: "43"
+    no_of_reviews: "43",
+    id: "544"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksj9dow0/computer/n/i/p/na-gaming-laptop-lenovo-original-imag6345sb2jfu2a.jpeg?q=70",
@@ -7096,7 +7643,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "29",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "545"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l51d30w0/computer/s/g/x/a515-57g-gaming-laptop-acer-original-imagft36qhxsm89g.jpeg?q=70",
@@ -7109,7 +7657,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "546"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -7122,7 +7671,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "547"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3vxbbk0/computer/g/u/y/-original-imagewgtfgzf8fdd.jpeg?q=70",
@@ -7135,7 +7685,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "87",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "548"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqv8vww0/computer/w/m/g/na-notebook-msi-original-imag4sh33sdvnkgh.jpeg?q=70",
@@ -7148,7 +7699,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "549"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/p/5/creatorpro-m16-a12uis-notebook-msi-original-imaghffg9wzgthnf.jpeg?q=70",
@@ -7161,7 +7713,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "550"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -7174,7 +7727,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "551"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/9/t/-original-imaghryqfmnejfxk.jpeg?q=70",
@@ -7187,7 +7741,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "552"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -7200,7 +7755,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "43",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "553"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/y/8/16arh7h-gaming-laptop-lenovo-original-imagmg7vafrxd7br.jpeg?q=70",
@@ -7213,7 +7769,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "554"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -7226,7 +7783,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "555"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/l/i/u/inspiron-3515-thin-and-light-laptop-dell-original-imag7chq58xfqfga.jpeg?q=70",
@@ -7239,7 +7797,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "318",
-    no_of_reviews: "28"
+    no_of_reviews: "28",
+    id: "556"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/computer/v/x/u/katana-gf66-11ud-thin-and-light-laptop-msi-original-imag6hgucfpqacvt.jpeg?q=70",
@@ -7252,7 +7811,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "256",
-    no_of_reviews: "45"
+    no_of_reviews: "45",
+    id: "557"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/l/t/q/16-e1062ax-gaming-laptop-hp-original-imagfgqgzbrzchfq.jpeg?q=70",
@@ -7265,7 +7825,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "558"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -7278,7 +7839,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "559"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/b/m/14-ek0137tu-thin-and-light-laptop-hp-original-imaghqbze3zrxx6t.jpeg?q=70",
@@ -7291,7 +7853,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "560"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/h/b/-original-imagmgzyrj4wgvqr.jpeg?q=70",
@@ -7304,7 +7867,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "561"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kfpq5jk0/computer/y/e/h/msi-na-gaming-laptop-original-imafw3zfjxfxmxbe.jpeg?q=70",
@@ -7317,7 +7881,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "562"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -7330,7 +7895,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "563"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/x/4/j/g15-5515-gaming-laptop-dell-original-imag7chqvu3veeaz.jpeg?q=70",
@@ -7343,7 +7909,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "564"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kb1470w0/computer/z/5/f/msi-na-gaming-laptop-original-imafsh7ahbgkmvtm.jpeg?q=70",
@@ -7356,7 +7923,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "4351",
-    no_of_reviews: "596"
+    no_of_reviews: "596",
+    id: "565"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwcfngw0/computer/u/e/0/-original-imag9fgxqcsrfej7.jpeg?q=70",
@@ -7369,7 +7937,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "10",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "566"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -7382,7 +7951,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "567"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/9/t/-original-imaghryqfmnejfxk.jpeg?q=70",
@@ -7395,7 +7965,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "568"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kq5iykw0/computer/q/j/2/vostro-3405-thin-and-light-laptop-dell-original-imag48ejkx33d9nn.jpeg?q=70",
@@ -7408,7 +7979,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "17",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "569"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jraycnk0/computer/w/z/y/asus-na-thin-and-light-laptop-original-imafd3g96rxzxgkn.jpeg?q=70",
@@ -7421,7 +7993,8 @@ const laptops =
     display: "13.3",
     rating: "4.3",
     no_of_ratings: "40",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "570"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -7434,7 +8007,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "571"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kpft18w0/computer/4/v/p/ideapad-5-15itl05-thin-and-light-laptop-lenovo-original-imag3zgjzafrkbtg.jpeg?q=70",
@@ -7447,7 +8021,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "50",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "572"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/1/g/-original-imagg6t9hmxg6ndz.jpeg?q=70",
@@ -7460,7 +8035,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "39",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "573"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/t/o/4/a515-45-r9px-thin-and-light-laptop-acer-original-imagbmx3nr6xex9g.jpeg?q=70",
@@ -7473,7 +8049,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "574"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -7486,7 +8063,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "575"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/c/o/14-ek0072tu-thin-and-light-laptop-hp-original-imaghqbpkcggcqh4.jpeg?q=70",
@@ -7499,7 +8077,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "576"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzrbiq80/computer/v/d/d/15s-fq2626tu-thin-and-light-laptop-hp-original-imagbpb2sztfprgz.jpeg?q=70",
@@ -7512,7 +8091,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "283",
-    no_of_reviews: "17"
+    no_of_reviews: "17",
+    id: "577"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/9/a/k/asus-original-imafvq27mhsqxhek.jpeg?q=70",
@@ -7525,7 +8105,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "578"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -7538,7 +8119,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "579"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt8zb0w0/computer/n/m/v/inspiron-3511-thin-and-light-laptop-dell-original-imag6n5kbmfcgxk6.jpeg?q=70",
@@ -7551,7 +8133,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "123",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "580"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -7564,7 +8147,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "581"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksj9dow0/computer/n/i/p/na-gaming-laptop-lenovo-original-imag6345sb2jfu2a.jpeg?q=70",
@@ -7577,7 +8161,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "582"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -7590,7 +8175,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "583"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/q/o/245-g8-business-laptop-hp-original-imagjdywrx9g8yph.jpeg?q=70",
@@ -7603,7 +8189,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "17",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "584"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/o/3/6/15-eg1000tx-thin-and-light-laptop-hp-original-imagbn4b6ht9xznp.jpeg?q=70",
@@ -7616,7 +8203,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "123",
-    no_of_reviews: "15"
+    no_of_reviews: "15",
+    id: "585"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/computer/f/c/v/asus-notebook-original-imaer3hghafsrhyx.jpeg?q=70",
@@ -7629,7 +8217,8 @@ const laptops =
     display: "15.6",
     rating: "3",
     no_of_ratings: "2",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "586"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -7642,7 +8231,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "587"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/o/p/new-inspiron-15-laptop-thin-and-light-laptop-dell-original-imagcyregycdnqyz.jpeg?q=70",
@@ -7655,7 +8245,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "588"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/4/p/v15-thin-and-light-laptop-lenovo-original-imagmm9wydypwjr9.jpeg?q=70",
@@ -7668,7 +8259,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "589"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/m/w/-original-imagg5jscr4hcuqc.jpeg?q=70",
@@ -7681,7 +8273,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "29",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "590"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/f/s/fx506lhb-hn357w-laptop-asus-original-imaggbzguuazzwm9.jpeg?q=70",
@@ -7694,7 +8287,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "591"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kykgb680/computer/r/9/e/-original-imagarytzgkp5t3q.jpeg?q=70",
@@ -7707,7 +8301,8 @@ const laptops =
     display: "14",
     rating: "4.8",
     no_of_ratings: "5",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "592"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwv0djk0/computer/2/u/m/16-e0162ax-gaming-laptop-hp-original-imag9g7ytxnpfvxh.jpeg?q=70",
@@ -7720,7 +8315,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "593"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kn7sdjk0/computer/l/4/y/na-notebook-dell-original-imagfy6adtf9apuh.jpeg?q=70",
@@ -7733,7 +8329,8 @@ const laptops =
     display: "35",
     rating: "3.9",
     no_of_ratings: "89",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "594"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktszgy80/computer/h/0/f/alpha-15-b5eek-029in-gaming-laptop-msi-original-imag72h7uptk3x9t.jpeg?q=70",
@@ -7746,7 +8343,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "413",
-    no_of_reviews: "63"
+    no_of_reviews: "63",
+    id: "595"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvvad8w0/computer/m/k/t/16-e0362ax-gaming-laptop-hp-original-imag8zh5mbczsxws.jpeg?q=70",
@@ -7759,7 +8357,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "596"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kit6hzk0-0/computer/f/c/w/dell-inspiron-3505-laptop-amd-ryzen-3-3250u-4gb-ram-1tb-hdd-15-6-original-imafygzmveshfgtc.jpeg?q=70",
@@ -7772,7 +8371,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "597"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -7785,7 +8385,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "117",
-    no_of_reviews: "15"
+    no_of_reviews: "15",
+    id: "598"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/h/5/inspiron-7620-thin-and-light-laptop-dell-original-imagkz94qneret6g.jpeg?q=70",
@@ -7798,7 +8399,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "599"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -7811,7 +8413,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "600"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kit6hzk0-0/computer/f/c/w/dell-inspiron-3505-laptop-amd-ryzen-3-3250u-4gb-ram-1tb-hdd-15-6-original-imafygzmveshfgtc.jpeg?q=70",
@@ -7824,7 +8427,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "601"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt8zb0w0/computer/n/m/v/inspiron-3511-thin-and-light-laptop-dell-original-imag6n5kbmfcgxk6.jpeg?q=70",
@@ -7837,7 +8441,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "53",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "602"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -7850,7 +8455,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "603"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzvlua80/computer/e/y/f/vostro-3510-thin-and-light-laptop-dell-original-imagbsn5hgcnmxqs.jpeg?q=70",
@@ -7863,7 +8469,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "212",
-    no_of_reviews: "30"
+    no_of_reviews: "30",
+    id: "604"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -7876,7 +8483,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "605"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -7889,7 +8497,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "606"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -7902,7 +8511,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "607"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/q/s/w/inspiron-3511-laptop-dell-original-imagfycrbnpu2nbh.jpeg?q=70",
@@ -7915,7 +8525,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "608"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/p/m/y/asus-original-imafvq2qyjm7humq.jpeg?q=70",
@@ -7928,7 +8539,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "609"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kctf0cw0/computer/8/y/c/acer-na-original-imaftv3q6yjs3wtm.jpeg?q=70",
@@ -7941,7 +8553,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "610"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -7954,7 +8567,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "611"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/u/h/inspiron-3520-thin-and-light-laptop-dell-original-imagm5skknhkg2qy.jpeg?q=70",
@@ -7967,7 +8581,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "612"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/6/w/g/mnwa3hn-a-laptop-apple-original-imagmfhehcvgub84.jpeg?q=70",
@@ -7980,7 +8595,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "613"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k2dm7bk0/computer/x/t/s/asus-na-thin-and-light-laptop-original-imafhqfb3dpyagyk.jpeg?q=70",
@@ -7993,7 +8609,8 @@ const laptops =
     display: "13.3",
     rating: "4.4",
     no_of_ratings: "11",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "614"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/v/v/sf314-71-thin-and-light-laptop-acer-original-imaghrgezjpt3bub.jpeg?q=70",
@@ -8006,7 +8623,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "615"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kybvo280/computer/c/u/5/-original-imagah7xqmwnt2x6.jpeg?q=70",
@@ -8019,7 +8637,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "100",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "616"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2p23rk0/computer/t/i/t/tuf-gaming-a15-gaming-laptop-asus-original-imagdzby2dzuqucp.jpeg?q=70",
@@ -8032,7 +8651,8 @@ const laptops =
     display: "16.6",
     rating: "4.5",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "617"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/b/j/-original-imagjfgy6ghyqssh.jpeg?q=70",
@@ -8045,7 +8665,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "47",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "618"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt8zb0w0/computer/n/m/v/inspiron-3511-thin-and-light-laptop-dell-original-imag6n5kbmfcgxk6.jpeg?q=70",
@@ -8058,7 +8679,8 @@ const laptops =
     display: "14.96",
     rating: "4.3",
     no_of_ratings: "56",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "619"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/r/3/-original-imagg6t98mxeztjn.jpeg?q=70",
@@ -8071,7 +8693,8 @@ const laptops =
     display: "14",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "620"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1jmc280/computer/k/k/a/fx577ze-hn056w-gaming-laptop-asus-original-imagd395ymfqgarh.jpeg?q=70",
@@ -8084,7 +8707,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "621"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/o/d/w/-original-imagf35eyyeezqpk.jpeg?q=70",
@@ -8097,7 +8721,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "105",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "622"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kfmv9u80/computer/r/g/w/asus-na-gaming-laptop-original-imafwfxbhqtgy8f5.jpeg?q=70",
@@ -8110,7 +8735,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "623"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/z/o/16-e0550ax-gaming-laptop-hp-original-imagjfqztvhqbyyh.jpeg?q=70",
@@ -8123,7 +8749,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "624"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2jcccw0/computer/s/d/u/-original-imagdv4f66jmsqfv.jpeg?q=70",
@@ -8136,7 +8763,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "926",
-    no_of_reviews: "150"
+    no_of_reviews: "150",
+    id: "625"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2urv680/computer/a/x/0/-original-image333cfww5zfg.jpeg?q=70",
@@ -8149,7 +8777,8 @@ const laptops =
     display: "14",
     rating: "4.6",
     no_of_ratings: "43",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "626"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -8162,7 +8791,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "627"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktrk13k0/computer/a/q/c/v15-itl-gen-2-thin-and-light-laptop-lenovo-original-imag7fh6pmds7p5r.jpeg?q=70",
@@ -8175,7 +8805,8 @@ const laptops =
     display: "15",
     rating: "4.3",
     no_of_ratings: "164",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "628"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/d/j/15s-eq1560au-thin-and-light-laptop-hp-original-imaggsgk3gpr6jpp.jpeg?q=70",
@@ -8188,7 +8819,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "3881",
-    no_of_reviews: "400"
+    no_of_reviews: "400",
+    id: "629"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l41n2q80/computer/t/z/r/-original-imagff79mr7h8fyu.jpeg?q=70",
@@ -8201,7 +8833,8 @@ const laptops =
     display: "15.6",
     rating: "4.9",
     no_of_ratings: "8",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "630"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -8214,7 +8847,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "631"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kk2wl8w0/computer/f/k/b/na-gaming-laptop-lenovo-original-imafzgdkvx9guy8q.jpeg?q=70",
@@ -8227,7 +8861,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "145",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "632"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/computer/v/3/7/-original-imagdsjsjszc65fh.jpeg?q=70",
@@ -8240,7 +8875,8 @@ const laptops =
     display: "13.3",
     rating: "4.5",
     no_of_ratings: "13",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "633"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvvad8w0/keyboard-skin/k/j/i/laptop-premium-keyboard-cover-protector-fit-with-victus-by-hp-original-imag8njdqea2ucrh.jpeg?q=70",
@@ -8253,7 +8889,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "634"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -8266,7 +8903,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "635"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/3/c/w/15s-eq2213au-thin-and-light-laptop-hp-original-imagm2hcekkvkezb.jpeg?q=70",
@@ -8279,7 +8917,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "636"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/y/w/x/gv301ra-li030ws-thin-and-light-laptop-asus-original-imagfyg7mmnyhfmz.jpeg?q=70",
@@ -8292,7 +8931,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "637"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kk2wl8w0/computer/f/k/b/na-gaming-laptop-lenovo-original-imafzgdkvx9guy8q.jpeg?q=70",
@@ -8305,7 +8945,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "1763",
-    no_of_reviews: "254"
+    no_of_reviews: "254",
+    id: "638"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/g/p/-original-imaggskghfjzams4.jpeg?q=70",
@@ -8318,7 +8959,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "12",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "639"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/koad9jk0/computer/g/m/j/na-gaming-laptop-asus-original-imag2s5nf2wgh4hz.jpeg?q=70",
@@ -8331,7 +8973,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "640"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/b/j/-original-imagjfgy6ghyqssh.jpeg?q=70",
@@ -8344,7 +8987,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "126",
-    no_of_reviews: "23"
+    no_of_reviews: "23",
+    id: "641"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/y/w/x/gv301ra-li030ws-thin-and-light-laptop-asus-original-imagfyg7mmnyhfmz.jpeg?q=70",
@@ -8357,7 +9001,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "642"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -8370,7 +9015,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "818",
-    no_of_reviews: "95"
+    no_of_reviews: "95",
+    id: "643"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/n/v/16iah7-gaming-laptop-lenovo-original-imaghnqcfbznp7uf.jpeg?q=70",
@@ -8383,7 +9029,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "644"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0zm64w0/computer/k/h/m/14s-dq2606tu-thin-and-light-laptop-hp-original-imagcnsfnrzvzbs6.jpeg?q=70",
@@ -8396,7 +9043,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "2959",
-    no_of_reviews: "316"
+    no_of_reviews: "316",
+    id: "645"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kuof5ow0/computer/k/n/f/gv301qh-k6474ts-gaming-laptop-asus-original-imag7r6dyyvsza8v.jpeg?q=70",
@@ -8409,7 +9057,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "646"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/e/b/gv601rm-m6055ws-2-in-1-gaming-laptop-asus-original-imaggyy5h5vgubxe.jpeg?q=70",
@@ -8422,7 +9071,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "647"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1mh7rk0/computer/s/s/o/sfx16-51g-laptop-acer-original-imagd5zmbsdsvjuq.jpeg?q=70",
@@ -8435,7 +9085,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "648"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku2zjww0/computer/r/f/d/na-gaming-laptop-hp-original-imag7a7fgvrae7uu.jpeg?q=70",
@@ -8448,7 +9099,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2511",
-    no_of_reviews: "240"
+    no_of_reviews: "240",
+    id: "649"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/u/m/15s-du3614tu-thin-and-light-laptop-hp-original-imagghe6jcf76wgc.jpeg?q=70",
@@ -8461,7 +9113,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "145",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "650"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -8474,7 +9127,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "651"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kubk70w0/computer/w/q/e/inspiron-3511-laptop-dell-original-imag7guhghwehqbf.jpeg?q=70",
@@ -8487,7 +9141,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "7",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "652"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/w/e/tuf-a15-gaming-laptop-asus-original-imagj3qy4eyshxzx.jpeg?q=70",
@@ -8500,7 +9155,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "653"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/s/z/r/-original-imagetgzg4pgszmt.jpeg?q=70",
@@ -8513,7 +9169,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "502",
-    no_of_reviews: "47"
+    no_of_reviews: "47",
+    id: "654"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -8526,7 +9183,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "655"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k9loccw0/computer/4/f/w/acer-na-gaming-laptop-original-imafrcpya8phvptc.jpeg?q=70",
@@ -8539,7 +9197,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "2052",
-    no_of_reviews: "318"
+    no_of_reviews: "318",
+    id: "656"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kggviq80/computer/x/6/g/lenovo-original-imafwpajqjvfhrea.jpeg?q=70",
@@ -8552,7 +9211,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "657"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/4/f/pulse-17-b13vgk-252in-gaming-laptop-msi-original-imagmmhkf3gadpdf.jpeg?q=70",
@@ -8565,7 +9225,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "658"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -8578,7 +9239,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "659"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l29c9e80/computer/y/w/r/15ach6h-laptop-lenovo-original-imagdn94ehpsyjkw.jpeg?q=70",
@@ -8591,7 +9253,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "660"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktaeqvk0/computer/b/7/4/15s-gy0501au-thin-and-light-laptop-hp-original-imag6z6muntqnzzc.jpeg?q=70",
@@ -8604,7 +9267,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "3881",
-    no_of_reviews: "400"
+    no_of_reviews: "400",
+    id: "661"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/computer/b/u/m/na-gaming-laptop-acer-original-imag6h7gsyzcpwrb.jpeg?q=70",
@@ -8617,7 +9281,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "58",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "662"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/c/y/inspiron-3511-thin-and-light-laptop-dell-original-imagjh6h55w6r98g.jpeg?q=70",
@@ -8630,7 +9295,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "663"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
@@ -8643,7 +9309,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "571",
-    no_of_reviews: "73"
+    no_of_reviews: "73",
+    id: "664"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4x2rgw0/computer/t/c/y/inspiron-5320-thin-and-light-laptop-dell-original-imagfpzgrnw6hykf.jpeg?q=70",
@@ -8656,7 +9323,8 @@ const laptops =
     display: "13.3",
     rating: "3.7",
     no_of_ratings: "3",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "665"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/y/w/x/gv301ra-li030ws-thin-and-light-laptop-asus-original-imagfyg7mmnyhfmz.jpeg?q=70",
@@ -8669,7 +9337,8 @@ const laptops =
     display: "13.4",
     rating: "5",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "666"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kbqu4cw0/computer/q/x/r/hp-original-imaftyzachgrav8f.jpeg?q=70",
@@ -8682,7 +9351,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "12223",
-    no_of_reviews: "1239"
+    no_of_reviews: "1239",
+    id: "667"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/z/x/16iah7-gaming-laptop-lenovo-original-imagh4ypbwuqttwn.jpeg?q=70",
@@ -8695,7 +9365,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "668"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/computer/k/q/r/acer-predator-notebook-original-imaejmg5gzkf8sth.jpeg?q=70",
@@ -8708,7 +9379,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "669"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j6xxgnk0/computer/9/j/k/hp-gaming-laptop-original-imaexaznx4sdxhac.jpeg?q=70",
@@ -8721,7 +9393,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "670"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/f/8/i/-original-imageye8rydawpxz.jpeg?q=70",
@@ -8734,7 +9407,8 @@ const laptops =
     display: "14.1",
     rating: "3.8",
     no_of_ratings: "689",
-    no_of_reviews: "92"
+    no_of_reviews: "92",
+    id: "671"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/c/a/-original-imagfdfpnjjpdhq2.jpeg?q=70",
@@ -8747,7 +9421,8 @@ const laptops =
     display: "13.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "672"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/knhsgi80/computer/b/i/2/na-thin-and-light-laptop-hp-original-imag25v8zcapzexv.jpeg?q=70",
@@ -8760,7 +9435,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "872",
-    no_of_reviews: "177"
+    no_of_reviews: "177",
+    id: "673"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -8773,7 +9449,8 @@ const laptops =
     display: "16.1",
     rating: "4.9",
     no_of_ratings: "11",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "674"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -8786,7 +9463,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "675"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/6/i/j/x1500ea-ej522ws-thin-and-light-laptop-asus-original-imagkygm8tmqqgbv.jpeg?q=70",
@@ -8799,7 +9477,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "676"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/l/a/w/-original-imagf39qgu4qjmgk.jpeg?q=70",
@@ -8812,7 +9491,8 @@ const laptops =
     display: "14",
     rating: "3.7",
     no_of_ratings: "114",
-    no_of_reviews: "27"
+    no_of_reviews: "27",
+    id: "677"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/n/d/katana-17-b13vfk-253in-gaming-laptop-msi-original-imagmmhgf9gjkhzf.jpeg?q=70",
@@ -8825,7 +9505,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "678"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -8838,7 +9519,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "679"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4pxk7k0/computer/n/g/g/inspiron-3511-d560742win9s-laptop-dell-original-imagfjtzjr3hhezv.jpeg?q=70",
@@ -8851,7 +9533,8 @@ const laptops =
     display: "15",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "680"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kk2wl8w0/computer/f/k/b/na-gaming-laptop-lenovo-original-imafzgdkvx9guy8q.jpeg?q=70",
@@ -8864,7 +9547,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "191",
-    no_of_reviews: "20"
+    no_of_reviews: "20",
+    id: "681"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
@@ -8877,7 +9561,8 @@ const laptops =
     display: "15.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "682"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -8890,7 +9575,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "683"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/9/a/k/asus-original-imafvq27mhsqxhek.jpeg?q=70",
@@ -8903,7 +9589,8 @@ const laptops =
     display: "14",
     rating: "3.9",
     no_of_ratings: "10",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "684"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70",
@@ -8916,7 +9603,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "685"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kh9gbrk0/computer/e/6/d/asus-na-thin-and-light-laptop-original-imafxbj7gbsraqzk.jpeg?q=70",
@@ -8929,7 +9617,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "2836",
-    no_of_reviews: "401"
+    no_of_reviews: "401",
+    id: "686"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70",
@@ -8942,7 +9631,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "1006",
-    no_of_reviews: "101"
+    no_of_reviews: "101",
+    id: "687"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/computer/i/g/f/-original-imagfhpzm88zjzyc.jpeg?q=70",
@@ -8955,7 +9645,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "688"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzvlua80/computer/v/k/o/vostro-3510-thin-and-light-laptop-dell-original-imagbscgmx366uhv.jpeg?q=70",
@@ -8968,7 +9659,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "913",
-    no_of_reviews: "107"
+    no_of_reviews: "107",
+    id: "689"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70",
@@ -8981,7 +9673,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "125",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "690"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l12h1u80/computer/2/s/q/14-dy1048tu-thin-and-light-laptop-hp-original-imagcpuvfpshgd7q.jpeg?q=70",
@@ -8994,7 +9687,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "21",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "691"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
@@ -9007,7 +9701,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "40",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "692"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/3/q/k/lenovo-original-imag3eht25nykhjn.jpeg?q=70",
@@ -9020,7 +9715,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "740",
-    no_of_reviews: "70"
+    no_of_reviews: "70",
+    id: "693"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5iid8w0/computer/l/b/n/inspiron-7420-2-in-1-laptop-dell-original-imagg6d9yurcdzg3.jpeg?q=70",
@@ -9033,7 +9729,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "694"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jqb8ccw0/computer/x/g/g/asus-na-laptop-original-imafccy6gshnz6ct.jpeg?q=70",
@@ -9046,7 +9743,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "5344",
-    no_of_reviews: "705"
+    no_of_reviews: "705",
+    id: "695"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kgtqhe80/computer/h/a/y/dell-original-imafwyv9f2e52zzh.jpeg?q=70",
@@ -9059,7 +9757,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "238",
-    no_of_reviews: "27"
+    no_of_reviews: "27",
+    id: "696"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/v/i/m/-original-imaghumybbu927s4.jpeg?q=70",
@@ -9072,7 +9771,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "697"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/klzhq4w0/computer/v/u/l/na-thin-and-light-laptop-msi-original-imagyzqagngnrnzh.jpeg?q=70",
@@ -9085,7 +9785,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "11",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "698"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -9098,7 +9799,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "699"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/t/u/-original-imaghhe6ttguxzkq.jpeg?q=70",
@@ -9111,7 +9813,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "313",
-    no_of_reviews: "31"
+    no_of_reviews: "31",
+    id: "700"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jkcwakw0/computer/h/g/x/asus-na-laptop-original-imaf7qdpm99pq4yd.jpeg?q=70",
@@ -9124,7 +9827,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "701"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kawtvgw0/computer/g/h/h/msi-na-thin-and-light-laptop-original-imafsdbjzkxx2ssf.jpeg?q=70",
@@ -9137,7 +9841,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "97",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "702"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -9150,7 +9855,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "703"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/o/l/w/15-fa0353tx-gaming-laptop-hp-original-imaggytdx6zpv6qg.jpeg?q=70",
@@ -9163,7 +9869,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "704"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/f/r/-original-imagjfgyxmcz7scf.jpeg?q=70",
@@ -9176,7 +9883,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "47",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "705"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kolsscw0/computer/w/p/g/na-2-in-1-laptop-hp-original-imag3ff2hphu2zmy.jpeg?q=70",
@@ -9189,7 +9897,8 @@ const laptops =
     display: "13.3",
     rating: "4.3",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "706"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -9202,7 +9911,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "707"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/l/7/m/-original-imagetj2awbvdju6.jpeg?q=70",
@@ -9215,7 +9925,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "32",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "708"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kxuqdu80/computer/o/u/j/lenovo-core-i5-laptop-lenovo-original-imaga7u8ehmnfggx.jpeg?q=70",
@@ -9228,7 +9939,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "17",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "709"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/klphn680/computer/l/e/0/x515ja-ej302ts-thin-and-light-laptop-asus-original-imagyrtfuhpeznaj.jpeg?q=70",
@@ -9241,7 +9953,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "710"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks4yz680/computer/q/5/z/x409fa-ek617t-thin-and-light-laptop-asus-original-imag5rwhrgjtgkyq.jpeg?q=70",
@@ -9254,7 +9967,8 @@ const laptops =
     display: "14.1",
     rating: "3.5",
     no_of_ratings: "74",
-    no_of_reviews: "12"
+    no_of_reviews: "12",
+    id: "711"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k7531jk0/computer/e/a/h/hp-original-imafpfs893zu5mhb.jpeg?q=70",
@@ -9267,7 +9981,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "845",
-    no_of_reviews: "117"
+    no_of_reviews: "117",
+    id: "712"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krf91u80/computer/z/0/m/ideapad-slim-laptop-lenovo-original-imag57x3p7bw8y8b.jpeg?q=70",
@@ -9280,7 +9995,8 @@ const laptops =
     display: "15.6",
     rating: "5",
     no_of_ratings: "1",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "713"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/o/d/-original-imaghum8xyzz5dm2.jpeg?q=70",
@@ -9293,7 +10009,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "714"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ky4qgsw0/computer/j/f/5/240-g8-laptop-hp-original-imagaffva46zgucg.jpeg?q=70",
@@ -9306,7 +10023,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "715"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/b/d/y/-original-imagf39qmdjgesc9.jpeg?q=70",
@@ -9319,7 +10037,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "713",
-    no_of_reviews: "103"
+    no_of_reviews: "103",
+    id: "716"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kar44280/computer/f/6/p/asus-na-thin-and-light-laptop-original-imafs92tpthajprz.jpeg?q=70",
@@ -9332,7 +10051,8 @@ const laptops =
     display: "14",
     rating: "4.3",
     no_of_ratings: "5546",
-    no_of_reviews: "790"
+    no_of_reviews: "790",
+    id: "717"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktn9pjk0/computer/g/z/g/na-thin-and-light-laptop-avita-original-imag6y5qsuewhwks.jpeg?q=70",
@@ -9345,7 +10065,8 @@ const laptops =
     display: "14",
     rating: "3.6",
     no_of_ratings: "1857",
-    no_of_reviews: "268"
+    no_of_reviews: "268",
+    id: "718"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/v/i/-original-imagggnnxdzu38xy.jpeg?q=70",
@@ -9358,7 +10079,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "125",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "719"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/v/i/-original-imagggnnxdzu38xy.jpeg?q=70",
@@ -9371,7 +10093,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "125",
-    no_of_reviews: "9"
+    no_of_reviews: "9",
+    id: "720"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kdoup3k0/computer/e/v/p/hp-original-imafujjhdwjjh9j8.jpeg?q=70",
@@ -9384,7 +10107,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "849",
-    no_of_reviews: "80"
+    no_of_reviews: "80",
+    id: "721"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/9/z/x/14alc7-thin-and-light-laptop-lenovo-original-imaggujjhgppfkfg.jpeg?q=70",
@@ -9397,7 +10121,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "722"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -9410,7 +10135,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "723"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ky4qgsw0/computer/j/f/5/240-g8-laptop-hp-original-imagaffva46zgucg.jpeg?q=70",
@@ -9423,7 +10149,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "724"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktn9pjk0/computer/g/z/g/na-thin-and-light-laptop-avita-original-imag6y5qsuewhwks.jpeg?q=70",
@@ -9436,7 +10163,8 @@ const laptops =
     display: "14",
     rating: "3.6",
     no_of_ratings: "1857",
-    no_of_reviews: "268"
+    no_of_reviews: "268",
+    id: "725"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/8/a/vostro-5620-thin-and-light-laptop-dell-original-imagkz9fxzcgsnry.jpeg?q=70",
@@ -9449,7 +10177,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "726"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -9462,7 +10191,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "727"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/t/u/-original-imaghhe6ttguxzkq.jpeg?q=70",
@@ -9475,7 +10205,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "222",
-    no_of_reviews: "25"
+    no_of_reviews: "25",
+    id: "728"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jkcwakw0/computer/z/z/t/asus-na-thin-and-light-laptop-original-imaf7qdw3zrazcqz.jpeg?q=70",
@@ -9488,7 +10219,8 @@ const laptops =
     display: "13.3",
     rating: "4.3",
     no_of_ratings: "30",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "729"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/v/0/tuf-f15-gaming-laptop-asus-original-imagkemfwnsnhzkw.jpeg?q=70",
@@ -9501,7 +10233,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "730"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -9514,7 +10247,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "731"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/q/d/n/-original-imagetjymucqggdq.jpeg?q=70",
@@ -9527,7 +10261,8 @@ const laptops =
     display: "17.3",
     rating: "4.4",
     no_of_ratings: "105",
-    no_of_reviews: "18"
+    no_of_reviews: "18",
+    id: "732"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/q/2/-original-imagkqwzyzfahqac.jpeg?q=70",
@@ -9540,7 +10275,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "733"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/u/d/xps-9315-thin-and-light-laptop-dell-original-imagm5shryf2mgwh.jpeg?q=70",
@@ -9553,7 +10289,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "734"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -9566,7 +10303,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "735"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/y/0/c/na-thin-and-light-laptop-asus-original-imag3ebnzawky4kn.jpeg?q=70",
@@ -9579,7 +10317,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1654",
-    no_of_reviews: "225"
+    no_of_reviews: "225",
+    id: "736"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/w/u/gu603zm-k8034ws-gaming-laptop-asus-original-imagghnavdggg92s.jpeg?q=70",
@@ -9592,7 +10331,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "737"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kl5hh8w0/computer/c/j/8/hp-original-imagyckn3hqfgp4y.jpeg?q=70",
@@ -9605,7 +10345,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "545",
-    no_of_reviews: "68"
+    no_of_reviews: "68",
+    id: "738"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/j/h/an515-45-gaming-laptop-acer-original-imagkfjta83h2njz.jpeg?q=70",
@@ -9618,7 +10359,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "222",
-    no_of_reviews: "25"
+    no_of_reviews: "25",
+    id: "739"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l572ufk0/computer/r/n/k/fx517zc-hn108ws-gaming-laptop-asus-original-imagfxj5nfwkg5s7.jpeg?q=70",
@@ -9631,7 +10373,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "5",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "740"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l13whow0/computer/o/s/h/-original-imagcqvpmys2cmg3.jpeg?q=70",
@@ -9644,7 +10387,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "652",
-    no_of_reviews: "85"
+    no_of_reviews: "85",
+    id: "741"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/c/q/t/lenovo-na-thin-and-light-laptop-original-imafuzt873zgp9xe.jpeg?q=70",
@@ -9657,7 +10401,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "114",
-    no_of_reviews: "15"
+    no_of_reviews: "15",
+    id: "742"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/s/8/z/-original-imaggsy54zwpjhkp.jpeg?q=70",
@@ -9670,7 +10415,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "8",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "743"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kk2wl8w0/computer/f/k/b/na-gaming-laptop-lenovo-original-imafzgdkvx9guy8q.jpeg?q=70",
@@ -9683,7 +10429,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "912",
-    no_of_reviews: "122"
+    no_of_reviews: "122",
+    id: "744"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jzrb53k0pkrrdj/computer/t/z/e/acer-na-thin-and-light-laptop-original-imafhnvk5ussrgta.jpeg?q=70",
@@ -9696,7 +10443,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "6",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "745"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l59xq4w0/computer/w/e/b/gv601re-m6012ws-gaming-laptop-asus-original-imagfzchctgpefz6.jpeg?q=70",
@@ -9709,7 +10457,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "746"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -9722,7 +10471,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "747"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/b/q/h/na-gaming-laptop-hp-original-imag5bg5uwgmhmqj.jpeg?q=70",
@@ -9735,7 +10485,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "10",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "748"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/c/q/t/lenovo-na-thin-and-light-laptop-original-imafuzt873zgp9xe.jpeg?q=70",
@@ -9748,7 +10499,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "114",
-    no_of_reviews: "15"
+    no_of_reviews: "15",
+    id: "749"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kulk9zk0/computer/f/t/w/15-ec2075ax-gaming-laptop-hp-original-imag7nyzhxqc7xhh.jpeg?q=70",
@@ -9761,7 +10513,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "70",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "750"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -9774,7 +10527,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "751"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4bn5ow0/computer/0/s/t/hp-nb-notebook-notebook-hp-original-imagf8sa36dcaqtp.jpeg?q=70",
@@ -9787,7 +10541,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "752"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktn9pjk0/computer/b/m/o/na-gaming-laptop-asus-original-imag6xzyryhh82ff.jpeg?q=70",
@@ -9800,7 +10555,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "8",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "753"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/h/u/d/xps-9315-thin-and-light-laptop-dell-original-imagm5shryf2mgwh.jpeg?q=70",
@@ -9813,7 +10569,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "754"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -9826,7 +10583,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "755"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/c/q/t/lenovo-na-thin-and-light-laptop-original-imafuzt873zgp9xe.jpeg?q=70",
@@ -9839,7 +10597,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "944",
-    no_of_reviews: "93"
+    no_of_reviews: "93",
+    id: "756"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksru0sw0/computer/d/p/w/15-eh1101au-thin-and-light-laptop-hp-original-imag69prbzxur5qq.jpeg?q=70",
@@ -9852,7 +10611,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "210",
-    no_of_reviews: "30"
+    no_of_reviews: "30",
+    id: "757"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -9865,7 +10625,8 @@ const laptops =
     display: "16.1",
     rating: "4.3",
     no_of_ratings: "39",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "758"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -9878,7 +10639,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "759"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -9891,7 +10653,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "128",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "760"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ky90scw0/computer/q/4/8/vivobook-14-thin-and-light-laptop-asus-original-imagajf5gqrgsgzp.jpeg?q=70",
@@ -9904,7 +10667,8 @@ const laptops =
     display: "14.1",
     rating: "4.3",
     no_of_ratings: "25",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "761"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l48s9zk0/computer/6/z/k/hp-laptop-255-g8-notebook-notebook-hp-original-imagf6hthg9zbxug.jpeg?q=70",
@@ -9917,7 +10681,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "762"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -9930,7 +10695,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "763"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kbqu4cw0/computer/q/x/r/hp-original-imaftyzachgrav8f.jpeg?q=70",
@@ -9943,7 +10709,8 @@ const laptops =
     display: "15.6",
     rating: "4.6",
     no_of_ratings: "35",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "764"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwgpz0w0/computer/s/x/v/x415ea-ek302ws-laptop-asus-original-imag94tepsgcgrgk.jpeg?q=70",
@@ -9956,7 +10723,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "106",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "765"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2dmky80/computer/l/c/g/-original-imagdqdyewdfx452.jpeg?q=70",
@@ -9969,7 +10737,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "494",
-    no_of_reviews: "72"
+    no_of_reviews: "72",
+    id: "766"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -9982,7 +10751,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "767"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/3/k/m/inspiron-3525-thin-and-light-laptop-dell-original-imagjh6qw5frxv8h.jpeg?q=70",
@@ -9995,7 +10765,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "768"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
@@ -10008,7 +10779,8 @@ const laptops =
     display: "14",
     rating: "4.2",
     no_of_ratings: "34",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "769"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -10021,7 +10793,8 @@ const laptops =
     display: "16.2",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "770"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -10034,7 +10807,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "771"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kiew3gw0/computer/q/p/u/asus-original-imafy7hcewzzkvj9.jpeg?q=70",
@@ -10047,7 +10821,8 @@ const laptops =
     display: "17.3",
     rating: "4.8",
     no_of_ratings: "12",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "772"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvvad8w0/keyboard-skin/k/j/i/laptop-premium-keyboard-cover-protector-fit-with-victus-by-hp-original-imag8njdqea2ucrh.jpeg?q=70",
@@ -10060,7 +10835,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "773"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/m/w/-original-imagg5jscr4hcuqc.jpeg?q=70",
@@ -10073,7 +10849,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "29",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "774"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -10086,7 +10863,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "775"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/k/m/vostro-5625-thin-and-light-laptop-dell-original-imagkz88uc9ekuxa.jpeg?q=70",
@@ -10099,7 +10877,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "776"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/2/d/3/na-thin-and-light-laptop-dell-original-imag7cst7unghqek.jpeg?q=70",
@@ -10112,7 +10891,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "308",
-    no_of_reviews: "42"
+    no_of_reviews: "42",
+    id: "777"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr2e3680/computer/5/a/l/na-thin-and-light-laptop-asus-original-imag4yygqdqkpnpg.jpeg?q=70",
@@ -10125,7 +10905,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "209",
-    no_of_reviews: "29"
+    no_of_reviews: "29",
+    id: "778"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -10138,7 +10919,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "779"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/c/s/a/16-n0049ax-gaming-laptop-hp-original-imaghwptyggvfjjd.jpeg?q=70",
@@ -10151,7 +10933,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "780"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/f/x/f/asus-original-imafvq243ppg4hax.jpeg?q=70",
@@ -10164,7 +10947,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "781"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/computer/x/4/g/acer-aspire-notebook-original-imaeqcx3tpzq5cna.jpeg?q=70",
@@ -10177,7 +10961,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "1",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "782"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -10190,7 +10975,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "783"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kxf0jgw0/computer/j/6/v/m7600qe-l2058ts-laptop-asus-original-imag9vrmhh3t7tsy.jpeg?q=70",
@@ -10203,7 +10989,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "784"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jmkwya80/computer/b/y/h/lenovo-na-thin-and-light-laptop-original-imaf9gh6z9fhaufa.jpeg?q=70",
@@ -10216,7 +11003,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "785"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/k/w/y/na-thin-and-light-laptop-asus-original-imag5bhxcm7ygyh7.jpeg?q=70",
@@ -10229,7 +11017,8 @@ const laptops =
     display: "13.3",
     rating: "3",
     no_of_ratings: "2",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "786"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -10242,7 +11031,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "787"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j6dxaq80/computer/q/u/6/msi-na-gaming-laptop-original-imaewuvq7gmqcfa3.jpeg?q=70",
@@ -10255,7 +11045,8 @@ const laptops =
     display: "15.6",
     rating: "3.5",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "788"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/r/g/-original-imagmmnpxpeaggaa.jpeg?q=70",
@@ -10268,7 +11059,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "789"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l26hdow0/computer/d/r/a/g15-5521-se-gaming-laptop-dell-original-imagdktezaswjvsk.jpeg?q=70",
@@ -10281,7 +11073,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "35",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "790"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -10294,7 +11087,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "791"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/e/u/f/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjedtcx2vfw.jpeg?q=70",
@@ -10307,7 +11101,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "792"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jmkwya80/computer/g/a/5/lenovo-na-thin-and-light-laptop-original-imaf9gh6stqkvph3.jpeg?q=70",
@@ -10320,7 +11115,8 @@ const laptops =
     display: "13.3",
     rating: "3.3",
     no_of_ratings: "3",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "793"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/b/q/h/na-gaming-laptop-hp-original-imag5bg5uwgmhmqj.jpeg?q=70",
@@ -10333,7 +11129,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "479",
-    no_of_reviews: "57"
+    no_of_reviews: "57",
+    id: "794"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -10346,7 +11143,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "795"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/r/t/14-ek0088tu-thin-and-light-laptop-hp-original-imagh89bdga9fcys.jpeg?q=70",
@@ -10359,7 +11157,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "796"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/m/q/7/vostro-3425-thin-and-light-laptop-dell-original-imagf4mth22ydgqs.jpeg?q=70",
@@ -10372,7 +11171,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "797"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr3tj0w0/computer/j/3/s/na-notebook-msi-original-imag4z5jfc9bzwyq.jpeg?q=70",
@@ -10385,7 +11185,8 @@ const laptops =
     display: "17.3",
     rating: "4.5",
     no_of_ratings: "27",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "798"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -10398,7 +11199,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "799"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/q/2/-original-imagkqwzyzfahqac.jpeg?q=70",
@@ -10411,7 +11213,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "800"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/js0o9zk0/computer/h/g/2/hp-na-2-in-1-laptop-original-imafdzjsg9c7csh5.jpeg?q=70",
@@ -10424,7 +11227,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "801"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/x/o/15-eg2091t-thin-and-light-laptop-hp-original-imagmf9fvrzr8y4d.jpeg?q=70",
@@ -10437,7 +11241,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "802"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -10450,7 +11255,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "803"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/d/8/vivobook-pro-15-k6502hcb-gaming-laptop-asus-original-imaghhuhd9mz6sbk.jpeg?q=70",
@@ -10463,7 +11269,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "804"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kbqu4cw0/computer/t/d/f/hp-original-imaftyzafphshjge.jpeg?q=70",
@@ -10476,7 +11283,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "1147",
-    no_of_reviews: "119"
+    no_of_reviews: "119",
+    id: "805"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kubk70w0/computer/w/q/e/inspiron-3511-laptop-dell-original-imag7guhghwehqbf.jpeg?q=70",
@@ -10489,7 +11297,8 @@ const laptops =
     display: "15.6",
     rating: "3.5",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "806"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/b/q/h/na-gaming-laptop-hp-original-imag5bg5uwgmhmqj.jpeg?q=70",
@@ -10502,7 +11311,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "807"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kd69z0w0/computer/m/3/u/hp-original-imafu4xzyz5kcr6n.jpeg?q=70",
@@ -10515,7 +11325,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "808"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jraycnk0/computer/w/z/y/asus-na-thin-and-light-laptop-original-imafd3g96rxzxgkn.jpeg?q=70",
@@ -10528,7 +11339,8 @@ const laptops =
     display: "13.3",
     rating: "4.2",
     no_of_ratings: "50",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "809"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/y/w/x/gv301ra-li030ws-thin-and-light-laptop-asus-original-imagfyg7mmnyhfmz.jpeg?q=70",
@@ -10541,7 +11353,8 @@ const laptops =
     display: "13.4",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "810"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -10554,7 +11367,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "15",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "811"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/g/8/ux3402za-km732ws-laptop-asus-original-imagjsc2uxesmmbs.jpeg?q=70",
@@ -10567,7 +11381,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "812"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jfk00i80/computer/q/k/u/msi-na-gaming-laptop-original-imaf3zv7xszzuqej.jpeg?q=70",
@@ -10580,7 +11395,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "10",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "813"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kubk70w0/computer/w/q/e/inspiron-3511-laptop-dell-original-imag7guhghwehqbf.jpeg?q=70",
@@ -10593,7 +11409,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "814"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/z/2/c/-original-imagetjyhhtrtkdg.jpeg?q=70",
@@ -10606,7 +11423,8 @@ const laptops =
     display: "17.3",
     rating: "4.5",
     no_of_ratings: "1468",
-    no_of_reviews: "194"
+    no_of_reviews: "194",
+    id: "815"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kwv0djk0/computer/2/u/m/16-e0162ax-gaming-laptop-hp-original-imag9g7ytxnpfvxh.jpeg?q=70",
@@ -10619,7 +11437,8 @@ const laptops =
     display: "16.1",
     rating: "4.2",
     no_of_ratings: "9",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "816"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kd69z0w0/computer/m/3/u/hp-original-imafu4xzyz5kcr6n.jpeg?q=70",
@@ -10632,7 +11451,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "817"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks99aq80/computer/y/z/7/na-gaming-laptop-lenovo-original-imag5ve3jvhgvsnx.jpeg?q=70",
@@ -10645,7 +11465,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "15",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "818"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
@@ -10658,7 +11479,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "453",
-    no_of_reviews: "38"
+    no_of_reviews: "38",
+    id: "819"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/z/l/inspiron-3511-laptop-dell-original-imaggsc8tfurzfry.jpeg?q=70",
@@ -10671,7 +11493,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "820"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kylvr0w0/computer/x/k/c/inspiron-laptop-dell-original-imagat4jfka6hv5q.jpeg?q=70",
@@ -10684,7 +11507,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "821"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/khdqnbk0/computer/e/6/n/apple-original-imafxfyq4agsgysn.jpeg?q=70",
@@ -10697,7 +11521,8 @@ const laptops =
     display: "13.3",
     rating: "4.5",
     no_of_ratings: "481",
-    no_of_reviews: "50"
+    no_of_reviews: "50",
+    id: "822"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -10710,7 +11535,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "823"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/b/j/-original-imagjfgy6ghyqssh.jpeg?q=70",
@@ -10723,7 +11549,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "26",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "824"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kulk9zk0/computer/f/t/w/15-ec2075ax-gaming-laptop-hp-original-imag7nyzhxqc7xhh.jpeg?q=70",
@@ -10736,7 +11563,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "825"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/5/i/3/ga402rjz-l4135ws-thin-and-light-laptop-asus-original-imagmm76favtvwjx.jpeg?q=70",
@@ -10749,7 +11577,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "826"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -10762,7 +11591,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "4658",
-    no_of_reviews: "449"
+    no_of_reviews: "449",
+    id: "827"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kz4gh3k0/computer/n/e/x/fx506lh-hn258ws-gaming-laptop-asus-original-imagb7hfzhmv6v9y.jpeg?q=70",
@@ -10775,7 +11605,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "5145",
-    no_of_reviews: "564"
+    no_of_reviews: "564",
+    id: "828"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzvlua80/computer/e/y/f/vostro-3510-thin-and-light-laptop-dell-original-imagbsn5hgcnmxqs.jpeg?q=70",
@@ -10788,7 +11619,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "829"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l45xea80/computer/e/x/b/-original-imagf4ghfjtdpb3z.jpeg?q=70",
@@ -10801,7 +11633,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "45",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "830"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
@@ -10814,7 +11647,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "280",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "831"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/j/g/15s-eq1561au-thin-and-light-laptop-hp-original-imaggsgrjfzpawqa.jpeg?q=70",
@@ -10827,7 +11661,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "36",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "832"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k9he0sw0/computer/m/h/d/microsoft-original-imafr9qyecvfeyta.jpeg?q=70",
@@ -10840,7 +11675,8 @@ const laptops =
     display: "15",
     rating: "3.8",
     no_of_ratings: "9",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "833"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l58iaa80/computer/n/d/u/ga503rm-hq030ws-gaming-laptop-asus-original-imagfyjexnzcas5v.jpeg?q=70",
@@ -10853,7 +11689,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "834"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/a/c/3/-original-imagg56h9gat842s.jpeg?q=70",
@@ -10866,7 +11703,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "247",
-    no_of_reviews: "21"
+    no_of_reviews: "21",
+    id: "835"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3bx5e80/computer/c/e/s/e410ka-bv101ws-laptop-asus-original-imagegwmyhapshks.jpeg?q=70",
@@ -10879,7 +11717,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "836"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/k/0/c/g5-ke-52in213sh-gaming-laptop-gigabyte-original-imagk2b6meaukhkh.jpeg?q=70",
@@ -10892,7 +11731,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "837"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4oi4cw0/computer/l/t/q/16-e1062ax-gaming-laptop-hp-original-imagfgqgzbrzchfq.jpeg?q=70",
@@ -10905,7 +11745,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "838"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/2/3/5/-original-imagg5hhjunrv4e4.jpeg?q=70",
@@ -10918,7 +11759,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "1603",
-    no_of_reviews: "184"
+    no_of_reviews: "184",
+    id: "839"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ke353m80/computer/p/q/m/msi-original-imafuurxjxzy4zcn.jpeg?q=70",
@@ -10931,7 +11773,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "1197",
-    no_of_reviews: "151"
+    no_of_reviews: "151",
+    id: "840"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/z/l/inspiron-3511-laptop-dell-original-imaggsc8tfurzfry.jpeg?q=70",
@@ -10944,7 +11787,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "841"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l2jcccw0/computer/q/t/6/-original-imagdv4ykwrjxbmh.jpeg?q=70",
@@ -10957,7 +11801,8 @@ const laptops =
     display: "11.6",
     rating: "4",
     no_of_ratings: "1853",
-    no_of_reviews: "287"
+    no_of_reviews: "287",
+    id: "842"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -10970,7 +11815,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "843"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0fm07k0/computer/d/5/t/k513ea-l303ws-laptop-asus-original-imagc88bh6wbzntn.jpeg?q=70",
@@ -10983,7 +11829,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "844"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/u/z/-original-imagmxurgcshfkx7.jpeg?q=70",
@@ -10996,7 +11843,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "845"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1mh7rk0/computer/u/r/m/an515-58-gaming-laptop-acer-original-imagd5zzqqpngwmz.jpeg?q=70",
@@ -11009,7 +11857,8 @@ const laptops =
     display: "15.6",
     rating: "3.5",
     no_of_ratings: "4",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "846"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -11022,7 +11871,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "847"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/k/a/vos-5620-laptop-dell-original-imaggh4kf8v4nv6x.jpeg?q=70",
@@ -11035,7 +11885,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "848"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krjjde80/computer/5/k/z/na-gaming-laptop-lenovo-original-imag5bg5egrw92gp.jpeg?q=70",
@@ -11048,7 +11899,8 @@ const laptops =
     display: "16",
     rating: "4.6",
     no_of_ratings: "49",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "849"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/a/z/lg-gram-14z90q-g-aj56a2-thin-and-light-laptop-lg-gram-original-imagh89bshvjdpag.jpeg?q=70",
@@ -11061,7 +11913,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "850"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -11074,7 +11927,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "851"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf4ajrk0/computer/q/8/5/dell-na-gaming-laptop-original-imafvn3yewuackzs.jpeg?q=70",
@@ -11087,7 +11941,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "22",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "852"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/u/k/w/-original-imaggqgcggpau2zr.jpeg?q=70",
@@ -11100,7 +11955,8 @@ const laptops =
     display: "11.6",
     rating: "3.6",
     no_of_ratings: "153",
-    no_of_reviews: "22"
+    no_of_reviews: "22",
+    id: "853"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k3xcdjk0pkrrdj/computer/d/4/4/dell-na-laptop-original-imafkcr9faptf52d.jpeg?q=70",
@@ -11113,7 +11969,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "1371",
-    no_of_reviews: "177"
+    no_of_reviews: "177",
+    id: "854"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/c/e/n/-original-imagbn2bakfzk3qx.jpeg?q=70",
@@ -11126,7 +11983,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "855"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/2/o/q/-original-imagetjfvgfsm24g.jpeg?q=70",
@@ -11139,7 +11997,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "9",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "856"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/computer/r/q/1/f571lh-bq436t-gaming-laptop-asus-original-imag7bhetvcb3fky.jpeg?q=70",
@@ -11152,7 +12011,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "76",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "857"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/c/4/-original-imagmxurypdzh2zb.jpeg?q=70",
@@ -11165,7 +12025,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "858"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/0/o/z/vivobook-s-14-flip-2-in-1-gaming-laptop-asus-original-imagmbp5b8rfr2za.jpeg?q=70",
@@ -11178,7 +12039,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "859"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
@@ -11191,7 +12053,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "293",
-    no_of_reviews: "39"
+    no_of_reviews: "39",
+    id: "860"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kn7sdjk0/computer/l/4/y/na-notebook-dell-original-imagfy6adtf9apuh.jpeg?q=70",
@@ -11204,7 +12067,8 @@ const laptops =
     display: "35",
     rating: "4.2",
     no_of_ratings: "33",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "861"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l4pxk7k0/computer/5/n/x/inspiron-3515-laptop-dell-original-imagfk5zttagc8jg.jpeg?q=70",
@@ -11217,7 +12081,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "862"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/c/7/13iap7-thin-and-light-laptop-lenovo-original-imagh4yp5ztbq39w.jpeg?q=70",
@@ -11230,7 +12095,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "863"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/s/r/15iml05-thin-and-light-laptop-lenovo-original-imaghnzgqgrguusr.jpeg?q=70",
@@ -11243,7 +12109,8 @@ const laptops =
     display: "15.6",
     rating: "3.6",
     no_of_ratings: "22",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "864"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krf91u80/computer/v/n/z/aspire-5-thin-and-light-laptop-acer-original-imag57xyz4zxngmv.jpeg?q=70",
@@ -11256,7 +12123,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "566",
-    no_of_reviews: "61"
+    no_of_reviews: "61",
+    id: "865"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/t/e/hp-250-g8-notebook-hp-original-imaggy7xh7jnch35.jpeg?q=70",
@@ -11269,7 +12137,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "52",
-    no_of_reviews: "8"
+    no_of_reviews: "8",
+    id: "866"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -11282,7 +12151,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "867"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvba7bk0/computer/b/g/m/ga401ihr-hz070ts-gaming-laptop-asus-original-imag88s2xhgmuuzk.jpeg?q=70",
@@ -11295,7 +12165,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "868"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqb8pzk0/computer/d/j/c/na-2-in-1-laptop-dell-original-imag4dy68bwtg8j9.jpeg?q=70",
@@ -11308,7 +12179,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "28",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "869"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kfpq5jk0/computer/6/9/h/msi-na-gaming-laptop-original-imafw3yquyytnmx7.jpeg?q=70",
@@ -11321,7 +12193,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "870"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -11334,7 +12207,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "871"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0cr4i80/computer/i/h/d/e210ma-thin-and-light-laptop-asus-original-imagc5nj6sekuuhx.jpeg?q=70",
@@ -11347,7 +12221,8 @@ const laptops =
     display: "11.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "872"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/i/m/15ihu6-gaming-laptop-lenovo-original-imagkwgwgbxysnr2.jpeg?q=70",
@@ -11360,7 +12235,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "8",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "873"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/s/x/v15-itl-gen-2-laptop-lenovo-original-imagmzh7qw3nudse.jpeg?q=70",
@@ -11373,7 +12249,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "874"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -11386,7 +12263,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "875"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j5723680/computer/c/n/f/dell-inspiron-notebook-original-imaevxzffrrwacbw.jpeg?q=70",
@@ -11399,7 +12277,8 @@ const laptops =
     display: "15.6",
     rating: "1.6",
     no_of_ratings: "23",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "876"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l3uhvgw0/computer/l/s/p/inspiron-7420-2-in-1-laptop-dell-original-imagevrdyqnznyfb.jpeg?q=70",
@@ -11412,7 +12291,8 @@ const laptops =
     display: "14",
     rating: "4.8",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "877"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k391w280/computer/x/a/h/asus-na-original-imafmewrxvc7ygmb.jpeg?q=70",
@@ -11425,7 +12305,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "2298",
-    no_of_reviews: "307"
+    no_of_reviews: "307",
+    id: "878"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kkoc70w0/computer/n/v/b/probook-430-g8-notebook-pc-business-laptop-hp-original-imafzyry26deagdp.jpeg?q=70",
@@ -11438,7 +12319,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "879"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/x/v/fa706ic-hx036w-gaming-laptop-asus-original-imagjfhuvwdnecef.jpeg?q=70",
@@ -11451,7 +12333,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "880"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/d/s/h/na-thin-and-light-laptop-lenovo-original-imag3dz5ut6ds7eg.jpeg?q=70",
@@ -11464,7 +12347,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "116",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "881"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/i/m/gv601rm-m5039ws-2-in-1-gaming-laptop-asus-original-imaggvdunhtwfxkh.jpeg?q=70",
@@ -11477,7 +12361,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "882"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l1fc0i80/computer/9/5/r/inspiron-3525-thin-and-light-laptop-dell-original-imagczzfezyd7tqs.jpeg?q=70",
@@ -11490,7 +12375,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "883"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ko7idu80/computer/x/l/i/gf63-thin-10scxr-1616in-notebook-msi-original-imag2q55h6w2avfr.jpeg?q=70",
@@ -11503,7 +12389,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "1235",
-    no_of_reviews: "159"
+    no_of_reviews: "159",
+    id: "884"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/o/8/inspiron-3520-thin-and-light-laptop-dell-original-imagmhfbsvrfkpma.jpeg?q=70",
@@ -11516,7 +12403,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "885"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/8/e/j/-original-imagckcffymgykfd.jpeg?q=70",
@@ -11529,7 +12417,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "17",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "886"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krxtrww0/computer/e/l/c/redmibook-15-e-learning-edition-thin-and-light-laptop-redmi-original-imag5m8jkjbaybeu.jpeg?q=70",
@@ -11542,7 +12431,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "4443",
-    no_of_reviews: "518"
+    no_of_reviews: "518",
+    id: "887"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/0/c/victus-gaming-15-laptop-hp-original-imaggrgv4kkmpedf.jpeg?q=70",
@@ -11555,7 +12445,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "888"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jy7kyvk0/computer/z/7/7/lenovo-na-laptop-original-imafghtqfzhbaszn.jpeg?q=70",
@@ -11568,7 +12459,8 @@ const laptops =
     display: "15.6",
     rating: "3.3",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "889"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/s/7/y/thinkpad-p43s-thin-and-light-laptop-lenovo-original-imagau8rwey9zabh.jpeg?q=70",
@@ -11581,7 +12473,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "890"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -11594,7 +12487,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "891"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k8ro3gw0/computer/z/p/q/hp-na-original-imafqpnf5tthbuvh.jpeg?q=70",
@@ -11607,7 +12501,8 @@ const laptops =
     display: "13.3",
     rating: "3.3",
     no_of_ratings: "3",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "892"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/y/9/l/-original-imaghzahumgmsmj5.jpeg?q=70",
@@ -11620,7 +12515,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "187",
-    no_of_reviews: "16"
+    no_of_reviews: "16",
+    id: "893"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kkimfm80/computer/q/g/o/na-2-in-1-laptop-lenovo-original-imafzua4zhhpyyz8.jpeg?q=70",
@@ -11633,7 +12529,8 @@ const laptops =
     display: "14",
     rating: "4.7",
     no_of_ratings: "86",
-    no_of_reviews: "14"
+    no_of_reviews: "14",
+    id: "894"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -11646,7 +12543,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "895"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/i/8/a314-35-thin-and-light-laptop-acer-original-imagg462zhhzd62a.jpeg?q=70",
@@ -11659,7 +12557,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "896"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/c/0/ga503rm-hq057ws-gaming-laptop-asus-original-imagghnawsf7mvec.jpeg?q=70",
@@ -11672,7 +12571,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "897"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j66s3gw0/computer/y/g/n/dell-gaming-laptop-original-imaewphfgashevp5.jpeg?q=70",
@@ -11685,7 +12585,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "295",
-    no_of_reviews: "71"
+    no_of_reviews: "71",
+    id: "898"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -11698,7 +12599,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "899"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/computer/t/2/s/lenovo-b50-70-notebook-original-imadxweeqmwvmnwy.jpeg?q=70",
@@ -11711,7 +12613,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "78",
-    no_of_reviews: "17"
+    no_of_reviews: "17",
+    id: "900"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70",
@@ -11724,7 +12627,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "901"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/z/s/h/lg-gram-17z90q-g-aj56a2-lg-gram-17z90q-g-aj56a2-thin-and-light-original-imagh89bb46w757z.jpeg?q=70",
@@ -11737,7 +12641,8 @@ const laptops =
     display: "17",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "902"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzn17680/computer/1/i/z/-original-imagbhzqahdzyx4e.jpeg?q=70",
@@ -11750,7 +12655,8 @@ const laptops =
     display: "16.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "903"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kb1470w0/computer/z/5/f/msi-na-gaming-laptop-original-imafsh7ahbgkmvtm.jpeg?q=70",
@@ -11763,7 +12669,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "1667",
-    no_of_reviews: "232"
+    no_of_reviews: "232",
+    id: "904"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/f/c/y/inspiron-3511-thin-and-light-laptop-dell-original-imagjh6h55w6r98g.jpeg?q=70",
@@ -11776,7 +12683,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "905"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l572ufk0/computer/u/d/s/ga503rm-hq142ws-gaming-laptop-asus-original-imagfxjrtmpgfyhs.jpeg?q=70",
@@ -11789,7 +12697,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "906"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kjvrdzk0/computer/e/p/v/vaio-original-imafzcs5y9dmghmq.jpeg?q=70",
@@ -11802,7 +12711,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "84",
-    no_of_reviews: "13"
+    no_of_reviews: "13",
+    id: "907"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/o/o/k/extensa-notebook-acer-original-imagjykx7ghxmaw5.jpeg?q=70",
@@ -11815,7 +12725,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "12",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "908"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/w/j/ultimus-laptop-ultimus-original-imagkzbvv9fxgt8g.jpeg?q=70",
@@ -11828,7 +12739,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "909"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/klzhq4w0/computer/s/k/x/na-thin-and-light-laptop-msi-original-imagyzpcazfbmhjp.jpeg?q=70",
@@ -11841,7 +12753,8 @@ const laptops =
     display: "14",
     rating: "4.6",
     no_of_ratings: "21",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "910"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l111lzk0/computer/x/n/s/15-eh2024au-thin-and-light-laptop-hp-original-imagcztggrjh7zb2.jpeg?q=70",
@@ -11854,7 +12767,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "70",
-    no_of_reviews: "7"
+    no_of_reviews: "7",
+    id: "911"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kqgyhe80/computer/d/l/f/g15-5510-notebook-dell-original-imag4gy96ahhtmvz.jpeg?q=70",
@@ -11867,7 +12781,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "38",
-    no_of_reviews: "6"
+    no_of_reviews: "6",
+    id: "912"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ks4yz680/computer/q/5/z/x409fa-ek617t-thin-and-light-laptop-asus-original-imag5rwhrgjtgkyq.jpeg?q=70",
@@ -11880,7 +12795,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "21",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "913"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jwkzwy80/computer/f/h/e/acer-na-laptop-original-imafh8bvbwyevtrs.jpeg?q=70",
@@ -11893,7 +12809,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "121",
-    no_of_reviews: "27"
+    no_of_reviews: "27",
+    id: "914"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -11906,7 +12823,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "915"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kirr24w0/computer/f/q/k/dell-na-laptop-original-imafyhm5burt5ufe.jpeg?q=70",
@@ -11919,7 +12837,8 @@ const laptops =
     display: "14.96",
     rating: "4.3",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "916"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/l/k/a/vos-5620-laptop-dell-original-imaggh4kf8v4nv6x.jpeg?q=70",
@@ -11932,7 +12851,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "917"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l26hdow0/computer/d/r/a/g15-5521-se-gaming-laptop-dell-original-imagdktezaswjvsk.jpeg?q=70",
@@ -11945,7 +12865,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "11",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "918"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -11958,7 +12879,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "919"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvifekw0/computer/r/0/y/thinkpad-t14-business-laptop-lenovo-original-imag8eb8gpzve5eu.jpeg?q=70",
@@ -11971,7 +12893,8 @@ const laptops =
     display: "12",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "920"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kz4gh3k0/computer/n/e/x/fx506lh-hn258ws-gaming-laptop-asus-original-imagb7hfzhmv6v9y.jpeg?q=70",
@@ -11984,7 +12907,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "5145",
-    no_of_reviews: "564"
+    no_of_reviews: "564",
+    id: "921"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kzogn0w0/computer/j/u/m/14a-ca0504tu-thin-and-light-laptop-hp-original-imagbmt6dsjhwwhz.jpeg?q=70",
@@ -11997,7 +12921,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "26",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "922"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -12010,7 +12935,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "923"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/6/z/d/thinkpad-p53-thin-and-light-laptop-lenovo-original-imagau8rhrypghza.jpeg?q=70",
@@ -12023,7 +12949,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "924"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l51d30w0/computer/s/g/x/a515-57g-gaming-laptop-acer-original-imagft36qhxsm89g.jpeg?q=70",
@@ -12036,7 +12963,8 @@ const laptops =
     display: "15.6",
     rating: "4.8",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "925"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ke0a7ww0/computer/9/u/k/hp-250-g7-business-laptop-original-imafuskbuzwyx4mg.jpeg?q=70",
@@ -12049,7 +12977,8 @@ const laptops =
     display: "15.6",
     rating: "3.9",
     no_of_ratings: "47",
-    no_of_reviews: "4"
+    no_of_reviews: "4",
+    id: "926"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp78e4w0/computer/t/b/x/x415ea-ek302ts-thin-and-light-laptop-asus-original-imag3hhfzexvehff.jpeg?q=70",
@@ -12062,7 +12991,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "79",
-    no_of_reviews: "10"
+    no_of_reviews: "10",
+    id: "927"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kplisnk0/computer/v/c/f/thinkpad-t14-thin-and-light-laptop-lenovo-original-imag3sydvdwtz7zu.jpeg?q=70",
@@ -12075,7 +13005,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "928"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kvvad8w0/computer/h/m/m/-original-imag8z6sn8ujzqaa.jpeg?q=70",
@@ -12088,7 +13019,8 @@ const laptops =
     display: "11.6",
     rating: "3.9",
     no_of_ratings: "199",
-    no_of_reviews: "20"
+    no_of_reviews: "20",
+    id: "929"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5fnhjk0/computer/c/p/c/14s-fy1005au-thin-and-light-laptop-hp-original-imagg4dgtu77mzye.jpeg?q=70",
@@ -12101,7 +13033,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "4",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "930"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/jzu60sw0/computer/z/v/d/lenovo-na-thin-and-light-laptop-original-imafjrbd3k9fhh9a.jpeg?q=70",
@@ -12114,7 +13047,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "21",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "931"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kylvr0w0/computer/x/k/c/inspiron-laptop-dell-original-imagat4jfka6hv5q.jpeg?q=70",
@@ -12127,7 +13061,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "932"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/n/7/255-g8-r3-laptop-hp-original-imaggwpywbhnywt7.jpeg?q=70",
@@ -12140,7 +13075,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "933"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k7531jk0/computer/e/a/h/hp-original-imafpfs893zu5mhb.jpeg?q=70",
@@ -12153,7 +13089,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "274",
-    no_of_reviews: "42"
+    no_of_reviews: "42",
+    id: "934"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kv6zvrk0/computer/5/n/1/14-ec0033au-thin-and-light-laptop-hp-original-imag85htpbzcnsj5.jpeg?q=70",
@@ -12166,7 +13103,8 @@ const laptops =
     display: "14",
     rating: "4.1",
     no_of_ratings: "27",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "935"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/j/a/legion-5-pro-gaming-laptop-lenovo-original-imagmy78qccgetne.jpeg?q=70",
@@ -12179,7 +13117,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "936"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/c/4/-original-imagmxurypdzh2zb.jpeg?q=70",
@@ -12192,7 +13131,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "937"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/j8j32q80/computer/p/u/g/acer-na-laptop-original-imaeygxsxvayw4dv.jpeg?q=70",
@@ -12205,7 +13145,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "163",
-    no_of_reviews: "58"
+    no_of_reviews: "58",
+    id: "938"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -12218,7 +13159,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "939"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kpsnzww0/computer/h/r/l/dell-gaming-g5-5500-gaming-laptop-dell-original-imag3y4wycuk4tnn.jpeg?q=70",
@@ -12231,7 +13173,8 @@ const laptops =
     display: "15.6",
     rating: "4.2",
     no_of_ratings: "6",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "940"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/p/m/y/asus-original-imafvq2qyjm7humq.jpeg?q=70",
@@ -12244,7 +13187,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "941"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/koudfgw0/computer/e/s/a/fx516pm-hn157ts-gaming-laptop-asus-original-imag36uupjf9pwyr.jpeg?q=70",
@@ -12257,7 +13201,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "942"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -12270,7 +13215,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "943"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/f/x/f/asus-original-imafvq243ppg4hax.jpeg?q=70",
@@ -12283,7 +13229,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "944"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/3/k/m/asus-original-imafvq36ufg5v9mx.jpeg?q=70",
@@ -12296,7 +13243,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "945"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kplisnk0/computer/s/o/b/thinkpad-x13-thin-and-light-laptop-lenovo-original-imag3sy9rz4ffhhg.jpeg?q=70",
@@ -12309,7 +13257,8 @@ const laptops =
     display: "13.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "946"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -12322,7 +13271,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "947"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k8ro3gw0/computer/z/p/q/hp-na-original-imafqpnf5tthbuvh.jpeg?q=70",
@@ -12335,7 +13285,8 @@ const laptops =
     display: "13.3",
     rating: "5",
     no_of_ratings: "2",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "948"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/a/l/e/thinkpad-x1-carbon-thin-and-light-laptop-lenovo-original-imagau8thr96hukh.jpeg?q=70",
@@ -12348,7 +13299,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "949"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kcc9q4w0/computer/h/t/g/acer-na-gaming-laptop-original-imafthr8aa4rsjpn.jpeg?q=70",
@@ -12361,7 +13313,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "2952",
-    no_of_reviews: "364"
+    no_of_reviews: "364",
+    id: "950"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/u/z/-original-imagmxurgcshfkx7.jpeg?q=70",
@@ -12374,7 +13327,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "951"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k7531jk0/computer/e/a/h/hp-original-imafpfs893zu5mhb.jpeg?q=70",
@@ -12387,7 +13341,8 @@ const laptops =
     display: "15.6",
     rating: "4.3",
     no_of_ratings: "569",
-    no_of_reviews: "53"
+    no_of_reviews: "53",
+    id: "952"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kar44280/computer/r/z/k/asus-na-thin-and-light-laptop-original-imafs92vgxyadhpr.jpeg?q=70",
@@ -12400,7 +13355,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "994",
-    no_of_reviews: "172"
+    no_of_reviews: "172",
+    id: "953"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf8kvbk0/computer/p/m/y/asus-original-imafvq2qyjm7humq.jpeg?q=70",
@@ -12413,7 +13369,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "954"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
@@ -12426,7 +13383,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "955"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/k3xcdjk0pkrrdj/computer/d/t/b/acer-na-thin-and-light-laptop-original-imafn2vgzdtykznz.jpeg?q=70",
@@ -12439,7 +13397,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "15",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "956"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l08gsy80/computer/r/j/h/g513rc-hn062w-gaming-laptop-asus-original-imagc2hkehpcytxe.jpeg?q=70",
@@ -12452,7 +13411,8 @@ const laptops =
     display: "15.6",
     rating: "3.7",
     no_of_ratings: "6",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "957"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/n/i/m1603qa-mb712ws-notebook-asus-original-imagghmes5azfudv.jpeg?q=70",
@@ -12465,7 +13425,8 @@ const laptops =
     display: "16",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "958"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/o/b/modern-14-b5m-notebook-msi-original-imaggmfqjsdatppv.jpeg?q=70",
@@ -12478,7 +13439,8 @@ const laptops =
     display: "14",
     rating: "4.4",
     no_of_ratings: "3189",
-    no_of_reviews: "430"
+    no_of_reviews: "430",
+    id: "959"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/t/o/u/fa506icb-hn075w-gaming-laptop-asus-original-imaggtmvgjhypzsb.jpeg?q=70",
@@ -12491,7 +13453,8 @@ const laptops =
     display: "15.6",
     rating: "4.7",
     no_of_ratings: "3",
-    no_of_reviews: "0"
+    no_of_reviews: "0",
+    id: "960"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kyvvtzk0/computer/x/i/v/-original-imagbygzjwthsan3.jpeg?q=70",
@@ -12504,7 +13467,8 @@ const laptops =
     display: "15.6",
     rating: "4.1",
     no_of_ratings: "41",
-    no_of_reviews: "2"
+    no_of_reviews: "2",
+    id: "961"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ktyp8cw0/computer/h/a/s/na-thin-and-light-laptop-nokia-original-imag77fgvdj4fv8e.jpeg?q=70",
@@ -12517,7 +13481,8 @@ const laptops =
     display: "14",
     rating: "4",
     no_of_ratings: "94",
-    no_of_reviews: "20"
+    no_of_reviews: "20",
+    id: "962"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",
@@ -12530,7 +13495,8 @@ const laptops =
     display: "15.6",
     rating: "4.5",
     no_of_ratings: "14",
-    no_of_reviews: "1"
+    no_of_reviews: "1",
+    id: "963"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/p/y/u/ultimus-s151-laptop-ultimus-original-imagkvzrbhtqstgf.jpeg?q=70",
@@ -12543,7 +13509,8 @@ const laptops =
     display: "14.1",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "964"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ksyz8280/computer/8/v/i/cb-11igl05-thin-and-light-laptop-lenovo-original-imag6fh8sqpuk3ts.jpeg?q=70",
@@ -12556,7 +13523,8 @@ const laptops =
     display: "11.6",
     rating: "3.5",
     no_of_ratings: "1386",
-    no_of_reviews: "164"
+    no_of_reviews: "164",
+    id: "965"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/i/y/w/raider-ge67-hx-12ugs-gaming-laptop-msi-original-imagha2ct4ta3mws.jpeg?q=70",
@@ -12569,7 +13537,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "966"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -12582,7 +13551,8 @@ const laptops =
     display: "15.6",
     rating: "4.4",
     no_of_ratings: "53",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "967"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/s/14-ek0092tu-thin-and-light-laptop-hp-original-imaghubrzsyhm6wf.jpeg?q=70",
@@ -12595,7 +13565,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "968"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/o/e/er1501au-laptop-hp-original-imagk3gktwtrz9kt.jpeg?q=70",
@@ -12608,7 +13579,8 @@ const laptops =
     display: "15.6",
     rating: "3.8",
     no_of_ratings: "40",
-    no_of_reviews: "3"
+    no_of_reviews: "3",
+    id: "969"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kmccosw0/computer/2/r/e/e15-amd-thin-and-light-laptop-vaio-original-imagf9eapgpdwujs.jpeg?q=70",
@@ -12621,7 +13593,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "706",
-    no_of_reviews: "142"
+    no_of_reviews: "142",
+    id: "970"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/j/s/vostro-3425-thin-and-light-laptop-dell-original-imagjhbg6gyyc5j8.jpeg?q=70",
@@ -12634,7 +13607,8 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "971"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/w/p/3/15-ew0043tu-thin-and-light-laptop-hp-original-imaghrgttxtdcnfy.jpeg?q=70",
@@ -12647,7 +13621,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "972"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/n/u/t/-original-imagg2ckbhxm5ksm.jpeg?q=70",
@@ -12660,7 +13635,8 @@ const laptops =
     display: "15.6",
     rating: "3.6",
     no_of_ratings: "57",
-    no_of_reviews: "11"
+    no_of_reviews: "11",
+    id: "973"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kf4ajrk0/computer/j/t/d/avita-original-imafvng2b4qahht9.jpeg?q=70",
@@ -12673,7 +13649,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "318",
-    no_of_reviews: "59"
+    no_of_reviews: "59",
+    id: "974"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/r/j/m/vector-gp76-12ugso-gaming-laptop-msi-original-imaghbhzzy7gbtsa.jpeg?q=70",
@@ -12686,7 +13663,8 @@ const laptops =
     display: "17.3",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "975"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/l44hyfk0/computer/b/d/y/-original-imagf39qmdjgesc9.jpeg?q=70",
@@ -12699,7 +13677,8 @@ const laptops =
     display: "14",
     rating: "3.7",
     no_of_ratings: "114",
-    no_of_reviews: "27"
+    no_of_reviews: "27",
+    id: "976"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/2/j/inspiron-3511-thin-and-light-laptop-dell-original-imagkz7sd9hzu8yg.jpeg?q=70",
@@ -12712,7 +13691,8 @@ const laptops =
     display: "15.6",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
+    no_of_reviews: "",
+    id: "977"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr2e3680/computer/5/a/l/na-thin-and-light-laptop-asus-original-imag4yygqdqkpnpg.jpeg?q=70",
@@ -12725,7 +13705,8 @@ const laptops =
     display: "14",
     rating: "3.8",
     no_of_ratings: "1135",
-    no_of_reviews: "167"
+    no_of_reviews: "167",
+    id: "978"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/y/0/c/na-thin-and-light-laptop-asus-original-imag3ebnzawky4kn.jpeg?q=70",
@@ -12738,7 +13719,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "1907",
-    no_of_reviews: "227"
+    no_of_reviews: "227",
+    id: "979"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kr3tj0w0/computer/t/q/m/na-chromebook-hp-original-imag4yuphzuyfyc4.jpeg?q=70",
@@ -12751,7 +13733,8 @@ const laptops =
     display: "11.6",
     rating: "3.8",
     no_of_ratings: "5991",
-    no_of_reviews: "687"
+    no_of_reviews: "687",
+    id: "980"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/6/x/f/vivobook-pro-laptop-asus-original-imaggur3mgfbjmnf.jpeg?q=70",
@@ -12764,7 +13747,8 @@ const laptops =
     display: "14",
     rating: "4.5",
     no_of_ratings: "22",
-    no_of_reviews: "5"
+    no_of_reviews: "5",
+    id: "981"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/ku5ufm80/computer/o/3/o/inspiron-3511-thin-and-light-laptop-dell-original-imag7csrvdhnsbdf.jpeg?q=70",
@@ -12777,7 +13761,8 @@ const laptops =
     display: "15.6",
     rating: "4",
     no_of_ratings: "801",
-    no_of_reviews: "104"
+    no_of_reviews: "104",
+    id: "982"
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/c/o/e410ka-bv003w-laptop-asus-original-imagkqeghyh8hspz.jpeg?q=70",
@@ -12790,7 +13775,277 @@ const laptops =
     display: "14",
     rating: "",
     no_of_ratings: "",
-    no_of_reviews: ""
-  }
-] 
+    no_of_reviews: "",
+    id: "983"
+  },
+]
+
+
+
+// const availability = [
+//   "Include Out of Stock"
+// ];
+
+
+// const brands = [
+//   "HP",
+//   "Asus",
+//   "Lenevo",
+//   "Dell",
+//   "MSI",
+//   "Apple",
+//   "Samsung",
+//   "Zebronics",
+//   "Microsoft",
+//   "Honor",
+//   "Acer",
+//   "Primebook"
+// ];
+
+
+// const customerRatings = [
+//         "4",
+//         "3",
+//         "2",
+//         "1"
+//     ];
+
+
+
+//   const dedicatedGraphicsMemory = [
+//       "4 GB",
+//       "Integrated Graphics Card",
+//       "6 GB",
+//       "2 GB",
+//       "8 GB",
+//       "512 MB",
+//       "16 GB",
+//       "12 GB"
+//   ];
+
+//   const discounts = [
+//     "50% or more",
+//     "40% or more",
+//     "30% or more",
+//     "20% or more",
+//     "10% or more"
+// ];
+
+
+// const features = [
+//   "Backlit Keyboard",
+//   "Full HD Display",
+//   "MS Office",
+//   "No Optical Disk Drive"
+// ];
+
+// const graphicsMemoryTypes = [
+//   "GDDR3",
+//   "GDDR5X",
+//   "LPDDR5",
+//   "DDR5",
+//   "GDDR5",
+//   "DDR4",
+//   "GDDR6"
+// ];
+
+// const graphicsProcessorName = [
+//   "Intel Integrated",
+//   "AMD Radeon",
+//   "NVIDIA GeForce RTX",
+//   "AMD Radeon RDNA 3",
+//   "Arc A370M",
+//   "MediaTek Integrated",
+//   "NVIDIA Quadro",
+//   "NVIDIA GeForce",
+//   "NVIDIA GeForce GTX"
+// ];
+
+// const graphics = [
+//   "Iris Xe Graphics",
+//   "3050",
+//   "1650",
+//   "4050",
+//   "Radeon",
+//   "Intel UHD",
+//   "RTX 2050",
+//   "Iris Plus 655",
+//   "GTX-1650",
+//   "4GB RTX 3050",
+//   "2070 Max-Q",
+//   "2GB MX330"
+// ];
+
+// const gst = [
+//   "GST Invoice Available"
+// ];
+
+// const hardDiskCapacity = [
+//   "1 TB",
+//   "2 TB",
+//   "256 GB",
+//   "512 GB"
+// ];
+
+// const lifestyle = [
+//   "Processing & Multitasking",
+//   "Gaming",
+//   "Travel & Business",
+//   "Everday Use",
+//   "Learning",
+//   "Entertainment",
+//   "Performance"
+// ];
+
+// const offers = [
+//   "No Cost EMI",
+//   "Special Price"
+// ];
+// const operatingSystems = [
+//   "Windows 10",
+//   "Mac OS",
+//   "DOS",
+//   "Prime OS",
+//   "Android",
+//   "Linux/Ubuntu",
+//   "Chrome",
+//   "Windows 11 Home",
+//   "Windows 11"
+// ];
+
+// const prices = [
+//   "All",
+//   "Below 20,000",
+//   "Above 20,000 & Below 30,000",
+//   "Above 30,000 & Below 40,000",
+//   "Above 40,000 & Below 50,000",
+//   "Above 50,000 & Below 60,000",
+//   "Above 60,000 & Below 70,000",
+//   "Above 70,000 & Below 80,000",
+//   "Above 80,000"
+// ];
+// const processors = [
+//   "Core i3",
+//   "Core i5",
+//   "Core i7",
+//   "Core i9",
+//   "Ryzen 3",
+//   "Ryzen 5",
+//   "Ryzen 7",
+//   "Ryzen 9",
+// ];
+// const processorbrands = [
+//   "AMD",
+//   "Intel",
+//   "MediaTek",
+//   "Apple"
+// ];
+// const processorsGenerations = [
+//   "10th Gen",
+//   "11th Gen",
+//   "12th Gen",
+//   "13th Gen",
+//   "3rd Gen",
+//   "4th Gen",
+//   "5th Gen",
+//   "6th Gen",
+//   "7th Gen",
+//   "8th Gen",
+//   "9th Gen",
+// ];
+// const rams = [
+//   "4 GB",
+//   "8 GB",
+//   "16 GB",
+//   "32 GB",
+//   "12 GB",
+//   "2 GB",
+//   "36 GB",
+//   "64 GB",
+//   "18 GB"
+// ];
+
+// const ramtype = [
+//   "DDR4",
+//   "DDR",
+//   "DDR4X",
+//   "LPDDR5X",
+//   "LPDDR4",
+//   "DDR3",
+//   "LPDDR4",
+//   "Unified Memory",
+//   "LPDDR4X",
+//   "LPDDR5",
+//   "DDR5"
+// ];
+// const screenSizes = [
+//   "Below 12 inch",
+//   "12 inch - 12.9 inch",
+//   "13 inch - 13.9 inch",
+//   "14 inch - 14.9 inch",
+//   "15 inch - 15.9 inch",
+//   "16 inch - 17.9 inch",
+//   "18 inch - 20 inch",
+//   "Above 20 inch"
+// ];
+// const ssds = [
+//   "512 GB",
+//   "256 GB",
+//   "1 TB",
+//   "4 TB",
+//   "64 GB",
+//   "8 GB",
+//   "128 GB",
+//   "2 TB"
+// ];
+
+// const storagetypes = [
+//   "SSD",
+//   "eMMC",
+//   "HDD"
+// ];
+// const touchscreen = [
+//   "Yes",
+//   "No"
+// ];
+// const types = [
+//   "Gaming Laptop",
+//   "thin and Light Laptop",
+//   "2 in 1 Laptop",
+//   "Laptop",
+//   "Handheld Gaming Laptop",
+//   "2 in 1 Gaming Laptop",
+//   "Creator Laptop",
+//   "Chromebook",
+//   "Business Laptop",
+//   "Notebook"
+// ];
+// const usage = [
+//   "Business",
+//   "Gaming, Everyday Use",
+//   "Gaming, Multimedia",
+//   "Home/Office/Gaming",
+//   "Home/Office/Designing",
+//   "Home/Office",
+//   "Everyday Use, Office, Student",
+//   "Gaming",
+//   "Processing & Multitasking"
+// ];
+// const weights = [
+//   "1.2 Kg or Below",
+//   "1.2 Kg to 1.5 Kg",
+//   "1.6 Kg to 1.8 Kg",
+//   "1.9 Kg to 2.1 Kg",
+//   "2.2 Kg to 2.6 Kg",
+//   "Above 2.6 Kg"
+// ];
+
+
+
+
+
+
+
+
+
 export default laptops

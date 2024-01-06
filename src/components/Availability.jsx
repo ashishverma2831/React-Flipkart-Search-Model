@@ -9,7 +9,7 @@ const Availability = () => {
     <h2 id="accordion-collapse-heading-20">
             <button
                 type="button"
-                class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
+                className="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
                 data-accordion-target="#accordion-collapse-body-20"
                 aria-expanded="true"
                 aria-controls="accordion-collapse-body-20"
@@ -17,7 +17,7 @@ const Availability = () => {
                 <span>Availability</span>         
                 <svg
                     data-accordion-icon
-                    class="w-3 h-3 rotate-180 shrink-0"
+                    className="w-3 h-3 rotate-180 shrink-0"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -35,15 +35,15 @@ const Availability = () => {
         </h2>
         <div
             id="accordion-collapse-body-20"
-            class="hidden"
+            className="hidden"
             aria-labelledby="accordion-collapse-heading-20"
         >
             <div class="p-5 border border-b-0 border-gray-200 ">
                 {availability.map((avail) => {
                     return (
-                        <div class="flex items-center mb-4">
-                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{avail}</label>
+                        <div className="flex items-center mb-4">
+                            <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
+                            <label htmlFor="default-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{avail}</label>
                         </div>
                     );
                 })}

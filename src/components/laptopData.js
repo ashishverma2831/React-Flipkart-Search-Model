@@ -1,4 +1,4 @@
-import DedicatedGraphicsMemory from "./DedicatedGraphicsMemory";
+// import DedicatedGraphicsMemory from "./DedicatedGraphicsMemory";
 
 const laptops = 
 [

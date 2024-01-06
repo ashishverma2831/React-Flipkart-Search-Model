@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
-import laptops from './laptopData'
+import React from 'react'
 
-const LaptopCards = () => {
-
-  const [laptopList, setLaptopList] = useState(laptops)
+const LaptopCards = ({results}) => {
 
   return (
     <>  
-      {laptopList.map((laptop)=>{
+      {results.map((laptop)=>{
         return (
           <div class="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
             <img class="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
@@ -18,7 +15,6 @@ const LaptopCards = () => {
                 <span className=" text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600  font-medium rounded text-sm px-2 py-1 text-center mr-2">{laptop.rating} <i className="fa-solid fa-star"></i></span>
                 :''
               }
-              {/* <span className=" text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600  font-medium rounded text-sm px-4 py-1.5 text-center mr-2">{laptop.rating} <i className="fa-solid fa-star"></i></span> */}
               {laptop.no_of_ratings?laptop.no_of_ratings:0} Ratings & {laptop.no_of_reviews?laptop.no_of_reviews:'No'} Reviews
               </p>
               <ul class="max-w-md text-gray-500 list-disc list-inside ">

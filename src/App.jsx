@@ -47,10 +47,19 @@ const App = () => {
     }
   }
 
+  function filteredLaptops(productList,searchRef){
+    let filteredItems = productList;
+    if(searchRef){
+      filteredItems=searchLaptop;
+    }
+    return filteredItems;
+  }
+  const results = filteredLaptops(productList,searchRef);
+
   return (
     <>
       {/* <SearchModel /> */}
-      <Header/>
+      <Header searchRef={searchRef} searchLaptop={searchLaptop} />
       <div className='grid grid-rows-1 bg-gray-100 max-w-screen-2xl mx-auto pt-20'>
         <div className=' col-start-1 col-span-4 m-4 border shadow bg-white px-4'>
           <div>
@@ -113,7 +122,7 @@ const App = () => {
           </div>
         </div>
         <div className='col-start-5 col-span-12  my-4 mr-4 border shadow'>
-          <LaptopCards results={productList}/>
+          <LaptopCards results={results}/>
         </div>
       </div>
     </>

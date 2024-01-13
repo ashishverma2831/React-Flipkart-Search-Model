@@ -6,7 +6,7 @@ const LaptopCards = ({results}) => {
     <>  
       {results.map((laptop)=>{
         return (
-          <div class="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
+          <div key={laptop.id} class="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
             <img class="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
             <div class="flex flex-col justify-between p-4 ml-2 flex-1 w-full hover:bg-gray-50 ">
               <h5 class="text-2xl font-semibold tracking-tight text-gray-900 ">{laptop.name}</h5>

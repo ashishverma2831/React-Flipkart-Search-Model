@@ -14,7 +14,7 @@ const Price = () => {
     ];
   return (
     <div>
-    <h2 id="accordion-collapse-heading-25">
+        <h2 id="accordion-collapse-heading-25">
             <button
                 type="button"
                 class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
@@ -57,7 +57,7 @@ const Price = () => {
                 })}
             </div>
         </div>
-</div>
+    </div>
   )
 }
 

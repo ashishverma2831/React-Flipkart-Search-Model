@@ -1,6 +1,6 @@
 // import DedicatedGraphicsMemory from "./DedicatedGraphicsMemory";
 
-const laptops = 
+ const laptops = 
 [
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/1/b/0/15itl6-thin-and-light-laptop-lenovo-original-imagkwgzafjp33es.jpeg?q=70",

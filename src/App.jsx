@@ -145,7 +145,7 @@ const App = () => {
         <div className=' col-start-1 col-span-4 m-4 border shadow bg-white px-4'>
           <div>
             <div id="accordion-collapse" data-accordion="collapse">
-              <Price />
+              {/* <Price /> */}
               <div>
                 <h2 id="accordion-collapse-heading-25">
                   <button
@@ -180,11 +180,11 @@ const App = () => {
                   aria-labelledby="accordion-collapse-heading-25"
                 >
                   <div class="p-5 border border-b-0 border-gray-200 ">
-                    {prices.map((price) => {
+                    {prices.map((p) => {
                       return (
                         <div class="flex items-center mb-4">
-                          <input checked={selectedPrice.includes(p)} onChange={(e) => { handlePrice(e, p) }} id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                          <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{price}</label>
+                          <input checked={selectedPrice.includes(p)} onChange={(e) => { handlePrice(e, p) }} id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
+                          <label for="default-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{p}</label>
                         </div>
                       );
                     })}

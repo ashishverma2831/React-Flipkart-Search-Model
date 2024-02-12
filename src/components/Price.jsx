@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import laptops from './laptopData';
 
-const Price = () => {
+const Price = (props) => {
     const prices = [
-        "All",
+        // "All",
         "Below 20,000",
         "Above 20,000 & Below 30,000",
         "Above 30,000 & Below 40,000",
@@ -12,6 +13,25 @@ const Price = () => {
         "Above 70,000 & Below 80,000",
         "Above 80,000"
     ];
+
+    const [selectedPrice, setSelectedPrice] = useState([]);
+    const handlePrice = (e,price)=>{
+        console.log(e.target.checked);
+        if(selectedPrice.includes(price)){
+            // const filteredPrice
+        }
+        else{
+            const filteredPrice = [...selectedPrice,price];
+            const filteredData = laptops.filter((laptop)=>{
+                return filteredPrice.includes(laptop.price)
+            })
+
+            setSelectedPrice(filteredPrice);
+            setProd
+        }
+    }
+
+
   return (
     <div>
         <h2 id="accordion-collapse-heading-25">
@@ -50,8 +70,8 @@ const Price = () => {
                 {prices.map((price) => {
                     return (
                         <div class="flex items-center mb-4">
-                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{price}</label>
+                            <input checked={selectedPrice.includes(p)} onChange={(e)=>{handlePrice(e,p)}} id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" />
+                            <label for="default-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{price}</label>
                         </div>
                     );
                 })}

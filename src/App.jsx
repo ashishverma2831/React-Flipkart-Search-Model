@@ -29,24 +29,25 @@ import CustomerRatings from './components/CustomerRatings'
 import GSTInvoiceAvailable from './components/GSTInvoiceAvailable'
 import Offers from './components/Offers'
 import Price from './components/Price'
-import laptops from './components/laptopData'
+import BrowseLaptop from './components/BrowseLaptop'
+// import laptops from './components/laptopData'
 
 
 const App = () => {
 
-  const [productList, setProductList] = useState(laptops);
-  const searchRef = useRef(null);
-  // console.log(searchRef.current.value);
-  const searchLaptop = () => {
-    const filteredProducts = laptops.filter((laptop) => {
-      return laptop.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
-    })
-    if (searchRef.current.value === '') {
-      setProductList(laptops)
-    }
-    setProductList(filteredProducts)
-    console.log(filteredProducts);
-  }
+  // const [productList, setProductList] = useState(laptops);
+  // const searchRef = useRef(null);
+  // // console.log(searchRef.current.value);
+  // const searchLaptop = () => {
+  //   const filteredProducts = laptops.filter((laptop) => {
+  //     return laptop.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
+  //   })
+  //   if (searchRef.current.value === '') {
+  //     setProductList(laptops)
+  //   }
+  //   setProductList(filteredProducts)
+  //   console.log(filteredProducts);
+  // }
 
 
   // const prices = [
@@ -60,51 +61,51 @@ const App = () => {
   //   "Above 80,000"
   // ];
 
-  const brands = [
-    "HP",
-    "Asus",
-    "Lenevo",
-    "Dell",
-    "MSI",
-    "Apple",
-    "Samsung",
-    "Zebronics",
-    "Microsoft",
-    "Honor",
-    "Acer",
-    "Primebook"
-];
+//   const brands = [
+//     "HP",
+//     "Asus",
+//     "Lenevo",
+//     "Dell",
+//     "MSI",
+//     "Apple",
+//     "Samsung",
+//     "Zebronics",
+//     "Microsoft",
+//     "Honor",
+//     "Acer",
+//     "Primebook"
+// ];
 
  
-  const [selectedBrand, setSelectedBrand] = useState([]);
+  // const [selectedBrand, setSelectedBrand] = useState([]);
 
-  const handleBrand = (e, brand) => {
-    console.log(e.target.checked);
-    if (selectedBrand.includes(brand)) {
-      const filteredBrand = selectedBrand.filter((b)=>{return b!==brand});
-      if(filteredBrand.length===0){
-        setProductList(laptops);
-      }
-      else{
-        const filteredData = laptops.filter((laptop)=>{
-          return filteredBrand.includes(laptop.brand);
-        })
-        setProductList(filteredData)
-        // console.log(filteredData);
-      }
-      setSelectedBrand(filteredBrand);
-      console.log(filteredBrand);
-      }
-    else {
-      const filteredBrand = [...selectedBrand, brand];
-      const filteredData = laptops.filter((laptop) => {
-        return filteredBrand.includes(laptop.brand)
-      })
-      setProductList(filteredData)
-      setSelectedBrand(filteredBrand);
-      console.log([...selectedBrand, brand]);
-    }
-  }
+  // const handleBrand = (e, brand) => {
+  //   console.log(e.target.checked);
+  //   if (selectedBrand.includes(brand)) {
+  //     const filteredBrand = selectedBrand.filter((b)=>{return b!==brand});
+  //     if(filteredBrand.length===0){
+  //       setProductList(laptops);
+  //     }
+  //     else{
+  //       const filteredData = laptops.filter((laptop)=>{
+  //         return filteredBrand.includes(laptop.brand);
+  //       })
+  //       setProductList(filteredData)
+  //       // console.log(filteredData);
+  //     }
+  //     setSelectedBrand(filteredBrand);
+  //     console.log(filteredBrand);
+  //     }
+  //   else {
+  //     const filteredBrand = [...selectedBrand, brand];
+  //     const filteredData = laptops.filter((laptop) => {
+  //       return filteredBrand.includes(laptop.brand)
+  //     })
+  //     setProductList(filteredData)
+  //     setSelectedBrand(filteredBrand);
+  //     console.log([...selectedBrand, brand]);
+  //   }
+  // }
 
 
   return (
@@ -112,7 +113,7 @@ const App = () => {
       {/* <SearchModel /> */}
       {/* <Header/> */}
 
-      <header className='bg-[#2874f0] shadow-lg fixed w-full'>
+      {/* <header className='bg-[#2874f0] shadow-lg fixed w-full'>
         <div className='max-w-screen-xl mx-auto py-2 flex items-center justify-center'>
           <div className='flex flex-col mx-4'>
             <img width={80} src='/flipkart-plus_8d85f4.png' className='text-white' alt='logo' />
@@ -155,15 +156,13 @@ const App = () => {
             Cart
           </button>
         </div>
-      </header>
+      </header> */}
 
-
-
-      <div className='grid grid-rows-1 bg-gray-100 max-w-screen-2xl mx-auto pt-20'>
+      {/* <div className='grid grid-rows-1 bg-gray-100 max-w-screen-2xl mx-auto pt-20'>
         <div className=' col-start-1 col-span-4 m-4 border shadow bg-white px-4'>
           <div>
             <div id="accordion-collapse" data-accordion="collapse">
-              {/* <div>
+              <div>
                 <h2 id="accordion-collapse-heading-25">
                   <button
                     type="button"
@@ -207,9 +206,8 @@ const App = () => {
                     })}
                   </div>
                 </div>
-              </div> */}
+              </div>
               <hr />
-              {/* <Brand /> */}
               <div>
         <h2 id="accordion-collapse-heading-3">
                 <button
@@ -313,7 +311,6 @@ const App = () => {
 
 
         <div className='col-start-5 col-span-12  my-4 mr-4 border shadow'>
-          {/* <LaptopCards results={results}/> */}
           {productList.map((laptop) => {
             return (
               <div key={laptop.id} className="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
@@ -347,7 +344,9 @@ const App = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
+
+      <BrowseLaptop />
     </>
   )
 }

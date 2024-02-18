@@ -13706,7 +13706,8 @@
     rating: "3.8",
     no_of_ratings: "1135",
     no_of_reviews: "167",
-    id: "978"
+    id: "978",
+    brand: "Asus",
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kp2y2kw0/computer/y/0/c/na-thin-and-light-laptop-asus-original-imag3ebnzawky4kn.jpeg?q=70",

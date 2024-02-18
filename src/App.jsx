@@ -61,22 +61,22 @@ const App = () => {
   //   "Above 80,000"
   // ];
 
-//   const brands = [
-//     "HP",
-//     "Asus",
-//     "Lenevo",
-//     "Dell",
-//     "MSI",
-//     "Apple",
-//     "Samsung",
-//     "Zebronics",
-//     "Microsoft",
-//     "Honor",
-//     "Acer",
-//     "Primebook"
-// ];
+  //   const brands = [
+  //     "HP",
+  //     "Asus",
+  //     "Lenevo",
+  //     "Dell",
+  //     "MSI",
+  //     "Apple",
+  //     "Samsung",
+  //     "Zebronics",
+  //     "Microsoft",
+  //     "Honor",
+  //     "Acer",
+  //     "Primebook"
+  // ];
 
- 
+
   // const [selectedBrand, setSelectedBrand] = useState([]);
 
   // const handleBrand = (e, brand) => {

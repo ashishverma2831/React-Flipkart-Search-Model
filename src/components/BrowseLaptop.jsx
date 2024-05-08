@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import laptops from './laptopData';
+import Brand from './Brand';
 
 const BrowseLaptop = () => {
 
@@ -54,9 +55,6 @@ const BrowseLaptop = () => {
     }
     console.log(selectedBrand);
 
-
-
-
     return (
         <>
             <header className='bg-[#2874f0] shadow-lg fixed w-full'>
@@ -109,7 +107,7 @@ const BrowseLaptop = () => {
                     <div className=' col-start-1 col-span-4 m-4 border shadow bg-white px-4'>
                         <div>
                             <div id="accordion-collapse" data-accordion="collapse">
-                                <div>
+                                {/* <div>
                                     <h2 id="accordion-collapse-heading-3">
                                         <button
                                             type="button"
@@ -153,13 +151,14 @@ const BrowseLaptop = () => {
                                             })}
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
+                                <Brand selectedBrand={selectedBrand} handleBrand={handleBrand} />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='col-start-5 col-span-12  my-4 mr-4 border shadow'>
-                    {laptopList.map((laptop) => {
+                    {laptopList.length!==0?laptopList.map((laptop) => {
                         return (
                             <div key={laptop.id} className="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
                                 <img className="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
@@ -190,28 +189,9 @@ const BrowseLaptop = () => {
                                 </div>
                             </div>
                         )
-                    })}
+                    }) : <p className='text-4xl text-center my-5'>No Laptops found</p> }
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </>

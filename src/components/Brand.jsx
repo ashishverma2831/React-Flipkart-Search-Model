@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 
-const Brand = () => {
+const Brand = ({selectedBrand,handleBrand}) => {
     const brands = [
         "HP",
         "Asus",
@@ -54,7 +54,7 @@ const Brand = () => {
                     {brands.map((brand) => {
                         return (
                             <div class="flex items-center mb-4">
-                                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"/>
+                                <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" checked={selectedBrand.includes(brand)} onChange={(e)=>{handleBrand(e,brand)}}/>
                                 <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{brand}</label>
                             </div>
                         );

@@ -48,9 +48,14 @@ const Price = ({ handlePrice }) => {
                 aria-labelledby="accordion-collapse-heading-25"
             >
                 <div class="p-5 border border-b-0 border-gray-200 ">
-                    <div class="flex items-center mb-4">
-                        <input onChange={handlePrice} id="default-checkbox" type="range" max={100000} min={20000} step={5000} value="" className="w-full text-blue-600 bg-gray-100 border-gray-300 rounded" />
-                        {/* <label for="default-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{price}</label> */}
+                    {/* <div class="flex items-center mb-4">
+                        <input onChange={handlePrice} id="default-checkbox" type="range" max={100000} min={10000} step={5000} value="" className="w-full text-blue-600 bg-gray-100 border-gray-300 rounded" />
+                    </div> */}
+                    <div class="relative mb-6">
+                        <label htmlFor="labels-range-input" class="sr-only">Labels range</label>
+                        <input id="labels-range-input" onChange={handlePrice} type="range" max={120000} min={10000} step={5000} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700" />
+                            <span className="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6">10k</span>
+                            <span className="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6">120k </span>
                     </div>
                 </div>
             </div>

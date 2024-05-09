@@ -44,10 +44,9 @@ const BrowseLaptop = () => {
     console.log(selectedBrand);
 
     // price filtering
-    
     const handlePrice = (e) => {
         const price = e.target.value;
-        const filterLaptop = laptops.filter((laptop) => laptop.price <= price);
+        const filterLaptop = laptops.filter((laptop) => laptop.price <= parseInt(price) );
         setLaptopList(filterLaptop);
     }
 

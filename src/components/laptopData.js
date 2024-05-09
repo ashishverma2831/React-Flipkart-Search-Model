@@ -14,7 +14,7 @@
     rating: "4.5",
     no_of_ratings: "14",
     no_of_reviews: "1",
-    id: "0"
+    id: "0",
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/d/t/c/v15-g2-alc-laptop-lenovo-original-imaghq2ffspmtfuh.jpeg?q=70",
@@ -13580,7 +13580,7 @@
     rating: "3.8",
     no_of_ratings: "40",
     no_of_reviews: "3",
-    id: "969"
+    id: "969",
   },
   {
     img_link: "https://rukminim1.flixcart.com/image/312/312/kmccosw0/computer/2/r/e/e15-amd-thin-and-light-laptop-vaio-original-imagf9eapgpdwujs.jpeg?q=70",

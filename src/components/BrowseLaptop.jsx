@@ -18,20 +18,7 @@ const BrowseLaptop = () => {
         }
     }
 
-    const brands = [
-        "HP",
-        "Asus",
-        "Lenevo",
-        "Dell",
-        "MSI",
-        "Apple",
-        "Samsung",
-        "Zebronics",
-        "Microsoft",
-        "Honor",
-        "Acer",
-        "Primebook"
-    ];
+    // brand filtering
     const [selectedBrand, setSelectedBrand] = useState([]);
     const handleBrand = (e,brand) => {
         if (selectedBrand.includes(brand)) {
@@ -40,7 +27,7 @@ const BrowseLaptop = () => {
                 setLaptopList(laptops);
             }
             else{
-                const filterLaptop = laptops.filter((laptop) => newBrand.includes(laptop.brand));
+                const filterLaptop = laptops.filter((laptop) => newBrand.includes(laptop.name.toLocaleLowerCase().split(' ')[0]));
                 setLaptopList(filterLaptop);
             }
             setSelectedBrand(newBrand);
@@ -49,7 +36,7 @@ const BrowseLaptop = () => {
         else {
             const filteredBrand = [...selectedBrand, brand];
             setSelectedBrand([...selectedBrand, brand]);
-            const filterLaptop = laptops.filter((laptop) => filteredBrand.includes(laptop.brand));
+            const filterLaptop = laptops.filter((laptop) => filteredBrand.includes(laptop.name.toLocaleLowerCase().split(' ')[0]));
             setLaptopList(filterLaptop);
         }
     }
@@ -102,9 +89,9 @@ const BrowseLaptop = () => {
                 </div>
             </header>
 
-            <section className='grid grid-rows-1 bg-gray-100 max-w-screen-2xl mx-auto pt-20'>
-                <div className='grid grid-rows-1 bg-gray-100 max-w-screen-2xl mx-auto pt-20'>
-                    <div className=' col-start-1 col-span-4 m-4 border shadow bg-white px-4'>
+            <section className='flex justify-center max-w-screen-xl mx-auto pt-20'>
+                <div className='max-w-screen-lg flex-1'>
+                    <div className=' mx-4 border shadow bg-white '>
                         <div>
                             <div id="accordion-collapse" data-accordion="collapse">
                                 {/* <div>
@@ -157,13 +144,13 @@ const BrowseLaptop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-start-5 col-span-12  my-4 mr-4 border shadow'>
+                <div className='max-w-screen-lg border shadow'>
                     {laptopList.length!==0?laptopList.map((laptop) => {
                         return (
                             <div key={laptop.id} className="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
                                 <img className="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
                                 <div className="flex flex-col justify-between p-4 ml-2 flex-1 w-full hover:bg-gray-50 ">
-                                    <h5 className="text-2xl font-semibold tracking-tight text-gray-900 ">{laptop.name}</h5>
+                                    <h5 className="text-2xl font-semibold tracking-tight text-gray-900 ">{laptop.name.toLocaleUpperCase()}</h5>
                                     <p className=" my-2 text-gray-700 font-medium">
                                         {laptop.rating ?
                                             <span className=" text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600  font-medium rounded text-sm px-2 py-1 text-center mr-2">{laptop.rating} <i className="fa-solid fa-star"></i></span>
@@ -189,7 +176,7 @@ const BrowseLaptop = () => {
                                 </div>
                             </div>
                         )
-                    }) : <p className='text-4xl text-center my-5'>No Laptops found</p> }
+                    }) : <div className='w-[1024px]'><p className='text-4xl text-center my-5'>No Laptops found</p></div> }
                 </div>
             </section>
 

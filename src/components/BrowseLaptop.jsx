@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import laptops from './laptopData';
 import Brand from './Brand';
+import Price from './Price';
 
 const BrowseLaptop = () => {
 
@@ -41,6 +42,14 @@ const BrowseLaptop = () => {
         }
     }
     console.log(selectedBrand);
+
+    // price filtering
+    
+    const handlePrice = (e) => {
+        const price = e.target.value;
+        const filterLaptop = laptops.filter((laptop) => laptop.price <= price);
+        setLaptopList(filterLaptop);
+    }
 
     return (
         <>
@@ -139,6 +148,7 @@ const BrowseLaptop = () => {
                                         </div>
                                     </div>
                                 </div> */}
+                                <Price handlePrice={handlePrice}/>
                                 <Brand selectedBrand={selectedBrand} handleBrand={handleBrand} />
                             </div>
                         </div>

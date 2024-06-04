@@ -46,7 +46,7 @@ const BrowseLaptop = () => {
     // price filtering
     const handlePrice = (e) => {
         const price = e.target.value;
-        const filterLaptop = laptops.filter((laptop) => laptop.price <= parseInt(price) );
+        const filterLaptop = laptops.filter((laptop) => laptop.price <= parseInt(price));
         setLaptopList(filterLaptop);
     }
 

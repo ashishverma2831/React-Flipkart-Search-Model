@@ -1,197 +1,468 @@
-import React, { useRef, useState } from 'react'
-import laptops from './laptopData';
-import Brand from './Brand';
-import Price from './Price';
+import { useEffect, useMemo, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { Search, ShoppingCart, X } from 'lucide-react'
 
-const BrowseLaptop = () => {
+import { Button } from '@/components/ui/button'
+import LaptopCard from './LaptopCard'
+import LaptopFilterSidebar from './LaptopFilterSidebar'
+import laptops from './laptopData'
+import {
+  filterLaptops,
+  getFilterFacets,
+  getPriceBounds,
+} from './filterLogic'
 
-    const [laptopList, setLaptopList] = useState(laptops)
-    // console.log(laptopList);
-    const searchRef = useRef(null);
-    const searchLaptop = (e) => {
-        e.preventDefault();
-        const searchValue = searchRef.current.value;
-        if (searchValue) {
-            const filterLaptop = laptops.filter((laptop) => laptop.name.toLowerCase().includes(searchValue.toLowerCase()));
-            setLaptopList(filterLaptop);
-        } else {
-            setLaptopList(laptops);
-        }
-    }
+const PAGE_SIZE = 24
+const EMPTY_FILTERS = { minRating: 0 }
 
-    // brand filtering
-    const [selectedBrand, setSelectedBrand] = useState([]);
-    const handleBrand = (e,brand) => {
-        if (selectedBrand.includes(brand)) {
-            const newBrand = selectedBrand.filter((item) => item !== brand);
-            if(newBrand.length === 0){
-                setLaptopList(laptops);
-            }
-            else{
-                const filterLaptop = laptops.filter((laptop) => newBrand.includes(laptop.name.toLocaleLowerCase().split(' ')[0]));
-                setLaptopList(filterLaptop);
-            }
-            setSelectedBrand(newBrand);
-            console.log(newBrand);
-        }
-        else {
-            const filteredBrand = [...selectedBrand, brand];
-            setSelectedBrand([...selectedBrand, brand]);
-            const filterLaptop = laptops.filter((laptop) => filteredBrand.includes(laptop.name.toLocaleLowerCase().split(' ')[0]));
-            setLaptopList(filterLaptop);
-        }
-    }
-    console.log(selectedBrand);
+const formatPrice = (price) =>
+  new Intl.NumberFormat('en-IN', {
+    maximumFractionDigits: 0,
+    style: 'currency',
+    currency: 'INR',
+  }).format(Number(price) || 0)
 
-    // price filtering
-    const handlePrice = (e) => {
-        const price = e.target.value;
-        const filterLaptop = laptops.filter((laptop) => laptop.price <= parseInt(price));
-        setLaptopList(filterLaptop);
-    }
+function BrowseLaptop() {
+  const [query, setQuery] = useState('')
+  const [filters, setFilters] = useState(EMPTY_FILTERS)
+  const [priceRange, setPriceRange] = useState({ minPrice: '', maxPrice: '' })
+  const [sortBy, setSortBy] = useState('relevance')
+  const [page, setPage] = useState(1)
+  const [cartItems, setCartItems] = useState([])
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+  const [cartOpen, setCartOpen] = useState(false)
 
-    return (
-        <>
-            <header className='bg-[#2874f0] shadow-lg fixed w-full'>
-                <div className='max-w-screen-xl mx-auto py-2 flex items-center justify-center'>
-                    <div className='flex flex-col mx-4'>
-                        <img width={80} src='/flipkart-plus_8d85f4.png' className='text-white' alt='logo' />
-                        <p className='text-white italic flex font-semibold text-sm hover:underline  justify-center'>Explore <span className='text-yellow-300 font-semibold'>Plus </span><img className='w-4 mr-1 h-4' src='https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png' /></p>
-                    </div>
-                    <form className='w-1/3'>
-                        <div className="flex">
-                            <div className="relative w-full">
-                                <input type="search" id="search-dropdown" className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded border border-gray-300 " placeholder="Search laptops..." required ref={searchRef} />
-                                <button type="submit" className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 " onClick={searchLaptop}>
-                                    <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+  const facets = useMemo(() => getFilterFacets(laptops), [])
+  const priceBounds = useMemo(() => getPriceBounds(laptops), [])
+  const results = useMemo(
+    () =>
+      filterLaptops(laptops, {
+        query,
+        filters,
+        minPrice: priceRange.minPrice,
+        maxPrice: priceRange.maxPrice,
+        sortBy,
+      }),
+    [filters, priceRange.maxPrice, priceRange.minPrice, query, sortBy],
+  )
 
-                    <button type="button" className="text-blue-800 bg-white focus:outline-none  text-lg font-semibold text-md px-10 py-1.5 my-auto rounded text-center inline-flex items-center mx-4">Login</button>
-                    <a href='#' className='text-white mx-2 text-lg font-medium'>Become a Seller</a>
+  useEffect(() => {
+    setPage(1)
+  }, [filters, priceRange, query, sortBy])
 
-                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="mx-4 text-white focus:outline-none font-medium text-lg px-5 py-2.5 text-center inline-flex items-center" type="button">More
-                        <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-                        </svg>
-                    </button>
-                    <div id="dropdownHover" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-50 dark:bg-gray-700">
-                        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100 ">Notification Preferences</a></li><hr />
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100 ">24x7 Customer Care</a></li><hr />
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100 ">Advertise</a></li><hr />
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100 ">Download App</a></li>
-                        </ul>
-                    </div>
+  const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
+  const visibleLaptops = results.slice(
+    (page - 1) * PAGE_SIZE,
+    page * PAGE_SIZE,
+  )
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0)
+  const cartTotal = cartItems.reduce(
+    (total, item) => total + (Number(item.price) || 0) * item.quantity,
+    0,
+  )
 
-                    <button type="button" className="text-white font-semibold text-lg px-5 py-2.5 text-center inline-flex items-center">
-                        <svg className="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
-                            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
-                        </svg>
-                        Cart
-                    </button>
-                </div>
-            </header>
+  const activeFilterCount =
+    Object.entries(filters).reduce(
+      (total, [key, values]) =>
+        total + (key === 'minRating' ? Number(values) > 0 : values.length),
+      0,
+    ) +
+    Number(Boolean(priceRange.minPrice || priceRange.maxPrice)) +
+    Number(Boolean(query.trim()))
 
-            <section className='flex justify-center max-w-screen-xl mx-auto pt-20'>
-                <div className='max-w-screen-lg flex-1'>
-                    <div className=' mx-4 border shadow bg-white '>
-                        <div>
-                            <div id="accordion-collapse" data-accordion="collapse">
-                                {/* <div>
-                                    <h2 id="accordion-collapse-heading-3">
-                                        <button
-                                            type="button"
-                                            class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 "
-                                            data-accordion-target="#accordion-collapse-body-3"
-                                            aria-expanded="true"
-                                            aria-controls="accordion-collapse-body-3"
-                                        >
-                                            <span>Brand</span>
-                                            <svg
-                                                data-accordion-icon
-                                                class="w-3 h-3 rotate-180 shrink-0"
-                                                aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 10 6"
-                                            >
-                                                <path
-                                                    stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M9 5 5 1 1 5"
-                                                />
-                                            </svg>
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="accordion-collapse-body-3"
-                                        class="hidden"
-                                        aria-labelledby="accordion-collapse-heading-3"
-                                    >
-                                        <div className="p-5 border border-b-0 border-gray-200 ">
-                                            {brands.map((brand) => {
-                                                return (
-                                                    <div class="flex items-center mb-4">
-                                                        <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded" checked={selectedBrand.includes(brand)} onChange={(e)=>{handleBrand(e,brand)}}/>
-                                                        <label for="default-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{brand}</label>
-                                                    </div>
-                                                );
-                                            })}
-                                        </div>
-                                    </div>
-                                </div> */}
-                                <Price handlePrice={handlePrice}/>
-                                <Brand selectedBrand={selectedBrand} handleBrand={handleBrand} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='max-w-screen-lg border shadow'>
-                    {laptopList.length!==0?laptopList.map((laptop) => {
-                        return (
-                            <div key={laptop.id} className="flex flex-col items-center bg-white border justify-between border-gray-200  shadow md:flex-row ">
-                                <img className="object-contain w-full md:w-1/3 min-h-72 p-4" src={laptop.img_link} alt="photo" />
-                                <div className="flex flex-col justify-between p-4 ml-2 flex-1 w-full hover:bg-gray-50 ">
-                                    <h5 className="text-2xl font-semibold tracking-tight text-gray-900 ">{laptop.name.toLocaleUpperCase()}</h5>
-                                    <p className=" my-2 text-gray-700 font-medium">
-                                        {laptop.rating ?
-                                            <span className=" text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600  font-medium rounded text-sm px-2 py-1 text-center mr-2">{laptop.rating} <i className="fa-solid fa-star"></i></span>
-                                            : ''
-                                        }
-                                        {laptop.no_of_ratings ? laptop.no_of_ratings : 0} Ratings & {laptop.no_of_reviews ? laptop.no_of_reviews : 'No'} Reviews
-                                    </p>
-                                    <ul className="max-w-md text-gray-500 list-disc list-inside ">
-                                        <li><span className='text-black'>{laptop.processor}</span></li>
-                                        <li><span className='text-black'>{laptop.ram} RAM</span></li>
-                                        <li><span className='text-black'>{laptop.os} Operating System</span></li>
-                                        <li><span className='text-black'>{laptop.storage} Storage</span></li>
-                                        <li><span className='text-black'>{laptop.display * 2.54} cm ({laptop.display} Inch) Display</span></li>
-                                        <li><span className='text-black'>1 Year Onsite Warranty</span></li>
-                                    </ul>
-                                    <div className=' my-2 flex justify-between items-center'>
-                                        <div>
-                                            <p className='font-semibold text-2xl'>₹{laptop.price - laptop.price / 10}</p>
-                                            <p><s className='text-gray-600 mr-1'>₹{laptop.price}</s><span className='text-green-500 font-bold'>10% off</span></p>
-                                        </div>
-                                        <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-lg shadow-blue-500/50  font-medium rounded-lg text-sm px-5 py-2.5 text-center">Buy now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    }) : <div className='w-[1024px]'><p className='text-4xl text-center my-5'>No Laptops found</p></div> }
-                </div>
-            </section>
+  const toggleFilter = (facetId, value) => {
+    setFilters((current) => {
+      const selectedValues = current[facetId] || []
+      const nextValues = selectedValues.includes(value)
+        ? selectedValues.filter((selectedValue) => selectedValue !== value)
+        : [...selectedValues, value]
 
+      return { ...current, [facetId]: nextValues }
+    })
+  }
 
-        </>
+  const changePriceRange = (key, value) => {
+    const clampedValue =
+      value === ''
+        ? ''
+        : String(
+            Math.min(Math.max(Number(value) || 0, priceBounds.min), priceBounds.max),
+          )
+
+    setPriceRange((current) => {
+      const next = { ...current, [key]: clampedValue }
+
+      if (key === 'minPrice' && next.maxPrice && Number(next.maxPrice) < Number(clampedValue)) {
+        next.maxPrice = clampedValue
+      }
+      if (key === 'maxPrice' && next.minPrice && Number(next.minPrice) > Number(clampedValue)) {
+        next.minPrice = clampedValue
+      }
+
+      return next
+    })
+  }
+
+  const clearAllFilters = () => {
+    setQuery('')
+    setFilters(EMPTY_FILTERS)
+    setPriceRange({ minPrice: '', maxPrice: '' })
+    setSortBy('relevance')
+    setMobileFiltersOpen(false)
+  }
+
+  const addToCart = (product) => {
+    setCartItems((current) => {
+      const existing = current.find((item) => item.id === product.id)
+
+      if (existing) {
+        return current.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item,
+        )
+      }
+
+      return [...current, { ...product, quantity: 1 }]
+    })
+    setCartOpen(true)
+  }
+
+  const changeCartQuantity = (productId, change) => {
+    setCartItems((current) =>
+      current
+        .map((item) =>
+          item.id === productId
+            ? { ...item, quantity: item.quantity + change }
+            : item,
+        )
+        .filter((item) => item.quantity > 0),
     )
+  }
+
+  const removeFilter = (facetId, value) => {
+    setFilters((current) => ({
+      ...current,
+      [facetId]: (current[facetId] || []).filter(
+        (selectedValue) => selectedValue !== value,
+      ),
+    }))
+  }
+
+  const activeFilterTags = facets.flatMap((facet) =>
+    (filters[facet.id] || []).map((value) => ({
+      key: `${facet.id}-${value}`,
+      label: `${facet.label}: ${
+        facet.options.find((option) => option.value === value)?.label || value
+      }`,
+      onRemove: () => removeFilter(facet.id, value),
+    })),
+  )
+
+  if (filters.minRating) {
+    activeFilterTags.push({
+      key: 'min-rating',
+      label: `${filters.minRating}★ & above`,
+      onRemove: () =>
+        setFilters((current) => ({ ...current, minRating: 0 })),
+    })
+  }
+
+  if (priceRange.minPrice || priceRange.maxPrice) {
+    activeFilterTags.push({
+      key: 'price-range',
+      label: `Price: ${formatPrice(priceRange.minPrice || priceBounds.min)} – ${formatPrice(priceRange.maxPrice || priceBounds.max)}`,
+      onRemove: () => setPriceRange({ minPrice: '', maxPrice: '' }),
+    })
+  }
+
+  if (query.trim()) {
+    activeFilterTags.push({
+      key: 'search-query',
+      label: `Search: ${query.trim()}`,
+      onRemove: () => setQuery(''),
+    })
+  }
+
+  return (
+    <div className="min-h-screen bg-slate-100">
+      <header className="sticky top-0 z-30 bg-[#2874f0] text-white shadow-md">
+        <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
+          <a href="/" className="shrink-0" aria-label="Flipkart home">
+            <img
+              src="/flipkart-plus_8d85f4.png"
+              width="80"
+              height="24"
+              alt="Flipkart"
+              className="h-auto w-20 object-contain"
+            />
+            <span className="hidden text-[10px] italic sm:block">
+              Explore <span className="font-semibold text-yellow-300">Plus</span>
+            </span>
+          </a>
+
+          <form
+            role="search"
+            className="flex min-w-0 flex-1"
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <label htmlFor="laptop-search" className="sr-only">
+              Search laptops
+            </label>
+            <input
+              id="laptop-search"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search for laptops, brands and more"
+              className="h-10 min-w-0 flex-1 rounded-l-sm border-0 bg-white px-3 text-sm text-slate-900 outline-none ring-blue-300 placeholder:text-slate-500 focus:ring-2"
+            />
+            {query && (
+              <button
+                type="button"
+                aria-label="Clear search"
+                onClick={() => setQuery('')}
+                className="bg-white px-2 text-slate-500"
+              >
+                <X className="h-4 w-4" aria-hidden="true" />
+              </button>
+            )}
+            <Button
+              type="submit"
+              size="icon"
+              aria-label="Search"
+              className="h-10 rounded-l-none rounded-r-sm bg-white text-blue-700 hover:bg-blue-50"
+            >
+              <Search className="h-5 w-5" aria-hidden="true" />
+            </Button>
+          </form>
+
+          <Button
+            type="button"
+            variant="secondary"
+            className="hidden h-9 px-6 font-semibold text-blue-700 sm:inline-flex"
+          >
+            Login
+          </Button>
+
+          <details
+            open={cartOpen}
+            onToggle={(event) => setCartOpen(event.currentTarget.open)}
+            className="relative"
+          >
+            <summary className="flex h-9 cursor-pointer list-none items-center gap-2 whitespace-nowrap rounded px-2 text-sm font-semibold hover:bg-blue-600 sm:px-3">
+              <ShoppingCart className="h-5 w-5" aria-hidden="true" />
+              Cart
+              <span className="rounded-full bg-white px-1.5 py-0.5 text-xs text-blue-700">
+                {cartCount}
+              </span>
+            </summary>
+            <div className="absolute right-0 top-11 z-40 w-80 max-w-[calc(100vw-2rem)] rounded-sm border bg-white p-3 text-slate-900 shadow-xl">
+              <h2 className="border-b pb-2 font-semibold">Your cart</h2>
+              {cartItems.length === 0 ? (
+                <p className="py-6 text-center text-sm text-slate-500">
+                  Your cart is empty.
+                </p>
+              ) : (
+                <>
+                  <ul className="max-h-72 divide-y overflow-y-auto">
+                    {cartItems.map((item) => (
+                      <li key={item.id} className="py-3">
+                        <p className="line-clamp-2 text-sm font-medium">
+                          {item.name}
+                        </p>
+                        <div className="mt-2 flex items-center justify-between gap-2">
+                          <span className="text-sm font-semibold">
+                            {formatPrice(Number(item.price) * item.quantity)}
+                          </span>
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              aria-label={`Decrease ${item.name} quantity`}
+                              onClick={() => changeCartQuantity(item.id, -1)}
+                              className="h-7 w-7 rounded border"
+                            >
+                              −
+                            </button>
+                            <span className="min-w-4 text-center text-sm">
+                              {item.quantity}
+                            </span>
+                            <button
+                              type="button"
+                              aria-label={`Increase ${item.name} quantity`}
+                              onClick={() => changeCartQuantity(item.id, 1)}
+                              className="h-7 w-7 rounded border"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex justify-between border-t pt-3 font-semibold">
+                    <span>Total</span>
+                    <span>{formatPrice(cartTotal)}</span>
+                  </div>
+                </>
+              )}
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-7xl px-3 py-5 sm:px-4">
+        <nav aria-label="Breadcrumb" className="mb-3 text-xs text-slate-500">
+          Home <span className="px-1">&gt;</span> Computers
+          <span className="px-1">&gt;</span> Laptops
+        </nav>
+
+        <section className="rounded-sm border bg-white px-4 py-4 sm:px-6">
+          <h1 className="text-xl font-semibold text-slate-900">Laptops</h1>
+          <p className="mt-1 text-sm text-slate-500">
+            Compare specifications, ratings and prices across {laptops.length.toLocaleString('en-IN')} laptops.
+          </p>
+        </section>
+
+        <div className="mt-4 flex flex-col gap-4 lg:flex-row lg:items-start">
+          <div className="lg:hidden">
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full bg-white"
+              aria-expanded={mobileFiltersOpen}
+              onClick={() => setMobileFiltersOpen((open) => !open)}
+            >
+              {mobileFiltersOpen ? 'Hide filters' : `Filters (${activeFilterCount})`}
+            </Button>
+          </div>
+
+          <div
+            className={`${mobileFiltersOpen ? 'block' : 'hidden'} w-full shrink-0 lg:block lg:w-64`}
+          >
+            <LaptopFilterSidebar
+              facets={facets}
+              filters={filters}
+              priceBounds={priceBounds}
+              priceRange={priceRange}
+              activeFilterCount={activeFilterCount}
+              onToggleFilter={toggleFilter}
+              onSetRating={(minRating) =>
+                setFilters((current) => ({ ...current, minRating }))
+              }
+              onPriceChange={changePriceRange}
+              onClear={clearAllFilters}
+            />
+          </div>
+
+          <section className="min-w-0 flex-1 rounded-sm border bg-white">
+            <div className="border-b px-4 py-4 sm:px-6">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-semibold text-slate-900">
+                    Laptops
+                  </h2>
+                  <p className="mt-1 text-sm text-slate-500" aria-live="polite">
+                    {results.length === 0
+                      ? 'No products found'
+                      : `Showing ${(page - 1) * PAGE_SIZE + 1}–${Math.min(
+                          page * PAGE_SIZE,
+                          results.length,
+                        )} of ${results.length.toLocaleString('en-IN')} products`}
+                  </p>
+                </div>
+                <label className="flex items-center gap-2 text-sm text-slate-600">
+                  Sort by
+                  <select
+                    value={sortBy}
+                    onChange={(event) => setSortBy(event.target.value)}
+                    className="rounded-sm border border-slate-300 bg-white px-2 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
+                  >
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Customer rating</option>
+                    <option value="popularity">Popularity</option>
+                  </select>
+                </label>
+              </div>
+
+              {activeFilterTags.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {activeFilterTags.map((tag) => (
+                    <button
+                      key={tag.key}
+                      type="button"
+                      onClick={tag.onRemove}
+                      className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700 hover:bg-blue-100"
+                    >
+                      {tag.label}
+                      <X className="h-3 w-3" aria-hidden="true" />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {results.length === 0 ? (
+              <div className="px-6 py-16 text-center">
+                <h3 className="text-lg font-semibold text-slate-800">
+                  We couldn&apos;t find a match
+                </h3>
+                <p className="mt-2 text-sm text-slate-500">
+                  Try changing your search or clearing some filters.
+                </p>
+                <Button type="button" className="mt-5" onClick={clearAllFilters}>
+                  Clear search and filters
+                </Button>
+              </div>
+            ) : (
+              <>
+                <div>
+                  <AnimatePresence>
+                    {visibleLaptops.map((laptop) => (
+                      <LaptopCard
+                        key={laptop.id}
+                        laptop={laptop}
+                        onAddToCart={addToCart}
+                      />
+                    ))}
+                  </AnimatePresence>
+                </div>
+
+                <nav
+                  aria-label="Product pages"
+                  className="flex items-center justify-center gap-4 border-t px-4 py-4"
+                >
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    disabled={page === 1}
+                    onClick={() => setPage((current) => current - 1)}
+                  >
+                    Previous
+                  </Button>
+                  <span className="text-sm text-slate-600">
+                    Page {page} of {pageCount}
+                  </span>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    disabled={page >= pageCount}
+                    onClick={() => setPage((current) => current + 1)}
+                  >
+                    Next
+                  </Button>
+                </nav>
+              </>
+            )}
+          </section>
+        </div>
+      </main>
+    </div>
+  )
 }
 
 export default BrowseLaptop
